@@ -1,0 +1,27 @@
+## Motor 1 ## 
+Set Music On
+Set Gen. Length 15
+Set Gen. Interval 3    
+Paste these notes:
+D4 8 D4 8 P8 D4 8 P8 D4 8 P8 D4 8 D4 8 D4 8 P8 D4 8 D4 8 P8 D4 8 D4 8 P8 D4 8 P8 D4 8 P8 D4 8 P8 D4 8 D4 8 D4 8 P8 D4 8 D4 8 P8 D4 1
+
+## Motor 2 ## 
+Set Music On
+Set Gen. Length 15
+Set Gen. Interval 3    
+Paste these notes:
+D5 4 D4 8 P8 D4 8 P8 D48 P8 D5 4 D4 8 C5 4 D4 8 D5 4 D4 8 P8 D4 8 P8 D4 8 P8 D4 8 P8 D5 4 D4 8 A4 4 D4 8 A#4 1
+
+## Motor 3 ## 
+Set Music On
+Set Gen. Length 15
+Set Gen. Interval 3    
+Paste these notes:
+A5 4 P4 P4 P4 A5 4 P8 G5 4 P8 A5 4 P4 P4 P4 P4 A5 4 P8 E5 4 P8 F5 1
+
+## Motor 4 ## 
+Set Music On
+Set Gen. Length 15
+Set Gen. Interval 3    
+Paste these notes:
+D6 4 P4 P4 P4 D6 4 P8 C6 4 P8 D6 4 P4 P4 P4 P4 D6 4 P8 A5 4 P8 A#5 1
