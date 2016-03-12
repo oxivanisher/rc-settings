@@ -1,10 +1,8 @@
 
-Entering CLI Mode, type 'exit' to return, or 'help'
-
 # dump
 
 # version
-# Cleanflight/NAZE 1.11.0 Nov 28 2015 / 15:30:06 (0c82a7b)
+# Cleanflight/NAZE 1.12.0 Feb 19 2016 / 20:01:21 (aa8608a)
 # dump master
 
 # mixer
@@ -35,6 +33,7 @@ feature -DISPLAY
 feature -ONESHOT125
 feature -BLACKBOX
 feature -CHANNEL_FORWARDING
+feature -TRANSPONDER
 feature RX_PPM
 feature VBAT
 feature MOTOR_STOP
@@ -108,7 +107,9 @@ color 15 0,0,0
 
 set looptime = 3500
 set emf_avoidance = OFF
-set i2c_overclock = OFF
+set i2c_highspeed = ON
+set gyro_sync = ON
+set gyro_sync_denom = 1
 set mid_rc = 1500
 set min_check = 1100
 set max_check = 1900
@@ -138,6 +139,7 @@ set gps_sbas_mode = AUTO
 set gps_auto_config = ON
 set gps_auto_baud = OFF
 set serialrx_provider = SPEK1024
+set sbus_inversion = ON
 set spektrum_sat_bind = 0
 set telemetry_switch = OFF
 set telemetry_inversion = OFF
@@ -163,22 +165,25 @@ set align_board_roll = 0
 set align_board_pitch = 0
 set align_board_yaw = 0
 set max_angle_inclination = 500
-set gyro_lpf = 42
+set gyro_lpf = 188HZ
+set gyro_soft_lpf =  60.000
 set moron_threshold = 32
-set gyro_cmpf_factor = 600
-set gyro_cmpfm_factor = 250
+set imu_dcm_kp = 2500
+set imu_dcm_ki = 0
 set yaw_control_direction = 1
 set pid_at_min_throttle = ON
+set airmode_saturation_limit = 50
 set yaw_motor_direction = 1
 set yaw_jump_prevention_limit = 200
 set tri_unarmed_servo = ON
-set servo_lowpass_freq = 400
+set servo_lowpass_freq =  400.000
 set servo_lowpass_enable = OFF
 set failsafe_delay = 10
 set failsafe_off_delay = 200
 set failsafe_throttle = 1000
 set failsafe_kill_switch = OFF
 set failsafe_throttle_low_delay = 100
+set failsafe_procedure = 0
 set rx_min_usec = 885
 set rx_max_usec = 2115
 set acc_hardware = 0
@@ -221,7 +226,7 @@ aux 0 0 0 1800 2100
 aux 1 1 1 1300 1700
 aux 2 2 1 1750 2100
 aux 3 12 2 1800 2100
-aux 4 0 0 900 900
+aux 4 20 3 1800 2100
 aux 5 0 0 900 900
 aux 6 0 0 900 900
 aux 7 0 0 900 900
@@ -290,7 +295,7 @@ set throttle_correction_value = 0
 set throttle_correction_angle = 800
 set default_rate_profile = 0
 set gimbal_mode = NORMAL
-set acc_lpf_factor = 4
+set acc_cut_hz = 15
 set accxy_deadband = 40
 set accz_deadband = 40
 set accz_lpf_cutoff =  5.000
@@ -302,6 +307,7 @@ set baro_noise_lpf =  0.600
 set baro_cf_vel =  0.985
 set baro_cf_alt =  0.965
 set mag_declination = 0
+set pid_delta_method = MEASUREMENT
 set pid_controller = MW23
 set p_pitch = 40
 set i_pitch = 30
@@ -321,7 +327,6 @@ set d_rollf =  0.030
 set p_yawf =  2.500
 set i_yawf =  1.000
 set d_yawf =  0.000
-set yaw_p_limit = 500
 set level_horizon =  3.000
 set level_angle =  5.000
 set sensitivity_horizon = 75
@@ -334,9 +339,17 @@ set d_level = 100
 set p_vel = 120
 set i_vel = 45
 set d_vel = 1
-set dterm_cut_hz = 0
-set pterm_cut_hz = 0
-set gyro_cut_hz = 0
+set yaw_p_limit = 500
+set dterm_cut_hz =  0.000
+set gtune_loP_rll = 10
+set gtune_loP_ptch = 10
+set gtune_loP_yw = 10
+set gtune_hiP_rll = 100
+set gtune_hiP_ptch = 100
+set gtune_hiP_yw = 100
+set gtune_pwr = 0
+set gtune_settle_time = 450
+set gtune_average_cycles = 16
 
 # dump rates
 
@@ -353,3 +366,5 @@ set pitch_rate = 0
 set yaw_rate = 0
 set tpa_rate = 0
 set tpa_breakpoint = 1500
+
+# 
