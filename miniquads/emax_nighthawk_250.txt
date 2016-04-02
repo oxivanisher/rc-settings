@@ -179,7 +179,7 @@ set servo_lowpass_freq =  400.000
 set servo_lowpass_enable = OFF
 set failsafe_delay = 10
 set failsafe_off_delay = 200
-set failsafe_throttle = 1300
+set failsafe_throttle = 1200
 set failsafe_kill_switch = OFF
 set failsafe_throttle_low_delay = 100
 set failsafe_procedure = 0
@@ -224,10 +224,10 @@ profile 0
 aux 0 0 0 1800 2100
 aux 1 1 1 1300 1700
 aux 2 2 1 1750 2100
-aux 3 12 2 1300 2100
-aux 4 26 2 1725 2100
-aux 5 20 3 1725 2100
-aux 6 0 0 900 900
+aux 3 4 1 1300 2100
+aux 4 12 2 1300 2100
+aux 5 26 2 1725 2100
+aux 6 20 3 1725 2100
 aux 7 0 0 900 900
 aux 8 0 0 900 900
 aux 9 0 0 900 900
@@ -305,18 +305,18 @@ set baro_tab_size = 21
 set baro_noise_lpf =  0.600
 set baro_cf_vel =  0.985
 set baro_cf_alt =  0.965
-set mag_declination = 0
+set mag_declination = 160
 set pid_delta_method = MEASUREMENT
 set pid_controller = LUX
-set p_pitch = 45
-set i_pitch = 38
-set d_pitch = 32
+set p_pitch = 40
+set i_pitch = 30
+set d_pitch = 23
 set p_roll = 40
-set i_roll = 45
-set d_roll = 32
-set p_yaw = 110
-set i_yaw = 50
-set d_yaw = 1
+set i_roll = 30
+set d_roll = 23
+set p_yaw = 85
+set i_yaw = 45
+set d_yaw = 0
 set p_pitchf =  1.400
 set i_pitchf =  0.400
 set d_pitchf =  0.030
@@ -356,13 +356,13 @@ set gtune_average_cycles = 16
 rateprofile 0
 
 set rc_rate = 100
-set rc_expo = 30
+set rc_expo = 70
 set rc_yaw_expo = 10
 set thr_mid = 35
 set thr_expo = 0
-set roll_rate = 0
-set pitch_rate = 0
-set yaw_rate = 0
+set roll_rate = 15
+set pitch_rate = 15
+set yaw_rate = 15
 set tpa_rate = 0
 set tpa_breakpoint = 1500
 
