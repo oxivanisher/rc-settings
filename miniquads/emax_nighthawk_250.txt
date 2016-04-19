@@ -1,5 +1,3 @@
-# dump
-
 # version
 # Cleanflight/NAZE 1.12.0 Feb 19 2016 / 20:01:21 (aa8608a)
 # dump master
@@ -365,5 +363,3 @@ set pitch_rate = 15
 set yaw_rate = 15
 set tpa_rate = 0
 set tpa_breakpoint = 1500
-
-# 
