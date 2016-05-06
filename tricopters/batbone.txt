@@ -33,6 +33,7 @@ feature -CHANNEL_FORWARDING
 feature -TRANSPONDER
 feature RX_PPM
 feature VBAT
+feature GPS
 feature FAILSAFE
 feature TELEMETRY
 
@@ -42,8 +43,8 @@ map TAER1234
 
 
 # serial
-serial 0 1 115200 57600 0 115200
-serial 1 0 115200 57600 0 115200
+serial 0 5 115200 57600 9600 115200
+serial 1 2 115200 57600 0 115200
 
 
 # led
@@ -129,7 +130,7 @@ set small_angle = 25
 set fixedwing_althold_dir = 1
 set reboot_character = 82
 set gps_provider = UBLOX
-set gps_sbas_mode = AUTO
+set gps_sbas_mode = EGNOS
 set gps_auto_config = ON
 set gps_auto_baud = OFF
 set serialrx_provider = SPEK1024
@@ -154,7 +155,7 @@ set multiwii_current_meter_output = OFF
 set current_meter_type = ADC
 set align_gyro = DEFAULT
 set align_acc = DEFAULT
-set align_mag = DEFAULT
+set align_mag = CW270FLIP
 set align_board_roll = 0
 set align_board_pitch = 0
 set align_board_yaw = 0
@@ -197,7 +198,7 @@ rxfail 2 a
 rxfail 3 a
 rxfail 4 h
 rxfail 5 s 1500
-rxfail 6 h
+rxfail 6 s 2000
 rxfail 7 h
 rxfail 8 h
 rxfail 9 h
@@ -258,12 +259,12 @@ rxrange 2 1000 2000
 rxrange 3 1000 2000
 
 # servo
-servo 0 1020 2000 1500 45 45 30 -1
-servo 1 1020 2000 1500 45 45 30 -1
+servo 0 1020 2000 1500 45 45 100 -1
+servo 1 1020 2000 1500 45 45 100 -1
 servo 2 1020 2000 1500 45 45 100 -1
 servo 3 1020 2000 1500 45 45 100 -1
 servo 4 1020 2000 1500 45 45 100 -1
-servo 5 1100 1900 1538 45 45 101 -1
+servo 5 1100 1900 1538 45 45 -100 -1
 servo 6 1020 2000 1500 45 45 100 -1
 servo 7 1020 2000 1500 45 45 100 -1
 
@@ -300,7 +301,7 @@ set baro_tab_size = 21
 set baro_noise_lpf =  0.600
 set baro_cf_vel =  0.985
 set baro_cf_alt =  0.965
-set mag_declination = 0
+set mag_declination = 180
 set pid_delta_method = MEASUREMENT
 set pid_controller = LUX
 set p_pitch = 40
@@ -360,3 +361,5 @@ set pitch_rate = 0
 set yaw_rate = 0
 set tpa_rate = 0
 set tpa_breakpoint = 1500
+
+# 
