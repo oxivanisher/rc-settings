@@ -1,5 +1,6 @@
+
 # version
-# Cleanflight/NAZE 1.12.0 Feb 19 2016 / 20:01:21 (aa8608a)
+# Cleanflight/NAZE 1.12.1 Apr 10 2016 / 19:57:39 (d0c90cf)
 # dump master
 
 # mixer
@@ -315,10 +316,10 @@ set d_roll = 23
 set p_yaw = 85
 set i_yaw = 45
 set d_yaw = 0
-set p_pitchf =  1.400
+set p_pitchf =  4.500
 set i_pitchf =  0.400
 set d_pitchf =  0.030
-set p_rollf =  1.400
+set p_rollf =  4.500
 set i_rollf =  0.400
 set d_rollf =  0.030
 set p_yawf =  3.500
@@ -358,8 +359,10 @@ set rc_expo = 70
 set rc_yaw_expo = 10
 set thr_mid = 35
 set thr_expo = 0
-set roll_rate = 15
-set pitch_rate = 15
-set yaw_rate = 15
+set roll_rate = 20
+set pitch_rate = 20
+set yaw_rate = 20
 set tpa_rate = 0
 set tpa_breakpoint = 1500
+
+# 
