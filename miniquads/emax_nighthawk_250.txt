@@ -1,3 +1,4 @@
+# dump
 
 # version
 # Cleanflight/NAZE 1.12.1 Apr 10 2016 / 19:57:39 (d0c90cf)
@@ -103,7 +104,7 @@ color 13 330,0,255
 color 14 0,0,0
 color 15 0,0,0
 
-set looptime = 3500
+set looptime = 1600
 set emf_avoidance = OFF
 set i2c_highspeed = ON
 set gyro_sync = ON
@@ -118,7 +119,7 @@ set rc_smoothing = ON
 set input_filtering_mode = OFF
 set min_throttle = 1150
 set max_throttle = 1850
-set min_command = 1000
+set min_command = 1150
 set servo_center_pulse = 1500
 set 3d_deadband_low = 1406
 set 3d_deadband_high = 1514
@@ -161,7 +162,7 @@ set align_acc = DEFAULT
 set align_mag = DEFAULT
 set align_board_roll = 0
 set align_board_pitch = 0
-set align_board_yaw = 0
+set align_board_yaw = 90
 set max_angle_inclination = 500
 set gyro_lpf = 188HZ
 set gyro_soft_lpf =  60.000
@@ -223,11 +224,11 @@ profile 0
 aux 0 0 0 1800 2100
 aux 1 1 1 1300 1700
 aux 2 2 1 1750 2100
-aux 3 4 1 1300 2100
-aux 4 12 2 1300 2100
-aux 5 26 2 1725 2100
-aux 6 20 3 1725 2100
-aux 7 0 0 900 900
+aux 3 27 3 1300 1700
+aux 4 4 1 1300 2100
+aux 5 12 2 1300 2100
+aux 6 26 2 1750 2100
+aux 7 20 3 1750 2100
 aux 8 0 0 900 900
 aux 9 0 0 900 900
 aux 10 0 0 900 900
@@ -306,20 +307,20 @@ set baro_cf_vel =  0.985
 set baro_cf_alt =  0.965
 set mag_declination = 160
 set pid_delta_method = MEASUREMENT
-set pid_controller = LUX
-set p_pitch = 40
+set pid_controller = MWREWRITE
+set p_pitch = 70
 set i_pitch = 30
 set d_pitch = 23
 set p_roll = 40
 set i_roll = 30
 set d_roll = 23
-set p_yaw = 85
+set p_yaw = 110
 set i_yaw = 45
-set d_yaw = 0
-set p_pitchf =  4.500
+set d_yaw = 13
+set p_pitchf =  1.400
 set i_pitchf =  0.400
 set d_pitchf =  0.030
-set p_rollf =  4.500
+set p_rollf =  1.400
 set i_rollf =  0.400
 set d_rollf =  0.030
 set p_yawf =  3.500
