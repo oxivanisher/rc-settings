@@ -1,5 +1,3 @@
-# dump
-
 # version
 # Cleanflight/NAZE 1.13.0 Jun  6 2016 / 00:03:48 (a77bc76)
 # dump master
@@ -36,7 +34,6 @@ feature -TRANSPONDER
 feature RX_PPM
 feature VBAT
 feature MOTOR_STOP
-feature FAILSAFE
 feature TELEMETRY
 feature LED_STRIP
 feature ONESHOT125
@@ -151,7 +148,7 @@ mode_color 6 5 2
 mode_color 6 6 3
 mode_color 6 7 6
 
-set looptime = 1600
+set looptime = 2000
 set emf_avoidance = OFF
 set i2c_highspeed = ON
 set gyro_sync = ON
@@ -226,13 +223,13 @@ set servo_lowpass_freq =  400.000
 set servo_lowpass_enable = OFF
 set failsafe_delay = 10
 set failsafe_off_delay = 200
-set failsafe_throttle = 1200
-set failsafe_kill_switch = OFF
+set failsafe_throttle = 1300
+set failsafe_kill_switch = ON
 set failsafe_throttle_low_delay = 100
 set failsafe_procedure = 0
 set acc_hardware = 0
 set baro_hardware = 0
-set mag_hardware = 0
+set mag_hardware = 1
 set blackbox_rate_num = 1
 set blackbox_rate_denom = 1
 set blackbox_device = SERIAL
@@ -336,7 +333,7 @@ set alt_hold_fast_change = ON
 set deadband = 0
 set yaw_deadband = 0
 set yaw_control_direction = 1
-set 3d_deadband_throttle = 50
+set 3d_deadband_throttle = 14852
 set throttle_correction_value = 0
 set throttle_correction_angle = 800
 set default_rate_profile = 0
@@ -355,10 +352,10 @@ set baro_cf_alt =  0.965
 set mag_declination = 0
 set pid_controller = LUX
 set p_pitch = 70
-set i_pitch = 30
+set i_pitch = 35
 set d_pitch = 23
 set p_roll = 45
-set i_roll = 30
+set i_roll = 35
 set d_roll = 23
 set p_yaw = 110
 set i_yaw = 45
@@ -366,7 +363,7 @@ set d_yaw = 10
 set p_alt = 50
 set i_alt = 0
 set d_alt = 0
-set p_level = 20
+set p_level = 30
 set i_level = 10
 set d_level = 100
 set p_vel = 120
@@ -389,14 +386,14 @@ set gtune_average_cycles = 16
 # rateprofile
 rateprofile 0
 
-set rc_rate = 90
-set rc_expo = 65
+set rc_rate = 100
+set rc_expo = 75
 set rc_yaw_expo = 10
-set thr_mid = 50
+set thr_mid = 35
 set thr_expo = 0
-set roll_rate = 20
-set pitch_rate = 20
-set yaw_rate = 20
+set roll_rate = 60
+set pitch_rate = 60
+set yaw_rate = 70
 set tpa_rate = 0
 set tpa_breakpoint = 1500
 
