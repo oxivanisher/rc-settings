@@ -1,3 +1,4 @@
+
 # version
 # Cleanflight/MOTOLAB 1.13.0 Jun  6 2016 / 00:05:30 (a77bc76)
 # dump master
@@ -214,7 +215,7 @@ set moron_threshold = 32
 set imu_dcm_kp = 2500
 set imu_dcm_ki = 0
 set pid_at_min_throttle = ON
-set yaw_motor_direction = 1
+set yaw_motor_direction = -1
 set yaw_jump_prevention_limit = 200
 set tri_unarmed_servo = ON
 set servo_lowpass_freq =  400.000
@@ -328,15 +329,15 @@ set acc_unarmedcal = ON
 set acc_trim_pitch = 0
 set acc_trim_roll = 0
 set pid_controller = LUX
-set p_pitch = 40
+set p_pitch = 68
 set i_pitch = 30
 set d_pitch = 23
-set p_roll = 40
+set p_roll = 45
 set i_roll = 30
 set d_roll = 23
-set p_yaw = 85
+set p_yaw = 113
 set i_yaw = 45
-set d_yaw = 0
+set d_yaw = 15
 set p_alt = 50
 set i_alt = 0
 set d_alt = 0
@@ -363,15 +364,13 @@ set gtune_average_cycles = 16
 # rateprofile
 rateprofile 0
 
-set rc_rate = 90
-set rc_expo = 65
+set rc_rate = 100
+set rc_expo = 72
 set rc_yaw_expo = 0
 set thr_mid = 35
 set thr_expo = 0
-set roll_rate = 0
-set pitch_rate = 0
-set yaw_rate = 0
+set roll_rate = 50
+set pitch_rate = 50
+set yaw_rate = 50
 set tpa_rate = 0
 set tpa_breakpoint = 1500
-
-# 
