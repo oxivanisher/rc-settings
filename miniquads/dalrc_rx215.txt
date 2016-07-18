@@ -1,4 +1,3 @@
-
 # version
 # Cleanflight/MOTOLAB 1.13.0 Jun  6 2016 / 00:05:30 (a77bc76)
 # dump master
@@ -34,7 +33,6 @@ feature -CHANNEL_FORWARDING
 feature -TRANSPONDER
 feature VBAT
 feature RX_SERIAL
-feature MOTOR_STOP
 feature FAILSAFE
 feature TELEMETRY
 feature ONESHOT125
@@ -169,7 +167,7 @@ set serialrx_provider = SBUS
 set sbus_inversion = ON
 set spektrum_sat_bind = 0
 set input_filtering_mode = OFF
-set min_throttle = 1150
+set min_throttle = 1070
 set max_throttle = 1850
 set min_command = 1000
 set servo_center_pulse = 1500
@@ -222,7 +220,7 @@ set servo_lowpass_freq =  400.000
 set servo_lowpass_enable = OFF
 set failsafe_delay = 10
 set failsafe_off_delay = 200
-set failsafe_throttle = 1000
+set failsafe_throttle = 1200
 set failsafe_kill_switch = OFF
 set failsafe_throttle_low_delay = 100
 set failsafe_procedure = 0
@@ -264,7 +262,7 @@ aux 0 0 0 1825 2100
 aux 1 1 1 1300 1700
 aux 2 2 1 1800 2100
 aux 3 12 2 1800 2100
-aux 4 27 3 1300 1700
+aux 4 27 0 1775 2100
 aux 5 0 0 900 900
 aux 6 0 0 900 900
 aux 7 0 0 900 900
@@ -329,13 +327,13 @@ set acc_unarmedcal = ON
 set acc_trim_pitch = 0
 set acc_trim_roll = 0
 set pid_controller = LUX
-set p_pitch = 68
-set i_pitch = 30
-set d_pitch = 23
-set p_roll = 45
-set i_roll = 30
-set d_roll = 23
-set p_yaw = 113
+set p_pitch = 60
+set i_pitch = 40
+set d_pitch = 33
+set p_roll = 44
+set i_roll = 35
+set d_roll = 26
+set p_yaw = 100
 set i_yaw = 45
 set d_yaw = 15
 set p_alt = 50
@@ -365,12 +363,14 @@ set gtune_average_cycles = 16
 rateprofile 0
 
 set rc_rate = 100
-set rc_expo = 72
+set rc_expo = 77
 set rc_yaw_expo = 0
-set thr_mid = 35
-set thr_expo = 0
-set roll_rate = 50
-set pitch_rate = 50
-set yaw_rate = 50
+set thr_mid = 50
+set thr_expo = 10
+set roll_rate = 75
+set pitch_rate = 75
+set yaw_rate = 75
 set tpa_rate = 0
 set tpa_breakpoint = 1500
+
+# 
