@@ -1,5 +1,7 @@
+# dump
+
 # version
-# Cleanflight/MOTOLAB 1.13.0 Jun  6 2016 / 00:05:30 (a77bc76)
+# Cleanflight/SPRACINGF3 1.13.0 Jun  6 2016 / 00:03:10 (a77bc76)
 # dump master
 
 # mixer
@@ -43,10 +45,9 @@ map TAER1234
 
 
 # serial
-serial 20 1 115200 57600 0 115200
 serial 0 1 115200 57600 0 115200
-serial 1 64 115200 57600 0 115200
-serial 2 32 115200 57600 0 115200
+serial 1 32 115200 57600 0 115200
+serial 2 64 115200 57600 0 115200
 
 
 # led
@@ -181,8 +182,12 @@ set disarm_kill_switch = ON
 set auto_disarm_delay = 5
 set max_arm_angle = 25
 set small_angle = 25
-set fixedwing_althold_dir = 72
+set fixedwing_althold_dir = 1
 set reboot_character = 82
+set gps_provider = NMEA
+set gps_sbas_mode = AUTO
+set gps_auto_config = ON
+set gps_auto_baud = OFF
 set telemetry_switch = OFF
 set telemetry_inversion = ON
 set frsky_default_lattitude =  0.000
@@ -205,7 +210,7 @@ set align_acc = DEFAULT
 set align_mag = DEFAULT
 set align_board_roll = 0
 set align_board_pitch = 0
-set align_board_yaw = 0
+set align_board_yaw = 90
 set max_angle_inclination = 500
 set gyro_lpf = 188HZ
 set gyro_soft_lpf = 60
@@ -225,6 +230,8 @@ set failsafe_kill_switch = OFF
 set failsafe_throttle_low_delay = 100
 set failsafe_procedure = 0
 set acc_hardware = 0
+set baro_hardware = 0
+set mag_hardware = 0
 set blackbox_rate_num = 1
 set blackbox_rate_denom = 1
 set blackbox_device = SERIAL
@@ -258,11 +265,11 @@ rxfail 17 h
 profile 0
 
 # aux
-aux 0 0 0 1825 2100
-aux 1 1 1 1300 1700
-aux 2 2 1 1800 2100
-aux 3 12 2 1800 2100
-aux 4 27 0 1775 2100
+aux 0 0 0 1800 2100
+aux 1 2 1 1300 1700
+aux 2 12 2 1650 2100
+aux 3 27 0 1650 2100
+aux 4 0 0 900 900
 aux 5 0 0 900 900
 aux 6 0 0 900 900
 aux 7 0 0 900 900
@@ -309,12 +316,26 @@ servo 5 1000 2000 1500 45 45 100 -1
 servo 6 1000 2000 1500 45 45 100 -1
 servo 7 1000 2000 1500 45 45 100 -1
 
+set gps_pos_p = 15
+set gps_pos_i = 0
+set gps_pos_d = 0
+set gps_posr_p = 34
+set gps_posr_i = 14
+set gps_posr_d = 53
+set gps_nav_p = 25
+set gps_nav_i = 33
+set gps_nav_d = 83
+set gps_wp_radius = 200
+set nav_controls_heading = ON
+set nav_speed_min = 100
+set nav_speed_max = 300
+set nav_slew_rate = 30
 set alt_hold_deadband = 40
 set alt_hold_fast_change = ON
 set deadband = 0
 set yaw_deadband = 0
 set yaw_control_direction = 1
-set 3d_deadband_throttle = 14852
+set 3d_deadband_throttle = 50
 set throttle_correction_value = 0
 set throttle_correction_angle = 800
 set default_rate_profile = 0
@@ -326,6 +347,11 @@ set accz_lpf_cutoff =  5.000
 set acc_unarmedcal = ON
 set acc_trim_pitch = 0
 set acc_trim_roll = 0
+set baro_tab_size = 21
+set baro_noise_lpf =  0.600
+set baro_cf_vel =  0.985
+set baro_cf_alt =  0.965
+set mag_declination = 0
 set pid_controller = LUX
 set p_pitch = 60
 set i_pitch = 40
