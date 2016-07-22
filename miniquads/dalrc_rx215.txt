@@ -1,5 +1,3 @@
-# dump
-
 # version
 # Cleanflight/SPRACINGF3 1.13.0 Jun  6 2016 / 00:03:10 (a77bc76)
 # dump master
@@ -38,6 +36,7 @@ feature RX_SERIAL
 feature FAILSAFE
 feature TELEMETRY
 feature ONESHOT125
+feature BLACKBOX
 
 
 # map
@@ -266,12 +265,12 @@ profile 0
 
 # aux
 aux 0 0 0 1800 2100
-aux 1 2 1 1300 1700
-aux 2 12 2 1650 2100
-aux 3 27 0 1650 2100
-aux 4 0 0 900 900
-aux 5 0 0 900 900
-aux 6 0 0 900 900
+aux 1 2 1 1300 2100
+aux 2 3 0 1800 2100
+aux 3 4 0 1800 2100
+aux 4 12 2 1800 2100
+aux 5 25 0 1300 1700
+aux 6 27 0 1800 2100
 aux 7 0 0 900 900
 aux 8 0 0 900 900
 aux 9 0 0 900 900
