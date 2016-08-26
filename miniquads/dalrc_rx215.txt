@@ -206,7 +206,7 @@ set multiwii_current_meter_output = OFF
 set current_meter_type = ADC
 set align_gyro = DEFAULT
 set align_acc = DEFAULT
-set align_mag = DEFAULT
+set align_mag = CW270
 set align_board_roll = 0
 set align_board_pitch = 0
 set align_board_yaw = 90
@@ -224,28 +224,28 @@ set servo_lowpass_freq =  400.000
 set servo_lowpass_enable = OFF
 set failsafe_delay = 10
 set failsafe_off_delay = 200
-set failsafe_throttle = 1200
+set failsafe_throttle = 1300
 set failsafe_kill_switch = OFF
 set failsafe_throttle_low_delay = 100
-set failsafe_procedure = 0
+set failsafe_procedure = 1
 set acc_hardware = 0
 set baro_hardware = 0
 set mag_hardware = 0
 set blackbox_rate_num = 1
-set blackbox_rate_denom = 1
-set blackbox_device = SERIAL
-set magzero_x = 0
-set magzero_y = 0
-set magzero_z = 0
+set blackbox_rate_denom = 4
+set blackbox_device = SPIFLASH
+set magzero_x = 1298
+set magzero_y = 1155
+set magzero_z = -3034
 
 # rxfail
 rxfail 0 a
 rxfail 1 a
 rxfail 2 a
 rxfail 3 a
-rxfail 4 h
-rxfail 5 s 1500
-rxfail 6 h
+rxfail 4 s 1200
+rxfail 5 h
+rxfail 6 s 1950
 rxfail 7 h
 rxfail 8 h
 rxfail 9 h
@@ -266,10 +266,10 @@ profile 0
 # aux
 aux 0 0 0 1800 2100
 aux 1 2 1 1300 2100
-aux 2 3 0 1800 2100
-aux 3 4 0 1800 2100
+aux 2 3 1 1800 2100
+aux 3 4 1 1800 2100
 aux 4 12 2 1800 2100
-aux 5 25 0 1300 1700
+aux 5 25 3 1800 2100
 aux 6 27 0 1800 2100
 aux 7 0 0 900 900
 aux 8 0 0 900 900
@@ -388,10 +388,10 @@ set gtune_average_cycles = 16
 rateprofile 0
 
 set rc_rate = 100
-set rc_expo = 77
+set rc_expo = 73
 set rc_yaw_expo = 0
-set thr_mid = 50
-set thr_expo = 10
+set thr_mid = 60
+set thr_expo = 1
 set roll_rate = 75
 set pitch_rate = 75
 set yaw_rate = 75
