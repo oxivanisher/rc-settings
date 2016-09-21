@@ -74,7 +74,7 @@ map TAER1234
 serial 20 1 115200 57600 0 115200
 serial 0 1 115200 57600 0 115200
 serial 1 64 115200 57600 0 115200
-serial 2 0 115200 57600 0 115200
+serial 2 4 115200 57600 0 115200
 
 
 # led
@@ -132,9 +132,9 @@ color 15 0,0,0
 
 # aux
 aux 0 0 0 1700 2100
-aux 1 1 2 1950 2025
-aux 2 2 2 1450 1525
-aux 3 0 0 900 900
+aux 1 1 1 1375 1650
+aux 2 2 1 1825 2100
+aux 3 12 2 1300 2100
 aux 4 0 0 900 900
 aux 5 0 0 900 900
 aux 6 0 0 900 900
@@ -268,7 +268,7 @@ set yaw_deadband = 16
 set throttle_correction_value = 0
 set throttle_correction_angle = 800
 set yaw_control_direction = 1
-set yaw_motor_direction = -1
+set yaw_motor_direction = 1
 set tri_unarmed_servo = ON
 set servo_lowpass_freq = 400
 set servo_lowpass_enable = OFF
@@ -310,9 +310,9 @@ rxfail 0 a
 rxfail 1 a
 rxfail 2 a
 rxfail 3 a
-rxfail 4 h
+rxfail 4 s 1000
 rxfail 5 h
-rxfail 6 h
+rxfail 6 s 1800
 rxfail 7 h
 rxfail 8 h
 rxfail 9 h
@@ -381,5 +381,4 @@ set yaw_rate = 70
 set tpa_rate = 20
 set tpa_breakpoint = 1650
 
-# 
-
+#
