@@ -1,3 +1,5 @@
+# dump
+
 # version
 # Cleanflight/SPRACINGF3 1.13.0 Jun  6 2016 / 00:03:10 (a77bc76)
 # dump master
@@ -167,7 +169,7 @@ set serialrx_provider = SBUS
 set sbus_inversion = ON
 set spektrum_sat_bind = 0
 set input_filtering_mode = OFF
-set min_throttle = 1070
+set min_throttle = 1150
 set max_throttle = 1850
 set min_command = 1000
 set servo_center_pulse = 1500
@@ -197,7 +199,7 @@ set frsky_vfas_precision = 0
 set hott_alarm_sound_interval = 5
 set battery_capacity = 0
 set vbat_scale = 110
-set vbat_max_cell_voltage = 43
+set vbat_max_cell_voltage = 44
 set vbat_min_cell_voltage = 33
 set vbat_warning_cell_voltage = 35
 set current_meter_scale = 400
@@ -217,7 +219,7 @@ set moron_threshold = 32
 set imu_dcm_kp = 2500
 set imu_dcm_ki = 0
 set pid_at_min_throttle = ON
-set yaw_motor_direction = -1
+set yaw_motor_direction = 1
 set yaw_jump_prevention_limit = 200
 set tri_unarmed_servo = ON
 set servo_lowpass_freq =  400.000
@@ -387,14 +389,14 @@ set gtune_average_cycles = 16
 # rateprofile
 rateprofile 0
 
-set rc_rate = 100
-set rc_expo = 73
-set rc_yaw_expo = 0
+set rc_rate = 110
+set rc_expo = 45
+set rc_yaw_expo = 10
 set thr_mid = 60
 set thr_expo = 1
-set roll_rate = 75
-set pitch_rate = 75
-set yaw_rate = 75
+set roll_rate = 90
+set pitch_rate = 90
+set yaw_rate = 100
 set tpa_rate = 0
 set tpa_breakpoint = 1500
 
