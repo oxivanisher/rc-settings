@@ -1,3 +1,5 @@
+# dump
+
 # version
 # Cleanflight/NAZE 1.13.0 Jun  6 2016 / 00:03:48 (a77bc76)
 # dump master
@@ -33,7 +35,7 @@ feature -CHANNEL_FORWARDING
 feature -TRANSPONDER
 feature RX_PPM
 feature VBAT
-feature MOTOR_STOP
+feature FAILSAFE
 feature TELEMETRY
 feature LED_STRIP
 feature ONESHOT125
@@ -268,7 +270,7 @@ aux 1 1 1 1300 1700
 aux 2 2 1 1750 2100
 aux 3 12 2 1750 2100
 aux 4 26 3 1750 2100
-aux 5 27 3 1300 1700
+aux 5 27 0 1800 2100
 aux 6 0 0 900 900
 aux 7 0 0 900 900
 aux 8 0 0 900 900
@@ -351,13 +353,13 @@ set baro_cf_vel =  0.985
 set baro_cf_alt =  0.965
 set mag_declination = 0
 set pid_controller = LUX
-set p_pitch = 70
-set i_pitch = 35
-set d_pitch = 23
+set p_pitch = 58
+set i_pitch = 47
+set d_pitch = 50
 set p_roll = 45
-set i_roll = 35
-set d_roll = 23
-set p_yaw = 110
+set i_roll = 47
+set d_roll = 55
+set p_yaw = 90
 set i_yaw = 45
 set d_yaw = 10
 set p_alt = 50
@@ -387,13 +389,13 @@ set gtune_average_cycles = 16
 rateprofile 0
 
 set rc_rate = 100
-set rc_expo = 75
+set rc_expo = 68
 set rc_yaw_expo = 10
 set thr_mid = 35
-set thr_expo = 0
-set roll_rate = 60
-set pitch_rate = 60
-set yaw_rate = 70
+set thr_expo = 10
+set roll_rate = 75
+set pitch_rate = 75
+set yaw_rate = 75
 set tpa_rate = 0
 set tpa_breakpoint = 1500
 
