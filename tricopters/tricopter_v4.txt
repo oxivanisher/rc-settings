@@ -1,3 +1,6 @@
+
+Entering CLI Mode, type 'exit' to return, or 'help'
+
 # dump
 
 # version
@@ -33,8 +36,9 @@ feature -ONESHOT125
 feature -BLACKBOX
 feature -CHANNEL_FORWARDING
 feature -TRANSPONDER
-feature RX_PPM
 feature VBAT
+feature RX_SERIAL
+feature SOFTSERIAL
 feature GPS
 feature FAILSAFE
 feature TELEMETRY
@@ -44,13 +48,13 @@ feature BLACKBOX
 
 
 # map
-map AETR1234
+map TAER1234
 
 
 # serial
 serial 20 1 115200 57600 0 115200
-serial 0 1 115200 57600 0 115200
-serial 1 4 115200 57600 0 115200
+serial 0 64 115200 57600 0 115200
+serial 1 1 115200 57600 0 115200
 serial 2 2 115200 57600 0 115200
 
 
@@ -188,7 +192,7 @@ set max_arm_angle = 25
 set small_angle = 25
 set fixedwing_althold_dir = 1
 set reboot_character = 82
-set gps_provider = NMEA
+set gps_provider = UBLOX
 set gps_sbas_mode = AUTO
 set gps_auto_config = ON
 set gps_auto_baud = OFF
@@ -234,7 +238,7 @@ set tri_motor_acc_yaw_correction = 27
 set tri_motor_acceleration =  0.180
 set failsafe_delay = 10
 set failsafe_off_delay = 200
-set failsafe_throttle = 1000
+set failsafe_throttle = 1200
 set failsafe_kill_switch = OFF
 set failsafe_throttle_low_delay = 100
 set failsafe_procedure = 0
@@ -274,8 +278,8 @@ rxfail 17 h
 profile 0
 
 # aux
-aux 0 0 0 900 900
-aux 1 0 0 900 900
+aux 0 0 0 1800 2100
+aux 1 27 0 1800 2100
 aux 2 0 0 900 900
 aux 3 0 0 900 900
 aux 4 0 0 900 900
@@ -361,7 +365,7 @@ set baro_noise_lpf =  0.600
 set baro_cf_vel =  0.985
 set baro_cf_alt =  0.965
 set mag_declination = 0
-set pid_controller = LUX
+set pid_controller = MWREWRITE
 set p_pitch = 35
 set i_pitch = 23
 set d_pitch = 27
