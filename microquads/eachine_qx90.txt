@@ -55,8 +55,8 @@ feature VBAT
 feature RX_SERIAL
 feature FAILSAFE
 feature TELEMETRY
-feature CURRENT_METER
 feature RSSI_ADC
+feature AIRMODE
 
 # beeper
 beeper GYRO_CALIBRATED
@@ -190,9 +190,9 @@ mode_color 6 10 0
 
 # aux
 aux 0 0 0 1700 2100
-aux 1 27 1 1700 2100
-aux 2 1 2 900 1300
-aux 3 12 3 1700 2100
+aux 1 1 1 1250 1650
+aux 2 2 1 1700 2100
+aux 3 12 2 1700 2100
 aux 4 0 0 900 900
 aux 5 0 0 900 900
 aux 6 0 0 900 900
@@ -276,7 +276,7 @@ set 3d_deadband_high = 1514
 set 3d_neutral = 1460
 set 3d_deadband_throttle = 50
 set use_unsynced_pwm = OFF
-set motor_pwm_protocol = ONESHOT125
+set motor_pwm_protocol = BRUSHED
 set motor_pwm_rate = 400
 set servo_pwm_rate = 50
 set disarm_kill_switch = ON
