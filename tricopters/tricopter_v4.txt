@@ -11,6 +11,7 @@ mixer TRI
 mmix reset
 smix reset
 
+
 # feature
 feature -RX_PPM
 feature -VBAT
@@ -45,7 +46,9 @@ feature VBAT
 feature GPS
 feature FAILSAFE
 feature TELEMETRY
+feature CURRENT_METER
 feature LED_STRIP
+
 
 # beeper
 beeper GYRO_CALIBRATED
@@ -67,14 +70,17 @@ beeper ARMED
 beeper SYSTEM_INIT
 beeper ON_USB
 
+
 # map
 map TAER1234
 
+
 # serial
 serial 20 1 115200 38400 0 115200
-serial 0 0 115200 38400 0 115200
-serial 1 4 115200 38400 0 115200
-serial 2 2 115200 38400 0 115200
+serial 0 32 115200 38400 0 115200
+serial 1 1 115200 38400 0 115200
+serial 2 2 115200 57600 0 115200
+
 
 # led
 led 0 14,1:S:A:0
@@ -110,6 +116,7 @@ led 29 0,0::C:0
 led 30 0,0::C:0
 led 31 0,0::C:0
 
+
 # color
 color 0 0,0,0
 color 1 0,255,255
@@ -127,6 +134,7 @@ color 12 300,0,255
 color 13 330,0,255
 color 14 0,0,0
 color 15 0,0,0
+
 
 # mode_color
 mode_color 0 0 1
@@ -298,7 +306,7 @@ set failsafe_off_delay = 200
 set failsafe_throttle = 1300
 set failsafe_kill_switch = OFF
 set failsafe_throttle_low_delay = 100
-set failsafe_procedure = SET-THR
+set failsafe_procedure = RTH
 set rx_min_usec = 885
 set rx_max_usec = 2115
 set acc_hardware = 0
@@ -345,13 +353,13 @@ rxfail 17 h
 profile 0
 
 # aux
-aux 0 0 2 1900 2100
-aux 1 1 1 925 2100
-aux 2 3 3 1900 2100
-aux 3 9 1 1300 1700
-aux 4 8 1 1875 2100
-aux 5 20 0 1875 2100
-aux 6 0 0 900 900
+aux 0 0 0 1850 2100
+aux 1 1 1 1375 1750
+aux 2 2 1 1800 2100
+aux 3 19 0 1800 2100
+aux 4 9 3 1300 1700
+aux 5 8 3 1750 2100
+aux 6 11 2 1700 2100
 aux 7 0 0 900 900
 aux 8 0 0 900 900
 aux 9 0 0 900 900
