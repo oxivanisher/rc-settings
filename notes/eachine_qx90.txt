@@ -1,0 +1,7 @@
+Cam Mount 20°: http://www.thingiverse.com/thing:1717374
+Prop guards:
+	https://www.thingiverse.com/thing:1802697/#files
+    http://www.thingiverse.com/thing:1765223
+    http://www.thingiverse.com/thing:1766335
+Betaflight 3 and PIDs config:
+	https://youtu.be/MQi-DAmXo-k?t=17m58s
