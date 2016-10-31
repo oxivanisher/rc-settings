@@ -1,0 +1,44 @@
+You can find out if your external compass has pull-up resistors by measuring with a multimeter between the +5V pin and the SDA or SCL lines (with everything DISCONNECTED)… if it shows open loop (high resistance) it has no pull-ups…. If you measure 10 kOhm (or some other value), those are the pull-up resistors…. You need to find a way to remove them from the external compass (probably using a soldering iron).
+http://rcexplorer.se/forums/topic/f3fc-inav-experiences/
+
+
+
+ACC calibration works different in iNav compared to cleanflight…. It has a 6 position calibration procedure described in the iNav Wiki. https://github.com/iNavFlight/inav/wiki/4.-Sensor-calibration
+
+Important to note: for calibration, the BOARD/sensors should be in the orientation mentioned, NOT the copter…. So you have to hold the board upside down (= electronics facing UP) in the first calibration step.
+Please note: ‘normal’ for the board is electronics facing down.
+
+So the correct sequence for ACC calibration for the BOARD is:
+1) up-side down 2) up-side up 3) usb up 4) tail down 5) usb down 6) nose down
+
+
+get accgain_x
+get accgain_y
+get accgain_z
+
+-------------------------------------------------
+cleanflight gps site:
+https://github.com/cleanflight/cleanflight/blob/master/docs/Gps.md
+
+cleanflight hardware configs:
+https://github.com/cleanflight/cleanflight/blob/master/docs/Cli.md
+-------------------------------------------------
+inav issue (Make timeouts in bus drivers smarter):
+https://github.com/iNavFlight/inav/issues/721
+-------------------------------------------------
+yaw direction:
+http://rcexplorer.se/forums/topic/yaw-correction-wrong-direction/
+-------------------------------------------------
+baro problems (probably not important):
+https://github.com/iNavFlight/inav/issues/713
+-------------------------------------------------
+merged triflight/inav clone https://github.com/kangsterizer/inav
+-------------------------------------------------
+HMC5883
+
+mag_hardware = 1
+or
+mag_hardware = 2
+baro_hardware = 3
+
+http://rcexplorer.se/forums/topic/f3fc-inav-experiences/
