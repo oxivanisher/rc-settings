@@ -43,7 +43,6 @@ feature -SOFTSPI
 feature -PWM_SERVO_DRIVER
 feature RX_PPM
 feature VBAT
-feature GPS
 feature FAILSAFE
 feature TELEMETRY
 feature CURRENT_METER
@@ -199,11 +198,11 @@ set rc_smoothing = ON
 set input_filtering_mode = OFF
 set min_throttle = 1150
 set max_throttle = 2000
-set min_command = 1000
+set min_command = 1015
 set 3d_deadband_low = 1406
 set 3d_deadband_high = 1514
 set 3d_neutral = 1460
-set 3d_deadband_throttle = 1000
+set 3d_deadband_throttle = 1015
 set motor_pwm_rate = 2000
 set motor_pwm_protocol = ONESHOT125
 set fixed_wing_auto_arm = OFF
@@ -306,7 +305,7 @@ set failsafe_off_delay = 200
 set failsafe_throttle = 1300
 set failsafe_kill_switch = OFF
 set failsafe_throttle_low_delay = 100
-set failsafe_procedure = RTH
+set failsafe_procedure = DROP
 set rx_min_usec = 885
 set rx_max_usec = 2115
 set acc_hardware = 0
@@ -319,13 +318,13 @@ set blackbox_device = SERIAL
 set magzero_x = 50
 set magzero_y = -25
 set magzero_z = 3
-set acczero_x = -119
-set acczero_y = -59
-set acczero_z = 1580
+set acczero_x = -222
+set acczero_y = -57
+set acczero_z = 801
 set ledstrip_visual_beeper = OFF
-set accgain_x = 4113
-set accgain_y = 4091
-set accgain_z = 4166
+set accgain_x = 4109
+set accgain_y = 4077
+set accgain_z = 4204
 
 # rxfail
 rxfail 0 h
@@ -353,13 +352,13 @@ rxfail 17 h
 profile 0
 
 # aux
-aux 0 0 0 1850 2100
+aux 0 0 0 1800 2100
 aux 1 1 1 1375 1750
 aux 2 2 1 1800 2100
-aux 3 19 0 1800 2100
-aux 4 9 3 1300 1700
-aux 5 8 3 1750 2100
-aux 6 11 2 1700 2100
+aux 3 11 2 1700 2100
+aux 4 0 0 900 900
+aux 5 0 0 900 900
+aux 6 0 0 900 900
 aux 7 0 0 900 900
 aux 8 0 0 900 900
 aux 9 0 0 900 900
@@ -461,12 +460,10 @@ rateprofile 0
 
 set rc_expo = 70
 set rc_yaw_expo = 20
-set thr_mid = 50
-set thr_expo = 0
+set thr_mid = 25
+set thr_expo = 1
 set roll_rate = 20
 set pitch_rate = 20
 set yaw_rate = 20
 set tpa_rate = 0
 set tpa_breakpoint = 1500
-
-# 
