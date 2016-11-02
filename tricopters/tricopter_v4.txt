@@ -184,7 +184,7 @@ mode_color 6 8 0
 mode_color 6 9 0
 mode_color 6 10 0
 
-set looptime = 2000
+set looptime = 1000
 set i2c_overclock = OFF
 set gyro_sync = OFF
 set gyro_sync_denom = 2
@@ -318,13 +318,13 @@ set blackbox_device = SERIAL
 set magzero_x = 50
 set magzero_y = -25
 set magzero_z = 3
-set acczero_x = -222
-set acczero_y = -57
-set acczero_z = 801
+set acczero_x = -228
+set acczero_y = -56
+set acczero_z = 797
 set ledstrip_visual_beeper = OFF
-set accgain_x = 4109
-set accgain_y = 4077
-set accgain_z = 4204
+set accgain_x = 4097
+set accgain_y = 4082
+set accgain_z = 4188
 
 # rxfail
 rxfail 0 h
@@ -435,7 +435,7 @@ set d_pitch = 23
 set p_roll = 40
 set i_roll = 30
 set d_roll = 23
-set p_yaw = 85
+set p_yaw = 40
 set i_yaw = 45
 set d_yaw = 0
 set p_level = 20
@@ -460,10 +460,12 @@ rateprofile 0
 
 set rc_expo = 70
 set rc_yaw_expo = 20
-set thr_mid = 25
+set thr_mid = 80
 set thr_expo = 1
 set roll_rate = 20
 set pitch_rate = 20
 set yaw_rate = 20
 set tpa_rate = 0
 set tpa_breakpoint = 1500
+
+# 
