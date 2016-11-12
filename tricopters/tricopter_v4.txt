@@ -1,7 +1,5 @@
-# dump
-
 # version
-# INAV/RCEXPLORERF3 1.3.0 Oct 24 2016 / 11:32:21 (6d02467)
+# INAV/RCEXPLORERF3 1.3.0 Nov  2 2016 / 11:18:08 (479d607)
 # pflags
 # Persistent config flags: 0x00000001
 # dump master
