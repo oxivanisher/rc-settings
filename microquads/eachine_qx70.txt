@@ -55,7 +55,6 @@ feature RX_SERIAL
 feature FAILSAFE
 feature RSSI_ADC
 feature LED_STRIP
-feature AIRMODE
 
 # beeper
 beeper GYRO_CALIBRATED
@@ -189,11 +188,11 @@ mode_color 6 10 0
 
 # aux
 aux 0 0 0 1700 2100
-aux 1 1 1 1300 1700
-aux 2 2 1 1700 2100
-aux 3 12 2 1700 2100
-aux 4 14 3 1700 2100
-aux 5 0 0 900 900
+aux 1 27 1 1300 2100
+aux 2 1 1 900 1300
+aux 3 2 1 1300 1700
+aux 4 12 2 1700 2100
+aux 5 14 3 1700 2100
 aux 6 0 0 900 900
 aux 7 0 0 900 900
 aux 8 0 0 900 900
