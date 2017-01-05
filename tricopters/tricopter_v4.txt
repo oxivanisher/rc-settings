@@ -1,7 +1,7 @@
 # dump
 
 # version
-# INAV/RCEXPLORERF3 1.5.0 Dec 31 2016 / 02:19:04 (37afad6)
+# INAV/RCEXPLORERF3 1.5.1 Jan  5 2017 / 11:36:06 (556168d)
 # pflags
 # Persistent config flags: 0x00000000
 # dump master
@@ -330,8 +330,8 @@ set rx_min_usec = 885
 set rx_max_usec = 2115
 set acc_hardware = MPU6000
 set baro_use_median_filter = ON
-set baro_hardware = NONE
-set mag_hardware = NONE
+set baro_hardware = MS5611
+set mag_hardware = HMC5883
 set blackbox_rate_num = 1
 set blackbox_rate_denom = 1
 set blackbox_device = SERIAL
