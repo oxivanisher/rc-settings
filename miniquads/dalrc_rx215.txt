@@ -1,4 +1,3 @@
-
 # dump
 
 # version
@@ -275,9 +274,9 @@ set 3d_deadband_low = 1406
 set 3d_deadband_high = 1514
 set 3d_neutral = 1460
 set 3d_deadband_throttle = 50
-set use_unsynced_pwm = OFF
+set use_unsynced_pwm = ON
 set motor_pwm_protocol = MULTISHOT
-set motor_pwm_rate = 400
+set motor_pwm_rate = 8000
 set servo_pwm_rate = 50
 set disarm_kill_switch = ON
 set gyro_cal_on_first_arm = OFF
@@ -356,7 +355,7 @@ set failsafe_procedure = DROP
 set rx_min_usec = 885
 set rx_max_usec = 2115
 set gimbal_mode = NORMAL
-set acc_hardware = AUTO
+set acc_hardware = NONE
 set acc_lpf_hz =  10.000
 set accxy_deadband = 40
 set accz_deadband = 40
@@ -367,10 +366,10 @@ set baro_tab_size = 21
 set baro_noise_lpf =  0.600
 set baro_cf_vel =  0.985
 set baro_cf_alt =  0.965
-set baro_hardware = AUTO
-set mag_hardware = AUTO
+set baro_hardware = NONE
+set mag_hardware = NONE
 set mag_declination = 0
-set pid_process_denom = 2
+set pid_process_denom = 1
 set blackbox_rate_num = 1
 set blackbox_rate_denom = 2
 set blackbox_device = SPIFLASH
@@ -445,5 +444,3 @@ set pitch_srate = 70
 set yaw_srate = 70
 set tpa_rate = 10
 set tpa_breakpoint = 1650
-
-# 
