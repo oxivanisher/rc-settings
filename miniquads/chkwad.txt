@@ -83,8 +83,8 @@ map TAER1234
 
 # serial
 serial 0 1 115200 57600 0 115200
-serial 1 64 115200 57600 0 115200
-serial 2 1 115200 57600 0 115200
+serial 1 32 115200 57600 0 115200
+serial 2 64 115200 57600 0 115200
 
 # led
 led 0 0,0::C:0
@@ -265,7 +265,7 @@ set input_filtering_mode = OFF
 set roll_yaw_cam_mix_degrees = 0
 set max_aux_channels = 6
 set debug_mode = NONE
-set min_throttle = 1070
+set min_throttle = 1030
 set max_throttle = 2000
 set min_command = 1000
 set servo_center_pulse = 1500
@@ -276,7 +276,7 @@ set 3d_neutral = 1460
 set 3d_deadband_throttle = 50
 set use_unsynced_pwm = ON
 set motor_pwm_protocol = MULTISHOT
-set motor_pwm_rate = 8000
+set motor_pwm_rate = 4000
 set servo_pwm_rate = 50
 set disarm_kill_switch = ON
 set gyro_cal_on_first_arm = OFF
