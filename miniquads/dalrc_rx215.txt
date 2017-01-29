@@ -1,9 +1,11 @@
 # diff
 
 # version
-# BetaFlight/SPRACINGF3 3.0.1 Oct 18 2016 / 10:35:52 (48b7b4f)
+# Betaflight / SPRACINGF3 3.1.0 Jan 25 2017 / 09:58:52 (88693ca)
 
 # name
+
+# resources
 
 # mixer
 
@@ -14,8 +16,8 @@
 
 # feature
 feature -RX_PPM
+feature -CURRENT_METER
 feature RX_SERIAL
-feature TELEMETRY
 feature AIRMODE
 
 # beeper
@@ -53,14 +55,13 @@ rxfail 6 s 1800
 # master
 set min_throttle = 1030
 set use_unsynced_pwm = ON
-set motor_pwm_protocol = MULTISHOT
+set motor_pwm_protocol = DSHOT600
 set motor_pwm_rate = 8000
 set serialrx_provider = SBUS
 set vbat_max_cell_voltage = 44
 set align_mag = CW270
 set align_board_yaw = 90
 set gyro_sync_denom = 2
-set acc_hardware = NONE
 set baro_cf_vel =  0.985
 set pid_process_denom = 1
 set blackbox_rate_denom = 2
