@@ -1,10 +1,8 @@
-$M&gtna$M>ItARM;ANGLE;HORIZON;HEADFREE;FAILSAFE;BEEPER;BLACKBOX;FPV ANGLE MIX;OSD SW;g$M>~à
-Entering CLI Mode, type 'exit' to return, or 'help'
 
 # diff
 
 # version
-# Betaflight / REVO 3.1.0 Jan 25 2017 / 09:50:07 (88693ca)
+# Betaflight / AIRBOTF4 3.1.0 Jan 25 2017 / 09:17:54 (88693ca)
 
 # name
 name gep130x
@@ -61,6 +59,8 @@ set serialrx_provider = SBUS
 set align_board_yaw = 270
 set deadband = 1
 set pid_process_denom = 1
+set blackbox_rate_denom = 4
+set blackbox_device = SPIFLASH
 
 # profile
 profile 0
@@ -69,6 +69,3 @@ rateprofile 0
 
 # rateprofile
 rateprofile 0
-
-set rc_rate = 188
-set rc_rate_yaw = 188
