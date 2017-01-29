@@ -1,9 +1,15 @@
+$M&gtna$M>ItARM;ANGLE;HORIZON;HEADFREE;FAILSAFE;BEEPER;BLACKBOX;FPV ANGLE MIX;OSD SW;g$M>~à
+Entering CLI Mode, type 'exit' to return, or 'help'
+
 # diff
 
 # version
-# BetaFlight/REVO 3.0.1 Oct 18 2016 / 10:26:33 (48b7b4f)
+# Betaflight / REVO 3.1.0 Jan 25 2017 / 09:50:07 (88693ca)
 
 # name
+name gep130x
+
+# resources
 
 # mixer
 
@@ -48,12 +54,13 @@ aux 4 25 3 1700 2100
 
 # master
 set min_throttle = 1030
-set motor_pwm_protocol = MULTISHOT
+set use_unsynced_pwm = ON
+set motor_pwm_protocol = DSHOT600
+set motor_pwm_rate = 16000
 set serialrx_provider = SBUS
 set align_board_yaw = 270
-set acc_trim_pitch = -2
-set acc_trim_roll = 2
-set pid_process_denom = 2
+set deadband = 1
+set pid_process_denom = 1
 
 # profile
 profile 0
@@ -65,5 +72,3 @@ rateprofile 0
 
 set rc_rate = 188
 set rc_rate_yaw = 188
-
-# 
