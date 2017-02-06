@@ -4,6 +4,7 @@
 # Betaflight / SPRACINGF3 3.1.0 Jan 25 2017 / 09:58:52 (88693ca)
 
 # name
+name CHKWAD
 
 # resources
 
