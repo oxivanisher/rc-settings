@@ -55,7 +55,7 @@ rxfail 6 s 1800
 # master
 set min_throttle = 1030
 set use_unsynced_pwm = ON
-set motor_pwm_protocol = DSHOT600
+set motor_pwm_protocol = MULTISHOT
 set motor_pwm_rate = 8000
 set serialrx_provider = SBUS
 set vbat_max_cell_voltage = 44
