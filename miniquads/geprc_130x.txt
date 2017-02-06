@@ -5,7 +5,7 @@
 # Betaflight / AIRBOTF4 3.1.0 Jan 25 2017 / 09:17:54 (88693ca)
 
 # name
-name gep130x
+name GEP130X
 
 # resources
 
@@ -69,3 +69,6 @@ rateprofile 0
 
 # rateprofile
 rateprofile 0
+
+
+# 
