@@ -1,8 +1,12 @@
+CLI
 
 # diff
 # Betaflight / SPRACINGF3EVO 3.1.5 Feb  7 2017 / 22:31:13 (4646f9d)
 
 feature -RX_PPM
+feature -TELEMETRY
+feature -BLACKBOX
+feature -TRANSPONDER
 feature RX_SERIAL
 feature LED_STRIP
 map TAER1234
@@ -19,6 +23,7 @@ aux 3 2 1 1300 1700
 aux 4 12 2 1700 2100
 aux 5 14 3 1700 2100
 set min_throttle = 1070
+set motor_pwm_rate = 8000
 set serialrx_provider = SBUS
 set pid_process_denom = 2
 profile 0
