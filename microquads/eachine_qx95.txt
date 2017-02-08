@@ -1,61 +1,29 @@
+
 # diff
+# Betaflight / SPRACINGF3EVO 3.1.5 Feb  7 2017 / 22:31:13 (4646f9d)
 
-# version
-# Betaflight / SPRACINGF3EVO 3.1.0 Jan 25 2017 / 09:59:29 (88693ca)
-
-# name
-
-# resources
-
-# mixer
-
-# servo
-
-# servo mix
-
-
-# feature
 feature -RX_PPM
 feature RX_SERIAL
 feature LED_STRIP
-
-# beeper
-
-# map
-
-# serial
+map TAER1234
 serial 0 1 115200 57600 0 115200
 serial 1 64 115200 57600 0 115200
-
-# led
 led 0 0,7::CI:3
 led 1 15,7::CTI:12
 led 2 7,7::CTI:12
 led 3 8,7::CI:3
-
-# color
-
-# mode_color
-
-# aux
-
-# adjrange
-
-# rxrange
-
-# rxfail
-
-# master
+aux 0 0 0 1700 2100
+aux 1 27 1 1700 2100
+aux 2 1 1 900 1300
+aux 3 2 1 1300 1700
+aux 4 12 2 1700 2100
+aux 5 14 3 1700 2100
 set min_throttle = 1070
 set serialrx_provider = SBUS
 set pid_process_denom = 2
-
-# profile
 profile 0
 
 rateprofile 0
-
-# rateprofile
 rateprofile 0
 
 
