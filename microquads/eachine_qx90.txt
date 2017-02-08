@@ -1,21 +1,7 @@
 
-Entering CLI Mode, type 'exit' to return, or 'help'
-
 # diff
+# Betaflight / SPRACINGF3EVO 3.1.5 Feb  7 2017 / 22:31:13 (4646f9d)
 
-# version
-# BetaFlight/SPRACINGF3EVO 3.0.1 Oct 18 2016 / 10:36:44 (48b7b4f)
-
-# name
-
-# mixer
-
-# servo
-
-# servo mix
-
-
-# feature
 feature -RX_PPM
 feature -TELEMETRY
 feature -CURRENT_METER
@@ -23,52 +9,25 @@ feature -BLACKBOX
 feature -TRANSPONDER
 feature RX_SERIAL
 feature LED_STRIP
-
-# beeper
-
-# map
 map TAER1234
-
-# serial
 serial 1 64 115200 57600 0 115200
-
-# led
 led 0 0,7::CI:3
 led 1 15,7::CTI:12
 led 2 7,7::CTI:12
 led 3 8,7::CI:3
-
-# color
-
-# mode_color
-
-# aux
 aux 0 0 0 1700 2100
 aux 1 27 1 1700 2100
 aux 2 1 1 900 1300
 aux 3 2 1 1300 1700
 aux 4 12 2 1700 2100
 aux 5 14 3 1300 1700
-
-# adjrange
-
-# rxrange
-
-# rxfail
-
-# master
-set use_unsynced_pwm = ON
-set motor_pwm_protocol = BRUSHED
 set motor_pwm_rate = 8000
 set serialrx_provider = SBUS
 set baro_cf_vel =  0.985
 set pid_process_denom = 2
-
-# profile
 profile 0
 
 set setpoint_relax_ratio = 100
-set dterm_setpoint_weight = 85
 set p_pitch = 60
 set i_pitch = 45
 set d_pitch = 60
@@ -76,11 +35,11 @@ set p_roll = 60
 set i_roll = 45
 set d_roll = 60
 rateprofile 0
-
-# rateprofile
 rateprofile 0
 
 set rc_rate = 105
 set roll_srate = 88
 set pitch_srate = 88
 set yaw_srate = 80
+
+# 
