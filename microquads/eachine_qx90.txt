@@ -1,3 +1,6 @@
+
+Entering CLI Mode, type 'exit' to return, or 'help'
+
 # diff
 
 # version
@@ -14,11 +17,12 @@
 
 # feature
 feature -RX_PPM
+feature -TELEMETRY
 feature -CURRENT_METER
 feature -BLACKBOX
 feature -TRANSPONDER
 feature RX_SERIAL
-feature AIRMODE
+feature LED_STRIP
 
 # beeper
 
@@ -29,6 +33,10 @@ map TAER1234
 serial 1 64 115200 57600 0 115200
 
 # led
+led 0 0,7::CI:3
+led 1 15,7::CTI:12
+led 2 7,7::CTI:12
+led 3 8,7::CI:3
 
 # color
 
@@ -36,9 +44,11 @@ serial 1 64 115200 57600 0 115200
 
 # aux
 aux 0 0 0 1700 2100
-aux 1 1 1 1250 1650
-aux 2 2 1 1700 2100
-aux 3 12 2 1700 2100
+aux 1 27 1 1700 2100
+aux 2 1 1 900 1300
+aux 3 2 1 1300 1700
+aux 4 12 2 1700 2100
+aux 5 14 3 1300 1700
 
 # adjrange
 
@@ -47,11 +57,12 @@ aux 3 12 2 1700 2100
 # rxfail
 
 # master
-set min_throttle = 1015
+set use_unsynced_pwm = ON
 set motor_pwm_protocol = BRUSHED
+set motor_pwm_rate = 8000
 set serialrx_provider = SBUS
 set baro_cf_vel =  0.985
-set pid_process_denom = 8
+set pid_process_denom = 2
 
 # profile
 profile 0
@@ -73,5 +84,3 @@ set rc_rate = 105
 set roll_srate = 88
 set pitch_srate = 88
 set yaw_srate = 80
-
-# 
