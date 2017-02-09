@@ -1,8 +1,7 @@
-
 # diff
 
 # version
-# Betaflight / AIRBOTF4 3.1.3 Feb  2 2017 / 13:23:44 (73b498e)
+# Betaflight / AIRBOTF4 3.1.5 Feb  7 2017 / 21:59:59 (4646f9d)
 
 # name
 name GEP130X
@@ -65,10 +64,13 @@ set blackbox_device = SPIFLASH
 # profile
 profile 0
 
+set p_yaw = 90
 rateprofile 0
 
 # rateprofile
 rateprofile 0
 
+set rc_rate = 188
+set rc_rate_yaw = 188
 
 # 
