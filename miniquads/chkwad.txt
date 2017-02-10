@@ -1,57 +1,21 @@
 # diff
-
-# version
-# Betaflight / SPRACINGF3 3.1.0 Jan 25 2017 / 09:58:52 (88693ca)
-
-# name
+# Betaflight / SPRACINGF3 3.1.5 Feb  7 2017 / 22:30:44 (4646f9d)
 name CHKWAD
 
-# resources
-
-# mixer
-
-# servo
-
-# servo mix
-
-
-# feature
 feature -RX_PPM
 feature -CURRENT_METER
 feature -RSSI_ADC
 feature -TRANSPONDER
 feature RX_SERIAL
 feature AIRMODE
-
-# beeper
-
-# map
 map TAER1234
-
-# serial
 serial 1 32 115200 57600 0 115200
 serial 2 64 115200 57600 0 115200
-
-# led
-
-# color
-
-# mode_color
-
-# aux
 aux 0 0 0 1700 2100
 aux 1 1 1 1300 1700
 aux 2 2 1 1700 2100
 aux 3 12 2 1700 2100
 aux 4 25 3 1700 2100
-
-# adjrange
-
-# rxrange
-
-# rxfail
-
-# master
 set min_throttle = 1030
 set use_unsynced_pwm = ON
 set motor_pwm_protocol = DSHOT600
@@ -63,16 +27,10 @@ set moron_threshold = 32
 set baro_cf_vel =  0.985
 set pid_process_denom = 1
 set blackbox_rate_denom = 2
-
-# profile
 profile 0
 
-set accum_threshold = 130
-set yaw_accum_threshold = 32
 set p_roll = 43
 rateprofile 0
-
-# rateprofile
 rateprofile 0
 
 set rc_rate = 188
