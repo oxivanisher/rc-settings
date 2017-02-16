@@ -1,49 +1,34 @@
+
 # diff
+# Betaflight / OMNIBUS 3.1.5 Feb  7 2017 / 22:19:42 (4646f9d)
+name GEP130X2
 
-# version
-# BetaFlight/OMNIBUS 3.0.0 Sep 11 2016 / 00:36:13 (a21694b)
-
-# name
-
-# mixer
-
-# servo
-
-# servo mix
-
-
-# feature
-
-# beeper
-
-# map
-
-# serial
-
-# led
-
-# color
-
-# mode_color
-
-# aux
-
-# adjrange
-
-# rxrange
-
-# rxfail
-
-# master
+feature -RX_PPM
+feature -CURRENT_METER
+feature RX_SERIAL
+feature TELEMETRY
+feature AIRMODE
+map TAER1234
+serial 0 64 115200 57600 0 115200
+serial 1 32 115200 57600 0 115200
+aux 0 0 0 900 1300
+aux 1 1 1 1300 1700
+aux 2 2 1 1700 2100
+aux 3 12 2 1700 2100
+aux 4 25 3 1700 2100
+set motor_pwm_protocol = DSHOT600
+set serialrx_provider = SBUS
 set baro_hardware = AUTO
-set osd_artificial_horizon = 0
-set osd_horizon_sidebars = 0
-
-# profile
+set pid_process_denom = 2
+set osd_units = METRIC
+set osd_vbat_pos = 2528
+set osd_flytimer_pos = 2551
+set osd_ontimer_pos = 374
+set osd_flymode_pos = 2048
 profile 0
 
 rateprofile 0
-
-# rateprofile
 rateprofile 0
 
+set rc_rate = 188
+set rc_rate_yaw = 188
