@@ -1,0 +1,49 @@
+# diff
+
+# version
+# BetaFlight/OMNIBUS 3.0.0 Sep 11 2016 / 00:36:13 (a21694b)
+
+# name
+
+# mixer
+
+# servo
+
+# servo mix
+
+
+# feature
+
+# beeper
+
+# map
+
+# serial
+
+# led
+
+# color
+
+# mode_color
+
+# aux
+
+# adjrange
+
+# rxrange
+
+# rxfail
+
+# master
+set baro_hardware = AUTO
+set osd_artificial_horizon = 0
+set osd_horizon_sidebars = 0
+
+# profile
+profile 0
+
+rateprofile 0
+
+# rateprofile
+rateprofile 0
+
