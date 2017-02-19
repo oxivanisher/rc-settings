@@ -17,10 +17,12 @@ aux 2 2 1 1700 2100
 aux 3 3 1 1300 2100
 aux 4 12 2 1700 2100
 aux 5 25 3 1700 2100
+set digital_idle_percent =  3.000
 set motor_pwm_protocol = DSHOT600
 set serialrx_provider = SBUS
 set baro_hardware = AUTO
 set pid_process_denom = 2
+set blackbox_rate_denom = 2
 set osd_units = METRIC
 set osd_vbat_pos = 2528
 set osd_flytimer_pos = 2551
