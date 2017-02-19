@@ -1,4 +1,3 @@
-
 # diff
 # Betaflight / OMNIBUS 3.1.5 Feb  7 2017 / 22:19:42 (4646f9d)
 name GEP130X2
@@ -9,13 +8,15 @@ feature RX_SERIAL
 feature TELEMETRY
 feature AIRMODE
 map TAER1234
-serial 0 64 115200 57600 0 115200
-serial 1 32 115200 57600 0 115200
+serial 0 32 115200 57600 0 115200
+serial 1 2048 115200 57600 0 115200
+serial 2 64 115200 57600 0 115200
 aux 0 0 0 900 1300
 aux 1 1 1 1300 1700
 aux 2 2 1 1700 2100
-aux 3 12 2 1700 2100
-aux 4 25 3 1700 2100
+aux 3 3 1 1300 2100
+aux 4 12 2 1700 2100
+aux 5 25 3 1700 2100
 set motor_pwm_protocol = DSHOT600
 set serialrx_provider = SBUS
 set baro_hardware = AUTO
@@ -32,3 +33,5 @@ rateprofile 0
 
 set rc_rate = 188
 set rc_rate_yaw = 188
+
+# 
