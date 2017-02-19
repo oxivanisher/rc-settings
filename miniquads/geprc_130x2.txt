@@ -20,6 +20,7 @@ aux 5 25 3 1700 2100
 set digital_idle_percent =  3.000
 set motor_pwm_protocol = DSHOT600
 set serialrx_provider = SBUS
+set align_board_yaw = 180
 set baro_hardware = AUTO
 set pid_process_denom = 2
 set blackbox_rate_denom = 2
