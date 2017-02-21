@@ -1,74 +1,47 @@
-
 # diff
+# Betaflight / OMNIBUS 3.1.5 Feb  7 2017 / 22:19:42 (4646f9d)
+name GEP130X2
 
-# version
-# Betaflight / AIRBOTF4 3.1.0 Jan 25 2017 / 09:17:54 (88693ca)
-
-# name
-name GEP130X
-
-# resources
-
-# mixer
-
-# servo
-
-# servo mix
-
-
-# feature
-feature VBAT
+feature -RX_PPM
+feature -CURRENT_METER
+feature RX_SERIAL
 feature TELEMETRY
+feature LED_STRIP
 feature AIRMODE
-
-# beeper
-
-# map
 map TAER1234
-
-# serial
-serial 0 64 115200 57600 0 115200
-serial 2 32 115200 57600 0 115200
-serial 5 1 115200 57600 0 115200
-
-# led
-
-# color
-
-# mode_color
-
-# aux
+serial 0 32 115200 57600 0 115200
+serial 1 2048 115200 57600 0 115200
+serial 2 64 115200 57600 0 115200
+led 0 6,15:W:CTI:6
+led 1 7,15:S:ATW:0
+led 2 8,15:S:ATW:0
+led 3 9,15:E:CTI:6
 aux 0 0 0 1700 2100
 aux 1 1 1 1300 1700
 aux 2 2 1 1700 2100
-aux 3 12 2 1700 2100
-aux 4 25 3 1700 2100
-
-# adjrange
-
-# rxrange
-
-# rxfail
-
-# master
-set min_throttle = 1030
-set use_unsynced_pwm = ON
+aux 3 3 1 1300 2100
+aux 4 12 2 1700 2100
+aux 5 14 4 1700 2100
+aux 6 25 3 1700 2100
+set digital_idle_percent =  3.000
 set motor_pwm_protocol = DSHOT600
-set motor_pwm_rate = 16000
 set serialrx_provider = SBUS
-set align_board_yaw = 270
-set deadband = 1
-set pid_process_denom = 1
-set blackbox_rate_denom = 4
-set blackbox_device = SPIFLASH
-
-# profile
+set align_board_yaw = 180
+set baro_hardware = AUTO
+set pid_process_denom = 2
+set blackbox_rate_denom = 2
+set osd_units = METRIC
+set osd_vbat_pos = 2497
+set osd_flytimer_pos = 2518
+set osd_ontimer_pos = 374
+set osd_flymode_pos = 2081
+set vcd_video_system = 1
 profile 0
 
 rateprofile 0
-
-# rateprofile
 rateprofile 0
 
+set rc_rate = 188
+set rc_rate_yaw = 188
 
-# 
+#
