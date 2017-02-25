@@ -6,17 +6,23 @@ feature -RX_PPM
 feature -CURRENT_METER
 feature RX_SERIAL
 feature TELEMETRY
+feature LED_STRIP
 feature AIRMODE
 map TAER1234
 serial 0 32 115200 57600 0 115200
 serial 1 2048 115200 57600 0 115200
 serial 2 64 115200 57600 0 115200
+led 0 6,15:W:CTI:6
+led 1 7,15:S:ATW:0
+led 2 8,15:S:ATW:0
+led 3 9,15:E:CTI:6
 aux 0 0 0 1700 2100
 aux 1 1 1 1300 1700
 aux 2 2 1 1700 2100
 aux 3 3 1 1300 2100
 aux 4 12 2 1700 2100
-aux 5 25 3 1700 2100
+aux 5 14 4 1700 2100
+aux 6 25 3 1700 2100
 set digital_idle_percent =  3.000
 set motor_pwm_protocol = DSHOT600
 set serialrx_provider = SBUS
@@ -25,10 +31,11 @@ set baro_hardware = AUTO
 set pid_process_denom = 2
 set blackbox_rate_denom = 2
 set osd_units = METRIC
-set osd_vbat_pos = 2528
-set osd_flytimer_pos = 2551
+set osd_vbat_pos = 2497
+set osd_flytimer_pos = 2518
 set osd_ontimer_pos = 374
-set osd_flymode_pos = 2048
+set osd_flymode_pos = 2081
+set vcd_video_system = 1
 profile 0
 
 rateprofile 0
@@ -36,5 +43,5 @@ rateprofile 0
 
 set rc_rate = 188
 set rc_rate_yaw = 188
-
-# 
+set rc_expo = 20
+set rc_yaw_expo = 20
