@@ -1,5 +1,5 @@
 # diff
-# Betaflight / SPRACINGF3 3.1.5 Feb  7 2017 / 22:30:44 (4646f9d)
+# Betaflight / SPRACINGF3 3.1.6 Feb 21 2017 / 14:44:08 (1fd502c)
 name CHKWAD
 
 feature -RX_PPM
@@ -29,11 +29,15 @@ set pid_process_denom = 1
 set blackbox_rate_denom = 2
 profile 0
 
+set d_pitch = 27
 set p_roll = 43
+set d_roll = 25
 rateprofile 0
 rateprofile 0
 
 set rc_rate = 188
 set rc_rate_yaw = 188
+set rc_expo = 20
+set rc_yaw_expo = 20
 
 # 
