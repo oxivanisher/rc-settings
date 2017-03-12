@@ -1,6 +1,6 @@
 # diff
-# Betaflight / OMNIBUS 3.1.5 Feb  7 2017 / 22:19:42 (4646f9d)
-name GEP130X2
+# Betaflight / OMNIBUS 3.1.6 Feb 21 2017 / 14:33:10 (1fd502c)
+name GEP130X
 
 feature -RX_PPM
 feature -CURRENT_METER
@@ -21,8 +21,7 @@ aux 1 1 1 1300 1700
 aux 2 2 1 1700 2100
 aux 3 3 1 1300 2100
 aux 4 12 2 1700 2100
-aux 5 14 4 1700 2100
-aux 6 25 3 1700 2100
+aux 5 25 3 1700 2100
 set digital_idle_percent =  3.000
 set motor_pwm_protocol = DSHOT600
 set serialrx_provider = SBUS
@@ -35,7 +34,6 @@ set osd_vbat_pos = 2497
 set osd_flytimer_pos = 2518
 set osd_ontimer_pos = 374
 set osd_flymode_pos = 2081
-set vcd_video_system = 1
 profile 0
 
 rateprofile 0
