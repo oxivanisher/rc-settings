@@ -1,73 +1,45 @@
 # diff
+# Betaflight / SPRACINGF3 3.1.6 Feb 21 2017 / 14:44:08 (1fd502c)
 
-# version
-# Betaflight / AIRBOTF4 3.1.5 Feb  7 2017 / 21:59:59 (4646f9d)
-
-# name
-name GEP130X
-
-# resources
-
-# mixer
-
-# servo
-
-# servo mix
-
-
-# feature
-feature VBAT
-feature TELEMETRY
+feature -RX_PPM
+feature -CURRENT_METER
+feature RX_SERIAL
 feature AIRMODE
-
-# beeper
-
-# map
 map TAER1234
-
-# serial
-serial 0 64 115200 57600 0 115200
-serial 2 32 115200 57600 0 115200
-serial 5 1 115200 57600 0 115200
-
-# led
-
-# color
-
-# mode_color
-
-# aux
-aux 0 0 0 1700 2100
-aux 1 1 1 1300 1700
+serial 1 32 115200 57600 0 115200
+serial 2 64 115200 57600 0 115200
+aux 0 0 0 1750 2100
+aux 1 1 1 1300 1675
 aux 2 2 1 1700 2100
-aux 3 12 2 1700 2100
-aux 4 25 3 1700 2100
-
-# adjrange
-
-# rxrange
-
-# rxfail
-
-# master
+aux 3 3 1 1700 2100
+aux 4 4 1 1700 2100
+aux 5 12 2 1700 2100
+aux 6 25 3 1700 2100
+rxfail 4 s 1200
+rxfail 6 s 1800
 set min_throttle = 1030
 set use_unsynced_pwm = ON
-set motor_pwm_protocol = DSHOT600
-set motor_pwm_rate = 16000
+set motor_pwm_protocol = MULTISHOT
+set motor_pwm_rate = 8000
 set serialrx_provider = SBUS
-set align_board_yaw = 270
-set deadband = 1
+set vbat_max_cell_voltage = 44
+set align_mag = CW270
+set align_board_yaw = 90
+set gyro_sync_denom = 2
+set baro_cf_vel =  0.985
 set pid_process_denom = 1
-set blackbox_rate_denom = 4
-set blackbox_device = SPIFLASH
-
-# profile
+set blackbox_rate_denom = 2
 profile 0
 
-set p_yaw = 90
+set p_pitch = 77
+set i_pitch = 80
+set d_pitch = 24
+set p_roll = 65
+set i_roll = 70
+set d_roll = 23
+set p_yaw = 85
+set i_yaw = 60
 rateprofile 0
-
-# rateprofile
 rateprofile 0
 
 set rc_rate = 188
