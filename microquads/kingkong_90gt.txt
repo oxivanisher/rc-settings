@@ -1,0 +1,65 @@
+# version
+# BetaFlight/SPRACINGF3 3.0.1 Oct 18 2016 / 10:35:52 (48b7b4f)
+
+# diff
+
+# version
+# BetaFlight/SPRACINGF3 3.0.1 Oct 18 2016 / 10:35:52 (48b7b4f)
+
+# name
+
+# mixer
+
+# servo
+
+# servo mix
+
+
+# feature
+feature -RX_PPM
+feature RX_SERIAL
+
+# beeper
+
+# map
+map TAER1234
+
+# serial
+serial 1 64 115200 57600 0 115200
+
+# led
+
+# color
+
+# mode_color
+
+# aux
+aux 0 0 0 1300 2100
+aux 1 1 1 900 1300
+aux 2 2 1 1300 1700
+
+# adjrange
+
+# rxrange
+
+# rxfail
+
+# master
+set motor_pwm_protocol = MULTISHOT
+set serialrx_provider = SBUS
+set gyro_sync_denom = 2
+set pid_process_denom = 1
+
+# profile
+profile 0
+
+set p_pitch = 22
+set p_roll = 22
+set p_yaw = 50
+rateprofile 0
+
+# rateprofile
+rateprofile 0
+
+
+# 
