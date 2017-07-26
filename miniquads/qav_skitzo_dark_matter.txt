@@ -55,11 +55,13 @@ rxfail 6 s 1800
 set fpv_mix_degrees = 25
 set digital_idle_percent =  3.000
 set motor_pwm_protocol = DSHOT600
+set small_angle = 180
 set serialrx_provider = SBUS
 set vbat_max_cell_voltage = 44
 set ibat_scale = 690
 set align_board_yaw = 90
 set gyro_notch1_hz = 0
+set deadband = 2
 set pid_process_denom = 1
 set blackbox_rate_denom = 4
 set osd_units = METRIC
@@ -69,28 +71,28 @@ set osd_ontimer_pos = 2423
 set osd_flymode_pos = 2048
 set osd_throttle_pos = 2272
 set osd_crosshairs = 2048
-set osd_current_pos = 2400
-set osd_mah_drawn_pos = 2432
-set osd_power_pos = 2414
+set osd_current_pos = 2368
+set osd_mah_drawn_pos = 2400
+set osd_power_pos = 2433
 set vcd_video_system = 2
 
 # profile
-profile 0
+profile 1
 
-set d_lowpass_type = PT1
-set p_pitch = 56
-set i_pitch = 75
-set d_pitch = 49
-set p_roll = 43
-set i_roll = 70
-set d_roll = 44
-set i_yaw = 42
+set p_pitch = 46
+set i_pitch = 48
+set d_pitch = 42
+set i_roll = 46
+set p_yaw = 90
 rateprofile 0
 
 # rateprofile
 rateprofile 0
 
-set rc_rate = 170
-set rc_rate_yaw = 170
+set rc_rate = 82
+set rc_rate_yaw = 82
+set roll_srate = 87
+set pitch_srate = 87
+set yaw_srate = 87
 
 # 
