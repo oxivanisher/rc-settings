@@ -1,9 +1,10 @@
 # diff
 
 # version
-# Betaflight / OMNIBUSF4 3.1.7 Apr  3 2017 / 22:14:59 (e1c4b5c)
+# Betaflight / OMNIBUSF4 3.2.0 Jul 27 2017 / 12:26:36 (43a84175e)
 
 # name
+name oXi
 
 # resources
 
@@ -16,9 +17,10 @@
 
 # feature
 feature TELEMETRY
-feature CURRENT_METER
 feature LED_STRIP
 feature AIRMODE
+feature ANTI_GRAVITY
+feature DYNAMIC_FILTER
 
 # beeper
 beeper -ON_USB
@@ -43,56 +45,79 @@ aux 1 1 1 1300 1700
 aux 2 2 1 1700 2100
 aux 3 13 2 1700 2100
 aux 4 26 3 1700 2100
+aux 5 35 2 1300 1700
 
 # adjrange
 
 # rxrange
 
+# vtx
+
 # rxfail
 rxfail 6 s 1800
 
 # master
-set fpv_mix_degrees = 25
-set digital_idle_percent =  3.000
-set motor_pwm_protocol = DSHOT600
-set small_angle = 180
-set serialrx_provider = SBUS
-set vbat_max_cell_voltage = 44
-set ibat_scale = 690
-set align_board_yaw = 90
 set gyro_notch1_hz = 0
+set gyro_notch2_hz = 0
+set baro_hardware = NONE
+set fpv_mix_degrees = 30
+set serialrx_provider = SBUS
+set blackbox_p_denom = 42
+set dshot_idle_value = 300
+set motor_pwm_protocol = DSHOT600
+set align_board_yaw = 90
+set vbat_max_cell_voltage = 44
+set current_meter = ADC
+set battery_meter = ADC
+set ibata_scale = 690
+set small_angle = 180
 set deadband = 2
 set pid_process_denom = 1
-set blackbox_rate_denom = 4
-set osd_units = METRIC
 set osd_vbat_pos = 2071
-set osd_flytimer_pos = 2455
-set osd_ontimer_pos = 2423
+set osd_rssi_pos = 2425
 set osd_flymode_pos = 2048
-set osd_throttle_pos = 2272
+set osd_throttle_pos = 2457
+set osd_vtx_channel_pos = 377
 set osd_crosshairs = 2048
 set osd_current_pos = 2368
 set osd_mah_drawn_pos = 2400
+set osd_craft_name_pos = 362
+set osd_gps_speed_pos = 218
+set osd_gps_lon_pos = 82
+set osd_gps_lat_pos = 65
+set osd_gps_sats_pos = 51
+set osd_home_dir_pos = 302
+set osd_home_dist_pos = 303
+set osd_compass_bar_pos = 266
+set osd_altitude_pos = 247
+set osd_pid_roll_pos = 0
+set osd_pid_pitch_pos = 0
+set osd_pid_yaw_pos = 0
+set osd_debug_pos = 1
 set osd_power_pos = 2433
+set osd_pidrate_profile_pos = 345
+set osd_warnings_pos = 2409
+set osd_avg_cell_voltage_pos = 76
+set osd_pit_ang_pos = 257
+set osd_rol_ang_pos = 289
+set osd_battery_usage_pos = 2056
+set osd_nheading_pos = 311
+set osd_nvario_pos = 279
+set osd_esc_tmp_pos = 82
+set osd_esc_rpm_pos = 83
 set vcd_video_system = 2
 
 # profile
-profile 1
+profile 0
 
-set p_pitch = 46
-set i_pitch = 48
-set d_pitch = 42
-set i_roll = 46
-set p_yaw = 90
-rateprofile 0
+set dterm_lowpass_type = PT1
+set dterm_notch_hz = 0
 
 # rateprofile
 rateprofile 0
 
-set rc_rate = 82
-set rc_rate_yaw = 82
-set roll_srate = 87
-set pitch_srate = 87
-set yaw_srate = 87
-
-# 
+set rc_rate = 120
+set rc_rate_yaw = 120
+set roll_srate = 82
+set pitch_srate = 82
+set yaw_srate = 82
