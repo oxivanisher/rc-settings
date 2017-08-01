@@ -1,7 +1,7 @@
 # diff
 
 # version
-# Betaflight / OMNIBUSF4 3.2.0 Jul 27 2017 / 12:26:36 (43a84175e)
+# Betaflight / OMNIBUSF4 (OBF4) 3.2.0 Aug  1 2017 / 06:53:22 (869dd1f00)
 
 # name
 name oXi
@@ -44,8 +44,9 @@ aux 0 0 0 1700 2100
 aux 1 1 1 1300 1700
 aux 2 2 1 1700 2100
 aux 3 13 2 1700 2100
-aux 4 26 3 1700 2100
+aux 4 26 3 1300 2100
 aux 5 35 2 1300 1700
+aux 6 36 3 1300 1700
 
 # adjrange
 
@@ -127,3 +128,5 @@ set rc_expo_yaw = 15
 set roll_srate = 85
 set pitch_srate = 80
 set yaw_srate = 85
+
+# 
