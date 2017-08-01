@@ -74,12 +74,12 @@ set small_angle = 180
 set deadband = 2
 set pid_process_denom = 1
 set osd_vbat_pos = 2071
-set osd_rssi_pos = 2425
+set osd_rssi_pos = 377
 set osd_flymode_pos = 2048
 set osd_throttle_pos = 2457
 set osd_vtx_channel_pos = 377
 set osd_crosshairs = 2048
-set osd_current_pos = 2368
+set osd_current_pos = 2425
 set osd_mah_drawn_pos = 2400
 set osd_craft_name_pos = 362
 set osd_gps_speed_pos = 218
@@ -100,24 +100,30 @@ set osd_warnings_pos = 2409
 set osd_avg_cell_voltage_pos = 76
 set osd_pit_ang_pos = 257
 set osd_rol_ang_pos = 289
-set osd_battery_usage_pos = 2056
+set osd_battery_usage_pos = 8
 set osd_nheading_pos = 311
 set osd_nvario_pos = 279
 set osd_esc_tmp_pos = 82
 set osd_esc_rpm_pos = 83
+set osd_stat_min_rssi = OFF
 set vcd_video_system = 2
 
 # profile
 profile 0
 
 set dterm_lowpass_type = PT1
-set dterm_notch_hz = 0
+set anti_gravity_gain = 4000
+set d_pitch = 37
+set p_roll = 42
+set d_roll = 34
 
 # rateprofile
 rateprofile 0
 
 set rc_rate = 120
 set rc_rate_yaw = 120
-set roll_srate = 82
-set pitch_srate = 82
-set yaw_srate = 82
+set rc_expo = 15
+set rc_expo_yaw = 15
+set roll_srate = 85
+set pitch_srate = 80
+set yaw_srate = 85
