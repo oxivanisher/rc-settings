@@ -45,8 +45,9 @@ aux 1 1 1 1300 1700
 aux 2 2 1 1700 2100
 aux 3 13 2 1700 2100
 aux 4 26 3 1300 2100
-aux 5 35 2 1300 1700
-aux 6 36 3 1300 1700
+aux 5 30 5 1300 1700
+aux 6 35 2 1300 1700
+aux 7 36 4 1700 2100
 
 # adjrange
 
@@ -76,11 +77,13 @@ set deadband = 2
 set pid_process_denom = 1
 set osd_vbat_pos = 2071
 set osd_rssi_pos = 377
+set osd_tim_1_pos = 2063
+set osd_tim_2_pos = 2055
 set osd_flymode_pos = 2048
-set osd_throttle_pos = 2457
+set osd_throttle_pos = 2456
 set osd_vtx_channel_pos = 377
 set osd_crosshairs = 2048
-set osd_current_pos = 2425
+set osd_current_pos = 2424
 set osd_mah_drawn_pos = 2400
 set osd_craft_name_pos = 362
 set osd_gps_speed_pos = 218
@@ -114,9 +117,10 @@ profile 0
 
 set dterm_lowpass_type = PT1
 set anti_gravity_gain = 4000
-set d_pitch = 37
+set p_pitch = 55
+set d_pitch = 45
 set p_roll = 42
-set d_roll = 34
+set d_roll = 36
 
 # rateprofile
 rateprofile 0
