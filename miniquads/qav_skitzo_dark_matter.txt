@@ -1,4 +1,3 @@
-
 # diff
 
 # version
@@ -36,7 +35,7 @@ serial 5 32 115200 57600 0 115200
 
 # led
 led 0 5,15:S:CVI:0
-led 1 6,15:S:C:2
+led 1 6,15:S:A:2
 led 2 7,15:S:CV:0
 led 3 8,15:S:CV:0
 led 4 9,15:S:CV:0
@@ -75,13 +74,17 @@ set blackbox_p_denom = 42
 set dshot_idle_value = 300
 set motor_pwm_protocol = DSHOT600
 set align_board_yaw = 90
+set bat_capacity = 1300
 set vbat_max_cell_voltage = 44
+set vbat_warning_cell_voltage = 34
 set current_meter = ADC
 set battery_meter = ADC
 set ibata_scale = 690
 set small_angle = 180
 set deadband = 2
 set pid_process_denom = 1
+set osd_cap_alarm = 1300
+set osd_tim2 = 1537
 set osd_vbat_pos = 2071
 set osd_rssi_pos = 377
 set osd_tim_1_pos = 2063
@@ -116,7 +119,9 @@ set osd_nheading_pos = 311
 set osd_nvario_pos = 279
 set osd_esc_tmp_pos = 82
 set osd_esc_rpm_pos = 83
+set osd_stat_max_spd = OFF
 set osd_stat_min_rssi = OFF
+set osd_stat_endbatt = ON
 set vcd_video_system = 2
 
 # profile
@@ -133,5 +138,3 @@ set rc_expo_yaw = 15
 set roll_srate = 85
 set pitch_srate = 80
 set yaw_srate = 85
-
-# 
