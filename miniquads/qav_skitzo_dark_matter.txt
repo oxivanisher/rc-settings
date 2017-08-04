@@ -1,3 +1,4 @@
+
 # diff
 
 # version
@@ -34,6 +35,12 @@ serial 2 2048 115200 57600 0 115200
 serial 5 32 115200 57600 0 115200
 
 # led
+led 0 5,15:S:CVI:0
+led 1 6,15:S:C:2
+led 2 7,15:S:CV:0
+led 3 8,15:S:CV:0
+led 4 9,15:S:CV:0
+led 5 10,15:S:CVI:0
 
 # color
 
@@ -113,14 +120,8 @@ set osd_stat_min_rssi = OFF
 set vcd_video_system = 2
 
 # profile
-profile 0
+profile 1
 
-set dterm_lowpass_type = PT1
-set anti_gravity_gain = 4000
-set p_pitch = 55
-set d_pitch = 45
-set p_roll = 42
-set d_roll = 36
 
 # rateprofile
 rateprofile 0
