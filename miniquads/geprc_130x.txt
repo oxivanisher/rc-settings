@@ -8,14 +8,15 @@ feature TELEMETRY
 feature LED_STRIP
 feature AIRMODE
 feature ANTI_GRAVITY
+beeper -ON_USB
 map TAER1234
 serial 0 32 115200 57600 0 115200
 serial 1 2048 115200 57600 0 115200
 serial 2 64 115200 57600 0 115200
-led 0 5,15:W:CVIW:0
-led 1 6,15:S:CVW:0
-led 2 9,15:S:CVW:0
-led 3 10,15:E:CVIW:0
+led 0 5,15:W:CVI:0
+led 1 7,15:S:CVW:0
+led 2 8,15:S:CVW:0
+led 3 10,15:E:CVI:0
 aux 0 0 0 1700 2100
 aux 1 1 1 1300 1700
 aux 2 2 1 1700 2100
@@ -39,6 +40,7 @@ set osd_flymode_pos = 2048
 set osd_throttle_pos = 2456
 set osd_vtx_channel_pos = 377
 set osd_crosshairs = 2048
+set osd_ah_sbar = 200
 set osd_current_pos = 2424
 set osd_mah_drawn_pos = 2400
 set osd_craft_name_pos = 362
@@ -72,6 +74,7 @@ set vcd_video_system = 2
 profile 0
 
 set dterm_lowpass_type = PT1
+set dterm_notch_hz = 0
 rateprofile 0
 
 set rc_rate = 188
