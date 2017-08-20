@@ -34,12 +34,12 @@ serial 2 2048 115200 57600 0 115200
 serial 5 32 115200 57600 0 115200
 
 # led
-led 0 5,15:S:CVI:0
-led 1 6,15:S:A:2
-led 2 7,15:S:CV:0
-led 3 8,15:S:CV:0
+led 0 5,15:W:CVI:0
+led 1 6,15:S:CV:0
+led 2 7,15:S:CVW:0
+led 3 8,15:S:CVW:0
 led 4 9,15:S:CV:0
-led 5 10,15:S:CVI:0
+led 5 10,15:E:CVI:0
 
 # color
 
@@ -68,6 +68,8 @@ rxfail 6 s 1800
 set gyro_notch1_hz = 0
 set gyro_notch2_hz = 0
 set baro_hardware = NONE
+set min_check = 1010
+set max_check = 1990
 set fpv_mix_degrees = 30
 set serialrx_provider = SBUS
 set blackbox_p_denom = 42
@@ -84,7 +86,6 @@ set small_angle = 180
 set deadband = 2
 set pid_process_denom = 1
 set osd_cap_alarm = 1300
-set osd_tim2 = 1537
 set osd_vbat_pos = 2071
 set osd_rssi_pos = 377
 set osd_tim_1_pos = 2063
@@ -127,14 +128,20 @@ set vcd_video_system = 2
 # profile
 profile 1
 
+set dterm_lowpass_type = PT1
+set dterm_notch_hz = 0
+set p_pitch = 53
+set d_pitch = 32
+set p_roll = 48
+set i_roll = 47
+set d_roll = 32
 
 # rateprofile
 rateprofile 0
 
-set rc_rate = 120
-set rc_rate_yaw = 120
-set rc_expo = 15
-set rc_expo_yaw = 15
-set roll_srate = 85
-set pitch_srate = 80
-set yaw_srate = 85
+set rc_rate = 188
+set rc_rate_yaw = 188
+set rc_expo = 24
+set rc_expo_yaw = 25
+
+# 
