@@ -1,5 +1,3 @@
-# diff
-
 # version
 # BetaFlight/SPRACINGF3EVO 3.0.1 Oct 18 2016 / 10:36:44 (48b7b4f)
 
@@ -15,11 +13,9 @@
 # feature
 feature -RX_PPM
 feature -TELEMETRY
-feature -CURRENT_METER
 feature -BLACKBOX
-feature -TRANSPONDER
 feature RX_SERIAL
-feature AIRMODE
+feature MOTOR_STOP
 
 # beeper
 
@@ -35,10 +31,7 @@ serial 1 64 115200 57600 0 115200
 # mode_color
 
 # aux
-aux 0 0 0 1700 2100
-aux 1 1 0 1300 1700
-aux 2 2 0 1700 2100
-aux 3 12 2 1700 2100
+aux 0 1 0 900 2100
 
 # adjrange
 
@@ -47,18 +40,13 @@ aux 3 12 2 1700 2100
 # rxfail
 
 # master
-set use_unsynced_pwm = ON
 set motor_pwm_protocol = BRUSHED
-set motor_pwm_rate = 32000
 set serialrx_provider = SBUS
 set vbat_max_cell_voltage = 45
 set vbat_min_cell_voltage = 30
 set vbat_warning_cell_voltage = 32
 set align_gyro = CW0
 set align_acc = CW0
-set align_board_roll = 6
-set align_board_pitch = 1
-set pid_process_denom = 2
 
 # profile
 profile 0
