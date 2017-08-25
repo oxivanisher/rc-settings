@@ -1,24 +1,71 @@
 # diff
-# Betaflight / SPRACINGF3EVO 3.1.5 Feb  7 2017 / 22:31:13 (4646f9d)
 
+# version
+# BetaFlight/SPRACINGF3EVO 3.0.1 Oct 18 2016 / 10:36:44 (48b7b4f)
+
+# name
+
+# mixer
+
+# servo
+
+# servo mix
+
+
+# feature
 feature -RX_PPM
 feature -TELEMETRY
+feature -CURRENT_METER
 feature -BLACKBOX
+feature -TRANSPONDER
 feature RX_SERIAL
-feature MOTOR_STOP
+feature AIRMODE
+
+# beeper
+
+# map
+
+# serial
 serial 1 64 115200 57600 0 115200
-aux 0 1 0 900 2100
+
+# led
+
+# color
+
+# mode_color
+
+# aux
+aux 0 0 0 1700 2100
+aux 1 1 0 1300 1700
+aux 2 2 0 1700 2100
+aux 3 12 2 1700 2100
+
+# adjrange
+
+# rxrange
+
+# rxfail
+
+# master
+set use_unsynced_pwm = ON
+set motor_pwm_protocol = BRUSHED
+set motor_pwm_rate = 32000
 set serialrx_provider = SBUS
 set vbat_max_cell_voltage = 45
 set vbat_min_cell_voltage = 30
 set vbat_warning_cell_voltage = 32
 set align_gyro = CW0
 set align_acc = CW0
+set align_board_roll = 6
+set align_board_pitch = 1
+set pid_process_denom = 2
+
+# profile
 profile 0
 
 rateprofile 0
+
+# rateprofile
 rateprofile 0
 
 set yaw_srate = 100
-
-# 
