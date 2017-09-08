@@ -1,7 +1,7 @@
 # diff
 
 # version
-# Betaflight / OMNIBUSF4 (OBF4) 3.2.0 Aug  1 2017 / 06:53:22 (869dd1f00)
+# Betaflight / OMNIBUSF4 (OBF4) 3.2.0 Aug  6 2017 / 13:33:15 (981df1d54)
 
 # name
 name oXi
@@ -94,6 +94,7 @@ set osd_flymode_pos = 2048
 set osd_throttle_pos = 2456
 set osd_vtx_channel_pos = 377
 set osd_crosshairs = 2048
+set osd_ah_sbar = 200
 set osd_current_pos = 2424
 set osd_mah_drawn_pos = 2400
 set osd_craft_name_pos = 362
