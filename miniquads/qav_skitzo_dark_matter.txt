@@ -1,7 +1,60 @@
+2017-09-08 @ 16:51:00 -- Running - OS: Windows, Chrome: 60.0.3112.113, Configurator: 3.2.1
+2017-09-08 @ 16:51:03 -- Loaded release information from GitHub.
+2017-09-08 @ 16:57:59 -- Serial port successfully opened with ID: 1
+2017-09-08 @ 16:57:59 -- MultiWii API version: 1.36.0
+2017-09-08 @ 16:57:59 -- Flight controller info, identifier: BTFL, version: 3.2.0
+2017-09-08 @ 16:57:59 -- Running firmware released on: Aug 6 2017 13:33:15
+2017-09-08 @ 16:57:59 -- Board: OBF4, version: 0
+2017-09-08 @ 16:57:59 -- Unique device ID: 0x4500213136511734373332
+2017-09-08 @ 16:57:59 -- Craft name: oXi
+2017-09-08 @ 16:58:01 -- CLI mode detected
+2017-09-08 @ 16:58:27 -- Unrecoverable failure of serial connection, disconnecting...
+2017-09-08 @ 16:58:27 -- Serial port successfully closed
+2017-09-08 @ 16:58:30 -- Using cached release information.
+2017-09-08 @ 16:58:49 -- USB device successfully opened with ID: 1
+2017-09-08 @ 16:58:49 -- Detected device with total flash size 1024 kiB
+2017-09-08 @ 16:58:49 -- Read protection not active
+2017-09-08 @ 16:58:55 -- Erased 368 kB of flash successfully
+2017-09-08 @ 16:59:15 -- USB device successfully closed
+2017-09-08 @ 16:59:21 -- Serial port successfully opened with ID: 2
+2017-09-08 @ 16:59:21 -- MultiWii API version: 1.36.0
+2017-09-08 @ 16:59:21 -- Flight controller info, identifier: BTFL, version: 3.2.0
+2017-09-08 @ 16:59:21 -- Running firmware released on: Aug 28 2017 12:02:14
+2017-09-08 @ 16:59:21 -- Board: OBF4, version: 0
+2017-09-08 @ 16:59:21 -- Unique device ID: 0x4500213136511734373332
+2017-09-08 @ 16:59:21 -- Craft name:
+2017-09-08 @ 16:59:22 -- CLI mode detected
+2017-09-08 @ 16:59:29 -- Unrecoverable failure of serial connection, disconnecting...
+2017-09-08 @ 16:59:29 -- Serial port successfully closed
+2017-09-08 @ 16:59:34 -- Serial port successfully opened with ID: 3
+2017-09-08 @ 16:59:34 -- MultiWii API version: 1.36.0
+2017-09-08 @ 16:59:34 -- Flight controller info, identifier: BTFL, version: 3.2.0
+2017-09-08 @ 16:59:34 -- Running firmware released on: Aug 28 2017 12:02:14
+2017-09-08 @ 16:59:34 -- Board: OBF4, version: 0
+2017-09-08 @ 16:59:34 -- Unique device ID: 0x4500213136511734373332
+2017-09-08 @ 16:59:34 -- Craft name: oXi
+2017-09-08 @ 17:02:04 -- EEPROM saved
+2017-09-08 @ 17:02:40 -- CLI mode detected
+Setup
+Ports
+Configuration
+Power & Battery
+PID Tuning
+Receiver
+Modes
+Motors
+OSD
+LED Strip
+Blackbox
+CLI
+Note: Leaving CLI tab or pressing Disconnect will automatically send "exit" to the board. With the latest firmware this will make the controller restart and unsaved changes will be lost.
+
+Entering CLI Mode, type 'exit' to return, or 'help'
+
 # diff
 
 # version
-# Betaflight / OMNIBUSF4 (OBF4) 3.2.0 Aug  6 2017 / 13:33:15 (981df1d54)
+# Betaflight / OMNIBUSF4 (OBF4) 3.2.0 Aug 28 2017 / 12:02:14 (b2cd7294e)
 
 # name
 name oXi
@@ -79,8 +132,6 @@ set align_board_yaw = 90
 set bat_capacity = 1300
 set vbat_max_cell_voltage = 44
 set vbat_warning_cell_voltage = 34
-set current_meter = ADC
-set battery_meter = ADC
 set ibata_scale = 690
 set small_angle = 180
 set deadband = 2
@@ -140,9 +191,10 @@ set d_roll = 32
 # rateprofile
 rateprofile 0
 
-set rc_rate = 188
-set rc_rate_yaw = 188
-set rc_expo = 24
-set rc_expo_yaw = 25
+set rc_rate = 127
+set rc_rate_yaw = 127
+set roll_srate = 80
+set pitch_srate = 80
+set yaw_srate = 80
 
 # 
