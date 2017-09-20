@@ -1,4 +1,3 @@
-
 # diff
 
 # version
@@ -142,5 +141,3 @@ set rc_rate_yaw = 127
 set roll_srate = 80
 set pitch_srate = 80
 set yaw_srate = 80
-
-# 
