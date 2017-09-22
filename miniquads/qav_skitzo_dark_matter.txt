@@ -1,7 +1,7 @@
 # diff
 
 # version
-# Betaflight / OMNIBUSF4 (OBF4) 3.2.0 Aug 28 2017 / 12:02:14 (b2cd7294e)
+# Betaflight / OMNIBUSF4SD (OBSD) 3.2.0 Sep 11 2017 / 06:44:20 (649ccd7c7) MSP API: 1.36
 
 # name
 name oXi
@@ -51,9 +51,10 @@ aux 1 1 1 1300 1700
 aux 2 2 1 1700 2100
 aux 3 13 2 1700 2100
 aux 4 15 3 1700 2100
-aux 5 30 5 1300 1700
-aux 6 35 2 1300 1700
-aux 7 36 4 1700 2100
+aux 5 26 0 900 2100
+aux 6 30 5 1300 1700
+aux 7 35 2 1300 1700
+aux 8 36 4 1700 2100
 
 # adjrange
 
@@ -70,6 +71,7 @@ set gyro_notch2_hz = 0
 set baro_hardware = NONE
 set min_check = 1010
 set max_check = 1990
+set rssi_channel = 16
 set fpv_mix_degrees = 30
 set serialrx_provider = SBUS
 set dshot_idle_value = 300
@@ -84,15 +86,15 @@ set deadband = 2
 set pid_process_denom = 1
 set osd_cap_alarm = 1300
 set osd_vbat_pos = 2071
-set osd_rssi_pos = 377
+set osd_rssi_pos = 2424
 set osd_tim_1_pos = 2063
 set osd_tim_2_pos = 2055
 set osd_flymode_pos = 2048
-set osd_throttle_pos = 2456
+set osd_throttle_pos = 407
 set osd_vtx_channel_pos = 377
 set osd_crosshairs = 2048
 set osd_ah_sbar = 200
-set osd_current_pos = 2424
+set osd_current_pos = 2455
 set osd_mah_drawn_pos = 2400
 set osd_craft_name_pos = 362
 set osd_gps_speed_pos = 218
@@ -119,7 +121,6 @@ set osd_nvario_pos = 279
 set osd_esc_tmp_pos = 82
 set osd_esc_rpm_pos = 83
 set osd_stat_max_spd = OFF
-set osd_stat_min_rssi = OFF
 set osd_stat_endbatt = ON
 set vcd_video_system = 2
 
