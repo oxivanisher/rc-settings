@@ -127,17 +127,23 @@ set vcd_video_system = 2
 profile 0
 
 set dterm_lowpass_type = PT1
+set dterm_notch_hz = 0
 set p_pitch = 56
 set i_pitch = 51
 set d_pitch = 21
 set p_roll = 58
 set i_roll = 42
+set p_yaw = 69
 
 # rateprofile
 rateprofile 0
 
-set rc_rate = 127
-set rc_rate_yaw = 127
-set roll_srate = 80
-set pitch_srate = 80
-set yaw_srate = 80
+set rc_rate = 185
+set rc_rate_yaw = 170
+set rc_expo = 60
+set rc_expo_yaw = 50
+set roll_srate = 63
+set pitch_srate = 63
+set yaw_srate = 63
+
+# 
