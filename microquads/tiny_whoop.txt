@@ -1,6 +1,4 @@
 
-CLI
-
 # diff
 # Betaflight / NAZE 3.1.6 Mar 22 2017 / 13:58:30 ()
 
@@ -9,11 +7,16 @@ aux 1 27 1 900 2100
 aux 2 1 1 1350 1700
 aux 3 2 1 1750 2100
 aux 27 0 0 900 900
+rxfail 3 h
+rxfail 5 s 1500
 set min_check = 1010
 set max_check = 1910
 set gyro_sync_denom = 3
 set deadband = 10
 set yaw_deadband = 15
+set failsafe_delay = 5
+set failsafe_off_delay = 10
+set failsafe_throttle = 1250
 profile 0
 
 rateprofile 0
