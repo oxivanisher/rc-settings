@@ -1,26 +1,57 @@
 
-# diff
-# Betaflight / NAZE 3.1.6 Mar 22 2017 / 13:58:30 ()
+CLI
 
+# diff
+# Betaflight / NAZE (AFNA) 3.2.0 Sep 28 2017 / 16:36:34 (ceb6f70) MSP API: 1.36
+name oXi
+
+feature AIRMODE
+map TAER1234
 aux 0 0 0 1700 2100
-aux 1 27 1 900 2100
-aux 2 1 1 1350 1700
-aux 3 2 1 1750 2100
-aux 27 0 0 900 900
+aux 1 1 1 1350 1700
+aux 2 2 1 1750 2100
 rxfail 3 h
 rxfail 5 s 1500
+set gyro_sync_denom = 4
+set gyro_lowpass_hz = 188
+set gyro_notch1_hz = 0
+set gyro_notch1_cutoff = 100
+set gyro_notch2_hz = 0
+set baro_hardware = NONE
 set min_check = 1010
-set max_check = 1910
-set gyro_sync_denom = 3
+set max_check = 1990
+set min_throttle = 1030
+set use_unsynced_pwm = ON
+set motor_pwm_protocol = BRUSHED
+set motor_pwm_rate = 4000
+set failsafe_delay = 5
+set failsafe_throttle = 1250
+set bat_capacity = 220
+set vbat_min_cell_voltage = 32
+set gyro_cal_on_first_arm = ON
 set deadband = 10
 set yaw_deadband = 15
-set failsafe_delay = 5
-set failsafe_off_delay = 10
-set failsafe_throttle = 1250
+set pid_process_denom = 2
 profile 0
 
-rateprofile 0
+set dterm_lowpass_type = PT1
+set dterm_lowpass = 160
+set setpoint_relax_ratio = 50
+set dterm_setpoint_weight = 200
+set p_pitch = 92
+set i_pitch = 80
+set d_pitch = 25
+set p_roll = 85
+set i_roll = 70
+set d_roll = 24
+set p_yaw = 200
+set i_yaw = 50
 rateprofile 0
 
+set rc_rate = 144
+set rc_rate_yaw = 164
+set roll_srate = 78
+set pitch_srate = 78
+set yaw_srate = 60
 
 # 
