@@ -122,6 +122,7 @@ feature -ESC_SENSOR
 feature -ANTI_GRAVITY
 feature -DYNAMIC_FILTER
 feature RX_PPM
+feature AIRMODE
 beeper GYRO_CALIBRATED
 beeper RX_LOST
 beeper RX_LOST_LANDING
@@ -243,7 +244,7 @@ mode_color 7 0 3
 aux 0 0 0 1700 2100
 aux 1 1 1 1350 1700
 aux 2 2 1 1750 2100
-aux 3 28 1 900 2100
+aux 3 0 0 900 900
 aux 4 0 0 900 900
 aux 5 0 0 900 900
 aux 6 0 0 900 900
