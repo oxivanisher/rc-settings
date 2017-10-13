@@ -76,7 +76,6 @@ set fpv_mix_degrees = 30
 set serialrx_provider = SBUS
 set dshot_idle_value = 300
 set motor_pwm_protocol = DSHOT600
-set align_board_yaw = 90
 set bat_capacity = 1300
 set vbat_max_cell_voltage = 44
 set vbat_warning_cell_voltage = 34
@@ -146,5 +145,3 @@ set rc_expo_yaw = 50
 set roll_srate = 63
 set pitch_srate = 63
 set yaw_srate = 63
-
-# 
