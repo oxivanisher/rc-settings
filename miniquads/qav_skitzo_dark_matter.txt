@@ -1,9 +1,7 @@
-Entering CLI Mode, type 'exit' to return, or 'help'
-
 # diff
 
 # version
-# Betaflight / OMNIBUSF4SD (OBSD) 3.2.0 Sep 28 2017 / 16:38:50 (ceb6f70) MSP API: 1.36
+# Betaflight / OMNIBUSF4SD (OBSD) 3.2.1 Oct 15 2017 / 19:42:35 (434db9a36) MSP API: 1.36
 
 # name
 name oXi
@@ -141,11 +139,11 @@ set p_yaw = 69
 rateprofile 0
 
 set rc_rate = 185
-set rc_rate_yaw = 170
+set rc_rate_yaw = 140
 set rc_expo = 60
 set rc_expo_yaw = 50
 set roll_srate = 63
 set pitch_srate = 63
-set yaw_srate = 63
+set yaw_srate = 53
 
 # 
