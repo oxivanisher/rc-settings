@@ -122,19 +122,13 @@ set osd_stat_min_rssi = OFF
 set osd_stat_endbatt = ON
 
 # profile
-profile 0
+profile 1
 
 set dterm_lowpass_type = PT1
 set dterm_notch_hz = 0
 set dterm_notch_cutoff = 0
 set setpoint_relax_ratio = 50
 set dterm_setpoint_weight = 200
-set p_pitch = 56
-set i_pitch = 51
-set d_pitch = 21
-set p_roll = 58
-set i_roll = 42
-set p_yaw = 69
 
 # rateprofile
 rateprofile 0
