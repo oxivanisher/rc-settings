@@ -1,5 +1,5 @@
 # diff
-# Betaflight / NAZE (AFNA) 3.2.1 Oct 15 2017 / 19:41:11 (434db9a36) MSP API: 1.36
+# Betaflight / NAZE (AFNA) 3.2.0 Sep 28 2017 / 16:36:34 (ceb6f70) MSP API: 1.36
 name oXi
 
 feature AIRMODE
@@ -7,7 +7,6 @@ map TAER1234
 aux 0 0 0 1700 2100
 aux 1 1 1 1350 1700
 aux 2 2 1 1750 2100
-aux 3 28 1 900 2100
 rxfail 3 h
 rxfail 5 s 1500
 set gyro_sync_denom = 4
@@ -18,7 +17,7 @@ set gyro_notch2_hz = 0
 set baro_hardware = NONE
 set min_check = 1010
 set max_check = 1990
-set min_throttle = 1180
+set min_throttle = 1030
 set use_unsynced_pwm = ON
 set motor_pwm_protocol = BRUSHED
 set motor_pwm_rate = 4000
@@ -26,7 +25,6 @@ set failsafe_delay = 5
 set failsafe_throttle = 1250
 set bat_capacity = 220
 set vbat_min_cell_voltage = 32
-set auto_disarm_delay = 0
 set gyro_cal_on_first_arm = ON
 set deadband = 10
 set yaw_deadband = 15
