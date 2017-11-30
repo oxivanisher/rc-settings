@@ -1,5 +1,5 @@
 # diff
-# Betaflight / OMNIBUS (OMNI) 3.2.0 Aug  6 2017 / 13:33:02 (981df1d54)
+# Betaflight / OMNIBUS (OMNI) 3.2.2 Nov 11 2017 / 00:38:45 (77782e602) MSP API: 1.36
 name oXi
 
 feature -RX_PPM
@@ -23,7 +23,9 @@ aux 2 2 1 1700 2100
 aux 3 13 2 1700 2100
 aux 4 36 4 1700 2100
 set gyro_notch1_hz = 0
+set gyro_notch1_cutoff = 0
 set gyro_notch2_hz = 0
+set gyro_notch2_cutoff = 0
 set baro_hardware = NONE
 set min_check = 1010
 set max_check = 1990
@@ -75,9 +77,12 @@ profile 0
 
 set dterm_lowpass_type = PT1
 set dterm_notch_hz = 0
+set dterm_notch_cutoff = 0
 rateprofile 0
 
 set rc_rate = 188
 set rc_rate_yaw = 188
 set rc_expo = 24
 set rc_expo_yaw = 25
+
+# 
