@@ -8,6 +8,7 @@ feature TELEMETRY
 feature LED_STRIP
 feature AIRMODE
 feature ANTI_GRAVITY
+feature DYNAMIC_FILTER
 beeper -ON_USB
 map TAER1234
 serial 0 32 115200 57600 0 115200
@@ -21,7 +22,9 @@ aux 0 0 0 1700 2100
 aux 1 1 1 1300 1700
 aux 2 2 1 1700 2100
 aux 3 13 2 1700 2100
-aux 4 36 4 1700 2100
+aux 4 30 5 1300 1700
+aux 5 35 2 1300 1700
+aux 6 36 4 1700 2100
 set gyro_notch1_hz = 0
 set gyro_notch1_cutoff = 0
 set gyro_notch2_hz = 0
@@ -29,22 +32,24 @@ set gyro_notch2_cutoff = 0
 set baro_hardware = NONE
 set min_check = 1010
 set max_check = 1990
+set rssi_channel = 16
 set serialrx_provider = SBUS
 set motor_pwm_protocol = DSHOT600
 set align_board_yaw = 180
+set small_angle = 180
 set pid_process_denom = 2
-set osd_cap_alarm = 1300
-set osd_vbat_pos = 2071
-set osd_rssi_pos = 377
+set osd_cap_alarm = 800
+set osd_vbat_pos = 23
+set osd_rssi_pos = 2497
 set osd_tim_1_pos = 2063
 set osd_tim_2_pos = 2055
-set osd_flymode_pos = 2048
-set osd_throttle_pos = 2456
+set osd_flymode_pos = 2049
+set osd_throttle_pos = 2520
 set osd_vtx_channel_pos = 377
 set osd_crosshairs = 2048
 set osd_ah_sbar = 200
-set osd_current_pos = 2424
-set osd_mah_drawn_pos = 2400
+set osd_current_pos = 376
+set osd_mah_drawn_pos = 352
 set osd_craft_name_pos = 362
 set osd_gps_speed_pos = 218
 set osd_gps_lon_pos = 82
@@ -58,10 +63,10 @@ set osd_pid_roll_pos = 0
 set osd_pid_pitch_pos = 0
 set osd_pid_yaw_pos = 0
 set osd_debug_pos = 1
-set osd_power_pos = 2433
+set osd_power_pos = 385
 set osd_pidrate_profile_pos = 345
-set osd_warnings_pos = 2409
-set osd_avg_cell_voltage_pos = 76
+set osd_warnings_pos = 2505
+set osd_avg_cell_voltage_pos = 2071
 set osd_pit_ang_pos = 257
 set osd_rol_ang_pos = 289
 set osd_battery_usage_pos = 8
@@ -71,6 +76,8 @@ set osd_esc_tmp_pos = 82
 set osd_esc_rpm_pos = 83
 set osd_stat_max_spd = OFF
 set osd_stat_min_rssi = OFF
+set osd_stat_max_curr = OFF
+set osd_stat_used_mah = OFF
 set osd_stat_endbatt = ON
 set vcd_video_system = 1
 profile 0
