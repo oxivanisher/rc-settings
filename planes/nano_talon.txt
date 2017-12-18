@@ -1,0 +1,132 @@
+# diff
+
+# version
+# INAV/OMNIBUSF4PRO 1.8.0 Nov  1 2017 / 06:34:32 (912d1315)
+
+# resources
+
+# mixer
+mixer CUSTOMAIRPLANE
+mmix 0  1.000  0.000  0.000  0.000
+
+# servo
+
+# servo mix
+smix 0 2 0 -100 0
+smix 1 3 1 -85 0
+smix 2 4 1 85 0
+smix 3 3 2 -75 0
+smix 4 4 2 -75 0
+
+# feature
+feature MOTOR_STOP
+feature GPS
+feature TELEMETRY
+feature CURRENT_METER
+feature RSSI_ADC
+feature AIRMODE
+feature PWM_OUTPUT_ENABLE
+
+# beeper
+
+# map
+map TAER5678
+
+# name
+
+# serial
+serial 0 64 115200 38400 0 115200
+serial 2 2048 115200 38400 0 115200
+serial 5 2 115200 38400 0 115200
+
+# led
+
+# color
+
+# mode_color
+
+# aux
+aux 0 0 0 1675 2100
+aux 1 2 1 1275 1725
+aux 2 2 2 1300 1700
+aux 3 4 2 1300 1700
+aux 4 3 2 1300 1700
+aux 5 8 2 1725 2100
+aux 6 10 1 900 1200
+aux 7 28 3 1700 2100
+aux 8 11 4 1700 2100
+
+# adjrange
+
+# rxrange
+
+# master
+set gyro_sync = ON
+set gyro_hardware_lpf = 188HZ
+set acc_hardware = MPU6000
+set acczero_x = 129
+set acczero_y = -30
+set acczero_z = 20
+set accgain_x = 4080
+set accgain_y = 4091
+set accgain_z = 4084
+set mag_hardware = NONE
+set baro_hardware = BMP280
+set pitot_hardware = NONE
+set receiver_type = SERIAL
+set rssi_channel = 12
+set serialrx_provider = CRSF
+set min_throttle = 1100
+set failsafe_throttle_low_delay = 0
+set failsafe_procedure = RTH
+set vbat_max_cell_voltage = 44
+set current_meter_scale = 740
+set small_angle = 180
+set gps_sbas_mode = AUTO
+set nav_rth_climb_first = OFF
+set nav_rth_altitude = 6500
+set nav_fw_cruise_thr = 1500
+set nav_fw_max_thr = 1800
+set nav_fw_bank_angle = 35
+set nav_fw_loiter_radius = 3500
+set osd_cap_alarm = 1400
+set osd_time_alarm = 20
+set osd_alt_alarm = 300
+set osd_main_voltage_pos = 12
+set osd_rssi_pos = 2081
+set osd_flytimer_pos = 2486
+set osd_ontime_pos = 343
+set osd_flymode_pos = 2113
+set osd_throttle_pos = 2199
+set osd_artificial_horizon_pos = 200
+set osd_current_draw_pos = 2135
+set osd_mah_drawn_pos = 2167
+set osd_gps_speed_pos = 2243
+set osd_gps_lon_pos = 2450
+set osd_gps_lat_pos = 2432
+set osd_home_dir_pos = 2414
+set osd_home_dist_pos = 2081
+set osd_altitude_pos = 2263
+set osd_rtc_time_pos = 2455
+set osd_main_cell_voltage_pos = 2060
+set osd_heading_graph_pos = 2123
+
+# profile
+profile 1
+
+set fw_p_pitch = 20
+set fw_i_pitch = 30
+set fw_ff_pitch = 15
+set fw_p_roll = 20
+set fw_i_roll = 30
+set fw_ff_roll = 15
+set fw_p_yaw = 45
+set fw_i_yaw = 5
+set fw_ff_yaw = 15
+set fw_i_level = 15
+set max_angle_inclination_rll = 600
+set max_angle_inclination_pit = 600
+set pitch_rate = 15
+set yaw_rate = 9
+
+# 
