@@ -84,12 +84,7 @@ set failsafe_throttle_low_delay = 0
 set failsafe_procedure = RTH
 set vbat_max_cell_voltage = 44
 set current_meter_scale = 740
-set small_angle = 180
 set gps_sbas_mode = AUTO
-set nav_rth_altitude = 15000
-set nav_fw_cruise_thr = 1500
-set nav_fw_max_thr = 1800
-set nav_fw_bank_angle = 35
 set nav_fw_loiter_radius = 3500
 set osd_cap_alarm = 1400
 set osd_time_alarm = 20
@@ -114,23 +109,13 @@ set osd_rtc_time_pos = 2455
 set osd_main_cell_voltage_pos = 2061
 set osd_throttle_auto_thr_pos = 2274
 set osd_heading_graph_pos = 2123
+set nav_rth_altitude = 7000
+set small_angle = 180
 
 # profile
 profile 1
 
-set fw_p_pitch = 20
-set fw_i_pitch = 30
-set fw_ff_pitch = 15
-set fw_p_roll = 20
-set fw_i_roll = 30
-set fw_ff_roll = 15
-set fw_p_yaw = 45
-set fw_i_yaw = 5
-set fw_ff_yaw = 15
-set fw_i_level = 15
 set max_angle_inclination_rll = 600
 set max_angle_inclination_pit = 600
-set pitch_rate = 15
-set yaw_rate = 9
 
 # 
