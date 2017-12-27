@@ -1,3 +1,4 @@
+
 # diff
 # Betaflight / FF_ACROWHOOPSP (AWHS) 3.2.3 Dec 11 2017 / 07:41:00 (cb962eda1) MSP API: 1.36
 name GEPRC Sparrow
@@ -6,6 +7,7 @@ resource MOTOR 4 A02
 resource MOTOR 5 NONE
 resource MOTOR 6 NONE
 
+feature TELEMETRY
 feature LED_STRIP
 feature AIRMODE
 feature ANTI_GRAVITY
