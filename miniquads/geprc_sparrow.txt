@@ -1,0 +1,39 @@
+# diff
+# Betaflight / PIKOBLX 3.1.5 Feb  7 2017 / 22:21:28 (4646f9d)
+name GEPRC Sparrow
+resource MOTOR 1 A01
+resource MOTOR 4 A02
+resource MOTOR 5 NONE
+resource MOTOR 6 NONE
+
+feature -RX_PARALLEL_PWM
+feature RX_SERIAL
+feature LED_STRIP
+serial 2 64 115200 57600 0 115200
+led 0 0,0::CT:5
+led 1 15,0::CT:5
+aux 0 0 0 900 1250
+aux 1 27 0 900 1250
+aux 2 1 1 1275 1700
+aux 3 2 1 1725 2100
+aux 4 12 2 900 1250
+set motor_pwm_protocol = DSHOT600
+set serialrx_provider = SBUS
+profile 0
+
+set p_pitch = 22
+set i_pitch = 40
+set d_pitch = 14
+set p_roll = 22
+set d_roll = 14
+set p_yaw = 50
+set i_yaw = 40
+rateprofile 0
+rateprofile 0
+
+set rc_rate = 110
+set roll_srate = 80
+set pitch_srate = 80
+set tpa_rate = 30
+
+# 
