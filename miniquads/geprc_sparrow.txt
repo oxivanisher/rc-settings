@@ -1,26 +1,39 @@
 # diff
-# Betaflight / PIKOBLX 3.1.5 Feb  7 2017 / 22:21:28 (4646f9d)
+# Betaflight / FF_ACROWHOOPSP (AWHS) 3.2.3 Dec 11 2017 / 07:41:00 (cb962eda1) MSP API: 1.36
 name GEPRC Sparrow
 resource MOTOR 1 A01
 resource MOTOR 4 A02
 resource MOTOR 5 NONE
 resource MOTOR 6 NONE
 
-feature -RX_PARALLEL_PWM
-feature RX_SERIAL
 feature LED_STRIP
-serial 2 64 115200 57600 0 115200
+feature AIRMODE
+feature ANTI_GRAVITY
+feature DYNAMIC_FILTER
+beeper -ON_USB
+map TAER1234
+serial 1 32 115200 57600 0 115200
 led 0 0,0::CT:5
 led 1 15,0::CT:5
-aux 0 0 0 900 1250
-aux 1 27 0 900 1250
-aux 2 1 1 1275 1700
-aux 3 2 1 1725 2100
-aux 4 12 2 900 1250
+aux 0 0 0 1700 2100
+aux 1 1 1 1300 1700
+aux 2 2 1 1700 2100
+aux 3 13 2 1700 2100
+aux 4 35 2 1300 1700
+aux 5 36 4 1700 2100
+set gyro_notch2_hz = 0
+set gyro_notch2_cutoff = 0
+set min_check = 1010
+set max_check = 1990
 set motor_pwm_protocol = DSHOT600
-set serialrx_provider = SBUS
+set pid_process_denom = 2
 profile 0
 
+set dterm_lowpass_type = PT1
+set dterm_notch_hz = 0
+set dterm_notch_cutoff = 0
+set setpoint_relax_ratio = 50
+set dterm_setpoint_weight = 200
 set p_pitch = 22
 set i_pitch = 40
 set d_pitch = 14
@@ -29,11 +42,14 @@ set d_roll = 14
 set p_yaw = 50
 set i_yaw = 40
 rateprofile 0
-rateprofile 0
 
-set rc_rate = 110
-set roll_srate = 80
-set pitch_srate = 80
+set rc_rate = 185
+set rc_rate_yaw = 140
+set rc_expo = 60
+set rc_expo_yaw = 50
+set roll_srate = 63
+set pitch_srate = 63
+set yaw_srate = 53
 set tpa_rate = 30
 
 # 
