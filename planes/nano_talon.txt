@@ -84,7 +84,9 @@ set failsafe_throttle_low_delay = 0
 set failsafe_procedure = RTH
 set vbat_max_cell_voltage = 44
 set current_meter_scale = 740
+set small_angle = 180
 set gps_sbas_mode = AUTO
+set nav_rth_altitude = 7000
 set nav_fw_loiter_radius = 3500
 set osd_cap_alarm = 1400
 set osd_time_alarm = 20
@@ -109,13 +111,13 @@ set osd_rtc_time_pos = 2455
 set osd_main_cell_voltage_pos = 2061
 set osd_throttle_auto_thr_pos = 2274
 set osd_heading_graph_pos = 2123
-set nav_rth_altitude = 7000
-set small_angle = 180
 
 # profile
 profile 1
 
 set max_angle_inclination_rll = 600
 set max_angle_inclination_pit = 600
+set nav_fw_pos_z_p = 30
+set nav_fw_pos_z_i = 10
 
 # 
