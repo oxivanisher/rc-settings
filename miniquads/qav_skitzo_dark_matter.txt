@@ -124,8 +124,6 @@ set osd_stat_endbatt = ON
 profile 1
 
 set dterm_lowpass_type = PT1
-set dterm_notch_hz = 0
-set dterm_notch_cutoff = 0
 set setpoint_relax_ratio = 50
 set dterm_setpoint_weight = 200
 
@@ -139,5 +137,3 @@ set rc_expo_yaw = 50
 set roll_srate = 63
 set pitch_srate = 63
 set yaw_srate = 53
-
-# 
