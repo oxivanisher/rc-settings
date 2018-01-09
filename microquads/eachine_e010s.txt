@@ -1,12 +1,16 @@
+
 # diff
 # Betaflight / SPRACINGF3 (SRF3) 3.2.3 Dec 11 2017 / 08:03:02 (cb962eda1) MSP API: 1.36
 
+feature -TELEMETRY
 feature -TRANSPONDER
+map TAER1234
 aux 0 0 0 1700 2100
 aux 1 1 1 900 1200
 aux 2 2 1 1400 1600
 aux 3 28 0 1700 2100
 aux 4 36 2 1700 2100
+set baro_hardware = NONE
 set motor_pwm_protocol = BRUSHED
 profile 0
 
