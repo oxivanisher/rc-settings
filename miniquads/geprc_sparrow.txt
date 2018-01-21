@@ -1,7 +1,6 @@
-
 # diff
 # Betaflight / FF_ACROWHOOPSP (AWHS) 3.2.3 Dec 11 2017 / 07:41:00 (cb962eda1) MSP API: 1.36
-name GEPRC Sparrow
+name GEPRC Sparrow oXi
 resource MOTOR 1 A01
 resource MOTOR 4 A02
 resource MOTOR 5 NONE
@@ -28,6 +27,7 @@ set gyro_notch2_cutoff = 0
 set min_check = 1010
 set max_check = 1990
 set motor_pwm_protocol = DSHOT600
+set small_angle = 180
 set pid_process_denom = 2
 profile 0
 
