@@ -1,0 +1,21 @@
+# diff
+
+# version
+# INAV/FF_F35_LIGHTNING 1.8.1 Feb 10 2018 / 15:19:11 (d0feb4d)
+
+# resources
+
+# mixer
+mixer FLYING_WING
+
+
+# adjrange
+
+# rxrange
+
+#e_procedure = RTH
+set small_angle = 180
+set auto_disarm_delay = 0
+set deadband = 2
+set yaw_deadband = 2
+set nav_extra_armin
