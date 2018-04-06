@@ -1,9 +1,11 @@
 # diff
-# Betaflight / OMNIBUS (OMNI) 3.2.2 Nov 11 2017 / 00:38:45 (77782e602) MSP API: 1.36
-name oXi
+# Betaflight / FF_ACROWHOOPSP (AWHS) 3.2.4 Jan 10 2018 / 22:45:56 (90d32fd56) MSP API: 1.36
+name GEPRC Sparrow oXi
+resource MOTOR 1 A01
+resource MOTOR 4 A02
+resource MOTOR 5 NONE
+resource MOTOR 6 NONE
 
-feature -RX_PPM
-feature RX_SERIAL
 feature TELEMETRY
 feature LED_STRIP
 feature AIRMODE
@@ -11,85 +13,45 @@ feature ANTI_GRAVITY
 feature DYNAMIC_FILTER
 beeper -ON_USB
 map TAER1234
-serial 0 32 115200 57600 0 115200
-serial 1 2048 115200 57600 0 115200
-serial 2 64 115200 57600 0 115200
-led 0 5,15:W:CVI:0
-led 1 7,15:S:CVW:0
-led 2 8,15:S:CVW:0
-led 3 10,15:E:CVI:0
+serial 1 32 115200 57600 0 115200
+led 0 0,0::CT:5
+led 1 15,0::CT:5
 aux 0 0 0 1700 2100
 aux 1 1 1 1300 1700
 aux 2 2 1 1700 2100
 aux 3 13 2 1700 2100
-aux 4 30 5 1300 1700
-aux 5 35 2 1300 1700
-aux 6 36 4 1700 2100
-set gyro_notch1_hz = 0
-set gyro_notch1_cutoff = 0
+aux 4 35 2 1300 1700
+aux 5 36 4 1700 2100
 set gyro_notch2_hz = 0
 set gyro_notch2_cutoff = 0
-set baro_hardware = NONE
 set min_check = 1010
 set max_check = 1990
-set rssi_channel = 16
-set serialrx_provider = SBUS
 set motor_pwm_protocol = DSHOT600
-set align_board_yaw = 180
 set small_angle = 180
 set pid_process_denom = 2
-set osd_cap_alarm = 800
-set osd_vbat_pos = 23
-set osd_rssi_pos = 2497
-set osd_tim_1_pos = 2063
-set osd_tim_2_pos = 2055
-set osd_flymode_pos = 2049
-set osd_throttle_pos = 2520
-set osd_vtx_channel_pos = 377
-set osd_crosshairs = 2048
-set osd_ah_sbar = 200
-set osd_current_pos = 376
-set osd_mah_drawn_pos = 352
-set osd_craft_name_pos = 362
-set osd_gps_speed_pos = 218
-set osd_gps_lon_pos = 82
-set osd_gps_lat_pos = 65
-set osd_gps_sats_pos = 51
-set osd_home_dir_pos = 302
-set osd_home_dist_pos = 303
-set osd_compass_bar_pos = 266
-set osd_altitude_pos = 247
-set osd_pid_roll_pos = 0
-set osd_pid_pitch_pos = 0
-set osd_pid_yaw_pos = 0
-set osd_debug_pos = 1
-set osd_power_pos = 385
-set osd_pidrate_profile_pos = 345
-set osd_warnings_pos = 2505
-set osd_avg_cell_voltage_pos = 2071
-set osd_pit_ang_pos = 257
-set osd_rol_ang_pos = 289
-set osd_battery_usage_pos = 8
-set osd_nheading_pos = 311
-set osd_nvario_pos = 279
-set osd_esc_tmp_pos = 82
-set osd_esc_rpm_pos = 83
-set osd_stat_max_spd = OFF
-set osd_stat_min_rssi = OFF
-set osd_stat_max_curr = OFF
-set osd_stat_used_mah = OFF
-set osd_stat_endbatt = ON
-set vcd_video_system = 1
 profile 0
 
 set dterm_lowpass_type = PT1
 set dterm_notch_hz = 0
 set dterm_notch_cutoff = 0
+set setpoint_relax_ratio = 50
+set dterm_setpoint_weight = 200
+set p_pitch = 22
+set i_pitch = 40
+set d_pitch = 14
+set p_roll = 22
+set d_roll = 14
+set p_yaw = 50
+set i_yaw = 40
 rateprofile 0
 
-set rc_rate = 188
-set rc_rate_yaw = 188
-set rc_expo = 24
-set rc_expo_yaw = 25
+set rc_rate = 185
+set rc_rate_yaw = 140
+set rc_expo = 60
+set rc_expo_yaw = 50
+set roll_srate = 63
+set pitch_srate = 63
+set yaw_srate = 53
+set tpa_rate = 30
 
 # 
