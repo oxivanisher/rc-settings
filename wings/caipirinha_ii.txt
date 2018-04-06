@@ -28,13 +28,14 @@ map TAER5678
 serial 3 2048 115200 38400 0 115200
 
 # aux
-aux 0 1 1 1700 2100
-aux 1 2 1 900 1300
-aux 2 4 2 900 1300
-aux 3 3 2 900 1300
-aux 4 8 2 1700 2100
-aux 5 10 0 1300 1700
-aux 6 11 0 1700 2100
+aux 0 0 3 1700 2100
+aux 1 1 1 1700 2100
+aux 2 2 1 900 1300
+aux 3 4 2 900 1300
+aux 4 3 2 900 1300
+aux 5 8 2 1700 2100
+aux 6 10 0 1300 1700
+aux 7 11 0 1700 2100
 
 # adjrange
 
@@ -42,10 +43,17 @@ aux 6 11 0 1700 2100
 
 # master
 set acc_hardware = MPU9250
+set acczero_x = 871
+set acczero_y = 362
+set acczero_z = -603
+set accgain_x = 4090
+set accgain_y = 4086
+set accgain_z = 4005
 set mag_hardware = MPU9250
 set baro_hardware = BMP280
 set pitot_hardware = ADC
 set rssi_channel = 4
+set failsafe_throttle_low_delay = 0
 set failsafe_procedure = RTH
 set vbat_max_cell_voltage = 420
 set battery_capacity = 5200
@@ -55,9 +63,13 @@ set small_angle = 180
 set auto_disarm_delay = 0
 set deadband = 2
 set yaw_deadband = 2
+set nav_extra_arming_safety = OFF
 set nav_user_control_mode = CRUISE
 set nav_rth_altitude = 7000
 set nav_mc_hover_thr = 1300
+set nav_fw_launch_thr = 1800
+set nav_fw_launch_motor_delay = 1700
+set nav_fw_launch_climb_angle = 35
 
 # profile
 profile 1
