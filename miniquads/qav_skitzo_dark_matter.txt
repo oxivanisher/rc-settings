@@ -1,3 +1,4 @@
+
 # diff
 
 # version
@@ -121,6 +122,9 @@ set osd_esc_rpm_pos = 83
 set osd_stat_max_spd = OFF
 set osd_stat_min_rssi = OFF
 set osd_stat_endbatt = ON
+set vtx_channel = 7
+set vtx_power = 2
+set vtx_freq = 5860
 
 # profile
 profile 1
@@ -141,5 +145,3 @@ set yaw_expo = 50
 set roll_srate = 63
 set pitch_srate = 63
 set yaw_srate = 53
-
-# 
