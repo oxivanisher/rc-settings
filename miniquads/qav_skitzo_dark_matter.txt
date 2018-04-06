@@ -2,7 +2,7 @@
 # diff
 
 # version
-# Betaflight / BETAFLIGHTF4 (BFF4) 3.3.0 Mar  2 2018 / 03:38:27 (177472b4f) MSP API: 1.37
+# Betaflight / BETAFLIGHTF4 (BFF4) 3.3.1 Apr  3 2018 / 09:27:15 (4b7eaf79d) MSP API: 1.37
 
 # name
 name oXi
@@ -83,6 +83,7 @@ set vbat_warning_cell_voltage = 34
 set current_meter = ESC
 set battery_meter = ESC
 set pid_process_denom = 1
+set osd_warnings = 63
 set osd_cap_alarm = 1300
 set osd_vbat_pos = 23
 set osd_rssi_pos = 2426
@@ -91,8 +92,6 @@ set osd_tim_2_pos = 2059
 set osd_flymode_pos = 2048
 set osd_throttle_pos = 2457
 set osd_vtx_channel_pos = 377
-set osd_crosshairs = 2048
-set osd_ah_sbar = 200
 set osd_current_pos = 2432
 set osd_mah_drawn_pos = 2400
 set osd_craft_name_pos = 362
@@ -125,6 +124,7 @@ set osd_stat_endbatt = ON
 set vtx_channel = 7
 set vtx_power = 2
 set vtx_freq = 5860
+set vcd_video_system = 2
 
 # profile
 profile 1
@@ -145,3 +145,5 @@ set yaw_expo = 50
 set roll_srate = 63
 set pitch_srate = 63
 set yaw_srate = 53
+
+# 
