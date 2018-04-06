@@ -1,21 +1,66 @@
 # diff
 
 # version
-# INAV/FF_F35_LIGHTNING 1.8.1 Feb 10 2018 / 15:19:11 (d0feb4d)
+# INAV/FF_F35_LIGHTNING 1.9.0 Mar  5 2018 / 01:09:23 (dc4ef594f)
 
 # resources
 
 # mixer
 mixer FLYING_WING
 
+# servo mix
+
+# servo
+servo 3 1000 2000 1500 -100 -1 
+
+# feature
+feature PWM_OUTPUT_ENABLE
+feature FW_LAUNCH
+
+# beeper
+
+# map
+map TAER5678
+
+# name
+
+# serial
+serial 3 2048 115200 38400 0 115200
+
+# aux
+aux 0 1 1 1700 2100
+aux 1 2 1 900 1300
+aux 2 4 2 900 1300
+aux 3 3 2 900 1300
+aux 4 8 2 1700 2100
+aux 5 10 0 1300 1700
+aux 6 11 0 1700 2100
 
 # adjrange
 
 # rxrange
 
-#e_procedure = RTH
+# master
+set acc_hardware = MPU9250
+set mag_hardware = MPU9250
+set baro_hardware = BMP280
+set pitot_hardware = ADC
+set rssi_channel = 4
+set failsafe_procedure = RTH
+set vbat_max_cell_voltage = 420
+set battery_capacity = 5200
+set battery_capacity_warning = 2080
+set battery_capacity_critical = 1040
 set small_angle = 180
 set auto_disarm_delay = 0
 set deadband = 2
 set yaw_deadband = 2
-set nav_extra_armin
+set nav_user_control_mode = CRUISE
+set nav_rth_altitude = 7000
+set nav_mc_hover_thr = 1300
+
+# profile
+profile 1
+
+
+# 
