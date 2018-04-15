@@ -1,3 +1,5 @@
+Entering CLI Mode, type 'exit' to return, or 'help'
+
 # diff
 
 # version
@@ -14,13 +16,9 @@ mixer FLYING_WING
 servo 3 1000 2000 1500 -100 -1 
 
 # feature
-feature GPS
-feature CURRENT_METER
-feature AIRMODE
 feature MOTOR_STOP
 feature PWM_OUTPUT_ENABLE
 feature FW_LAUNCH
-
 
 # beeper
 
@@ -77,8 +75,9 @@ set nav_extra_arming_safety = OFF
 set nav_user_control_mode = CRUISE
 set nav_rth_altitude = 7000
 set nav_fw_launch_thr = 1800
-set nav_fw_launch_motor_delay = 1700
+set nav_fw_launch_motor_delay = 300
 set nav_fw_launch_climb_angle = 35
+set osd_video_system = 1
 set osd_time_alarm = 45
 set osd_alt_alarm = 120
 set osd_main_voltage_pos = 12
@@ -100,30 +99,8 @@ set osd_ontime_flytime_pos = 2487
 set osd_messages_pos = 2497
 set osd_main_cell_voltage_pos = 2092
 
-set min_throttle = 1000
-set max_throttle = 1952
-set failsafe_off_delay = 250
-set failsafe_procedure = RTH
-
-set nav_extra_arming_safety = OFF
-set nav_rth_altitude = 10000
-set nav_fw_bank_angle = 45
-set nav_fw_climb_angle = 35
-set nav_fw_dive_angle = 35
-
 # profile
 profile 1
 
-set fw_p_pitch = 15
-set fw_i_pitch = 40
-set fw_ff_pitch = 15
-set fw_p_roll = 15
-set fw_i_roll = 30
-set fw_ff_roll = 15
-set fw_p_yaw = 50
-set fw_i_yaw = 45
-set fw_ff_yaw = 0
-set fw_i_level = 15
-set rc_expo = 80
-set roll_rate = 70
-set pitch_rate = 70
+
+# 
