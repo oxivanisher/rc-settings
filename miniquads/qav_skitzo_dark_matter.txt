@@ -52,6 +52,8 @@ aux 1 1 1 1300 1700 0
 aux 2 2 1 1700 2100 0
 aux 3 13 2 1700 2100 0
 aux 4 35 2 1300 1700 0
+aux 5 35 2 1300 1700 0
+aux 6 36 4 1700 2100 0
 
 # adjrange
 
@@ -70,7 +72,7 @@ set mag_hardware = NONE
 set baro_hardware = NONE
 set min_check = 1010
 set max_check = 1990
-set rssi_channel = 8
+set rssi_channel = 9
 set fpv_mix_degrees = 25
 set serialrx_provider = CRSF
 set dshot_idle_value = 300
