@@ -52,8 +52,6 @@ aux 1 1 1 1300 1700 0
 aux 2 2 1 1700 2100 0
 aux 3 13 2 1700 2100 0
 aux 4 35 2 1300 1700 0
-aux 5 35 2 1300 1700 0
-aux 6 36 4 1700 2100 0
 
 # adjrange
 
@@ -149,5 +147,3 @@ set yaw_expo = 50
 set roll_srate = 63
 set pitch_srate = 63
 set yaw_srate = 53
-
-# 
