@@ -1,7 +1,7 @@
- diff
+# diff
 
 # version
-# Betaflight / BETAFLIGHTF4 (BFF4) 3.3.2 May  4 2018 / 09:22:29 (64a292f37) MSP API: 1.38
+# Betaflight / BETAFLIGHTF4 (BFF4) 3.3.3 May 31 2018 / 12:55:00 (3565182d3) MSP API: 1.38
 
 # name
 name oXi
@@ -73,13 +73,17 @@ set max_check = 1990
 set rssi_channel = 9
 set fpv_mix_degrees = 25
 set serialrx_provider = CRSF
+set min_throttle = 1000
 set dshot_idle_value = 300
+set use_unsynced_pwm = ON
 set motor_pwm_protocol = DSHOT1200
+set motor_pwm_rate = 16000
 set bat_capacity = 1300
 set vbat_max_cell_voltage = 44
 set vbat_warning_cell_voltage = 34
 set current_meter = ESC
 set battery_meter = ESC
+set beeper_dshot_beacon_tone = 3
 set small_angle = 90
 set yaw_deadband = 1
 set pid_process_denom = 1
