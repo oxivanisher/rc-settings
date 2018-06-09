@@ -79,7 +79,7 @@ set bat_capacity = 1300
 set vbat_max_cell_voltage = 44
 set vbat_warning_cell_voltage = 34
 set current_meter = ESC
-set battery_meter = ESC
+set battery_meter = ADC
 set beeper_dshot_beacon_tone = 3
 set small_angle = 90
 set yaw_deadband = 1
@@ -128,13 +128,10 @@ set vtx_freq = 5860
 set vcd_video_system = 1
 
 # profile
-profile 1
+profile 0
 
-set dterm_lowpass_type = PT1
-set setpoint_relax_ratio = 50
-set dterm_setpoint_weight = 150
-set d_pitch = 38
-set d_roll = 31
+set setpoint_relax_ratio = 1
+set dterm_setpoint_weight = 100
 
 # rateprofile
 rateprofile 0
