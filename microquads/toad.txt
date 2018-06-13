@@ -31,6 +31,7 @@ map TAER1234
 
 # serial
 serial 2 64 115200 57600 0 115200
+serial 5 32 115200 57600 0 115200
 
 # led
 led 0 5,15:W:AOIW:9
@@ -41,6 +42,12 @@ led 1 10,15:E:AOIW:9
 # mode_color
 
 # aux
+aux 0 0 0 1700 2100 0
+aux 1 1 1 1300 1700 0
+aux 2 2 1 1700 2100 0
+aux 3 13 2 1700 2100 0
+aux 4 35 2 1300 1700 0
+aux 5 36 4 1700 2100 0
 
 # adjrange
 
@@ -59,8 +66,8 @@ set mag_hardware = NONE
 set baro_hardware = NONE
 set min_check = 1010
 set max_check = 1990
-set serialrx_provider = FPORT
-set serialrx_halfduplex = ON
+set rssi_channel = 16
+set serialrx_provider = SBUS
 set dshot_idle_value = 300
 set motor_pwm_protocol = DSHOT600
 set current_meter = NONE
