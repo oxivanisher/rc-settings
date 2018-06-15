@@ -128,10 +128,13 @@ set vtx_freq = 5860
 set vcd_video_system = 1
 
 # profile
-profile 0
+profile 1
 
-set setpoint_relax_ratio = 1
-set dterm_setpoint_weight = 100
+set dterm_lowpass_type = PT1
+set setpoint_relax_ratio = 50
+set dterm_setpoint_weight = 150
+set d_pitch = 38
+set d_roll = 31
 
 # rateprofile
 rateprofile 0
