@@ -19,8 +19,8 @@ name oXi
 feature LED_STRIP
 feature AIRMODE
 feature ESC_SENSOR
-feature ANTI_GRAVITY
-feature DYNAMIC_FILTER
+#feature ANTI_GRAVITY
+#feature DYNAMIC_FILTER
 
 # beeper
 beeper -ON_USB
@@ -62,10 +62,10 @@ aux 4 35 2 1300 1700 0
 # rxfail
 
 # master
-set gyro_notch1_hz = 0
-set gyro_notch1_cutoff = 0
-set gyro_notch2_hz = 0
-set gyro_notch2_cutoff = 0
+#set gyro_notch1_hz = 0
+#set gyro_notch1_cutoff = 0
+#set gyro_notch2_hz = 0
+#set gyro_notch2_cutoff = 0
 set mag_hardware = NONE
 set baro_hardware = NONE
 set min_check = 1010
@@ -83,7 +83,7 @@ set battery_meter = ADC
 set beeper_dshot_beacon_tone = 3
 set small_angle = 90
 set yaw_deadband = 1
-set pid_process_denom = 1
+#set pid_process_denom = 1
 set osd_warnings = 63
 set osd_cap_alarm = 1300
 set osd_vbat_pos = 23
@@ -130,11 +130,11 @@ set vcd_video_system = 1
 # profile
 profile 1
 
-set dterm_lowpass_type = PT1
-set setpoint_relax_ratio = 50
-set dterm_setpoint_weight = 150
-set d_pitch = 38
-set d_roll = 31
+#set dterm_lowpass_type = PT1
+#set setpoint_relax_ratio = 50
+#set dterm_setpoint_weight = 150
+#set d_pitch = 38
+#set d_roll = 31
 
 # rateprofile
 rateprofile 0
