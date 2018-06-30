@@ -1,8 +1,10 @@
-
 # diff
 
 # version
-# Betaflight / OMNIBUSF4 (OBF4) 3.3.3 May 31 2018 / 13:23:55 (3565182d3) MSP API: 1.38
+# Betaflight / OMNIBUSF4 (OBF4) 3.4.0 Jun 24 2018 / 10:00:20 (1c081ae8c) MSP API: 1.39
+
+board_name OMNIBUSF4
+manufacturer_id AIRB
 
 # name
 
@@ -21,11 +23,11 @@ feature RX_SERIAL
 feature TELEMETRY
 feature LED_STRIP
 feature AIRMODE
-feature ANTI_GRAVITY
-feature DYNAMIC_FILTER
 
 # beeper
 beeper -ON_USB
+
+# beacon
 
 # map
 map TAER1234
@@ -59,10 +61,6 @@ aux 5 36 4 1700 2100 0
 # rxfail
 
 # master
-set gyro_notch1_hz = 0
-set gyro_notch1_cutoff = 0
-set gyro_notch2_hz = 0
-set gyro_notch2_cutoff = 0
 set mag_hardware = NONE
 set baro_hardware = NONE
 set min_check = 1010
@@ -74,8 +72,6 @@ set motor_pwm_protocol = DSHOT600
 set current_meter = NONE
 set small_angle = 90
 set yaw_deadband = 1
-set pid_process_denom = 1
-set osd_warnings = 63
 set osd_cap_alarm = 1300
 set osd_vbat_pos = 23
 set osd_rssi_pos = 2425
@@ -111,16 +107,13 @@ set osd_nvario_pos = 279
 set osd_esc_tmp_pos = 82
 set osd_esc_rpm_pos = 83
 set osd_stat_max_spd = OFF
-set osd_stat_min_rssi = OFF
 set osd_stat_endbatt = ON
-set vcd_video_system = 2
+set osd_stat_min_rssi = OFF
+set vcd_video_system = NTSC
 
 # profile
 profile 0
 
-set dterm_lowpass_type = PT1
-set setpoint_relax_ratio = 50
-set dterm_setpoint_weight = 150
 
 # rateprofile
 rateprofile 0
