@@ -1,7 +1,7 @@
 # diff
 
 # version
-# Betaflight / BETAFLIGHTF4 (BFF4) 3.4.0 Jun 10 2018 / 02:20:37 (a5ba01666) MSP API: 1.39
+# Betaflight / BETAFLIGHTF4 (BFF4) 3.4.0 Jun 17 2018 / 08:21:09 (2fe9d7990) MSP API: 1.39
 
 board_name BETAFLIGHTF4
 manufacturer_id 
@@ -70,6 +70,7 @@ set baro_hardware = NONE
 set min_check = 1010
 set max_check = 1990
 set rssi_channel = 10
+set rc_smoothing_type = FILTER
 set fpv_mix_degrees = 25
 set serialrx_provider = CRSF
 set dshot_idle_value = 300
@@ -79,21 +80,18 @@ set vbat_max_cell_voltage = 44
 set vbat_warning_cell_voltage = 34
 set current_meter = ESC
 set battery_meter = ADC
-set beeper_dshot_beacon_tone = 3
 set small_angle = 90
 set yaw_deadband = 1
-set pid_process_denom = 1
-set osd_warn_core_temp = OFF
 set osd_cap_alarm = 1300
 set osd_vbat_pos = 23
-set osd_rssi_pos = 2521
+set osd_rssi_pos = 2489
 set osd_tim_1_pos = 15
 set osd_tim_2_pos = 2059
 set osd_flymode_pos = 2049
-set osd_throttle_pos = 2552
+set osd_throttle_pos = 2520
 set osd_vtx_channel_pos = 377
-set osd_current_pos = 2528
-set osd_mah_drawn_pos = 2497
+set osd_current_pos = 2496
+set osd_mah_drawn_pos = 2465
 set osd_craft_name_pos = 362
 set osd_gps_speed_pos = 218
 set osd_gps_lon_pos = 82
@@ -129,6 +127,18 @@ set vcd_video_system = PAL
 # profile
 profile 1
 
+set setpoint_relax_ratio = 50
+set dterm_setpoint_weight = 80
+set iterm_relax = RP
+set iterm_relax_cutoff = 10
+set throttle_boost = 8
+set p_pitch = 58
+set i_pitch = 65
+set d_pitch = 39
+set p_roll = 50
+set i_roll = 60
+set d_roll = 34
+set i_yaw = 60
 
 # rateprofile
 rateprofile 0
@@ -142,3 +152,5 @@ set yaw_expo = 50
 set roll_srate = 63
 set pitch_srate = 63
 set yaw_srate = 53
+set tpa_rate = 30
+set tpa_breakpoint = 1100
