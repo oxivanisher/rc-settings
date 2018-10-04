@@ -1,0 +1,143 @@
+# diff
+
+# version
+# Betaflight / BETAFLIGHTF4 (BFF4) 3.5.1 Sep  8 2018 / 05:01:45 (d9fb5ca13) MSP API: 1.40
+
+board_name BETAFLIGHTF4
+manufacturer_id 
+
+# name
+name oXi
+
+# resources
+
+# mixer
+
+# servo
+
+# servo mix
+
+
+# feature
+feature LED_STRIP
+feature AIRMODE
+feature ESC_SENSOR
+
+# beeper
+beeper -ON_USB
+
+# beacon
+
+# map
+map TAER1234
+
+# serial
+serial 0 1024 115200 57600 0 115200
+serial 1 64 115200 57600 0 115200
+serial 2 2048 115200 57600 0 115200
+serial 5 0 115200 57600 0 115200
+
+# led
+led 0 5,15:W:CVI:0
+led 1 6,15:S:CV:0
+led 2 7,15:S:CVW:0
+led 3 8,15:S:CVW:0
+led 4 9,15:S:CV:0
+led 5 10,15:E:CVI:0
+
+# color
+
+# mode_color
+
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 1 1 1300 1700 0 0
+aux 2 2 1 1700 2100 0 0
+aux 3 13 2 1700 2100 0 0
+aux 4 35 2 1300 1700 0 0
+
+# adjrange
+
+# rxrange
+
+# vtx
+
+# rxfail
+
+# master
+set acc_calibration = -67,-21,-166
+set mag_hardware = NONE
+set baro_hardware = NONE
+set min_check = 1010
+set max_check = 1990
+set rssi_channel = 10
+set fpv_mix_degrees = 35
+set serialrx_provider = CRSF
+set dshot_idle_value = 300
+set motor_pwm_protocol = DSHOT1200
+set bat_capacity = 1300
+set vbat_max_cell_voltage = 44
+set vbat_warning_cell_voltage = 34
+set current_meter = ESC
+set battery_meter = ADC
+set small_angle = 90
+set yaw_deadband = 2
+set pid_process_denom = 1
+set osd_cap_alarm = 1300
+set osd_vbat_pos = 23
+set osd_rssi_pos = 2489
+set osd_tim_1_pos = 15
+set osd_tim_2_pos = 2059
+set osd_flymode_pos = 2049
+set osd_throttle_pos = 2520
+set osd_vtx_channel_pos = 377
+set osd_current_pos = 2496
+set osd_mah_drawn_pos = 2465
+set osd_craft_name_pos = 362
+set osd_gps_speed_pos = 218
+set osd_gps_lon_pos = 82
+set osd_gps_lat_pos = 65
+set osd_gps_sats_pos = 51
+set osd_home_dir_pos = 302
+set osd_home_dist_pos = 303
+set osd_compass_bar_pos = 266
+set osd_altitude_pos = 247
+set osd_pid_roll_pos = 0
+set osd_pid_pitch_pos = 0
+set osd_pid_yaw_pos = 0
+set osd_debug_pos = 1
+set osd_power_pos = 384
+set osd_pidrate_profile_pos = 345
+set osd_warnings_pos = 2537
+set osd_avg_cell_voltage_pos = 2071
+set osd_pit_ang_pos = 257
+set osd_rol_ang_pos = 289
+set osd_battery_usage_pos = 8
+set osd_nheading_pos = 311
+set osd_nvario_pos = 279
+set osd_esc_tmp_pos = 82
+set osd_esc_rpm_pos = 83
+set osd_stat_max_spd = OFF
+set osd_stat_endbatt = ON
+set osd_stat_min_rssi = OFF
+set vtx_channel = 7
+set vtx_power = 2
+set vtx_freq = 5860
+set vcd_video_system = PAL
+
+# profile
+profile 0
+
+
+# rateprofile
+rateprofile 0
+
+set roll_rc_rate = 185
+set pitch_rc_rate = 185
+set yaw_rc_rate = 150
+set roll_expo = 50
+set pitch_expo = 50
+set yaw_expo = 55
+set roll_srate = 63
+set pitch_srate = 63
+set yaw_srate = 63
