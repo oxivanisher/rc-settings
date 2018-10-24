@@ -1,10 +1,10 @@
 # diff
 
 # version
-# Betaflight / OMNIBUSF4SD (OBSD) 3.5.0 Aug 14 2018 / 03:49:56 (1d710afd7) MSP API: 1.40
+# Betaflight / OMNIBUSF4 (OBF4) 3.5.2 Oct 16 2018 / 22:08:52 (a5e270fee) MSP API: 1.40
 
-board_name OMNIBUSF4SD
-manufacturer_id 
+board_name OMNIBUSF4
+manufacturer_id AIRB
 
 # name
 name BETA75X 2S
@@ -21,6 +21,8 @@ name BETA75X 2S
 # feature
 feature -RX_PARALLEL_PWM
 feature RX_SERIAL
+feature LED_STRIP
+feature AIRMODE
 
 # beeper
 
@@ -35,6 +37,10 @@ serial 0 64 115200 57600 0 115200
 serial 5 2048 115200 57600 0 115200
 
 # led
+led 0 6,15:W:CVI:0
+led 1 7,15:S:CV:0
+led 2 8,15:S:CV:0
+led 3 9,15:E:CVI:0
 
 # color
 
@@ -44,8 +50,8 @@ serial 5 2048 115200 57600 0 115200
 aux 0 0 0 1700 2100 0 0
 aux 1 1 1 1300 1700 0 0
 aux 2 2 1 1700 2100 0 0
-aux 3 28 2 900 1300 0 0
-aux 4 35 2 1700 2100 0 0
+aux 3 13 2 1700 2100 0 0
+aux 4 35 2 1300 1700 0 0
 
 # adjrange
 
@@ -62,8 +68,8 @@ set rssi_channel = 16
 set fpv_mix_degrees = 35
 set serialrx_provider = SBUS
 set blackbox_device = NONE
-set dshot_idle_value = 400
-set motor_pwm_protocol = DSHOT600
+set dshot_idle_value = 650
+set motor_pwm_protocol = DSHOT300
 set current_meter = VIRTUAL
 set ibatv_scale = 90
 set ibatv_offset = 29
@@ -75,6 +81,7 @@ set osd_vbat_pos = 2433
 set osd_rssi_pos = 2242
 set osd_tim_2_pos = 2455
 set osd_flymode_pos = 2425
+set osd_throttle_pos = 2401
 set osd_crosshairs_pos = 2253
 set osd_mah_drawn_pos = 2392
 set osd_craft_name_pos = 2442
@@ -84,15 +91,32 @@ set vcd_video_system = NTSC
 profile 0
 
 set dterm_notch_cutoff = 0
-set p_pitch = 75
-set i_pitch = 70
-set d_pitch = 45
-set p_roll = 75
-set i_roll = 70
-set d_roll = 45
-set p_yaw = 80
-set i_yaw = 60
-set f_yaw = 65
+set vbat_pid_gain = ON
+set anti_gravity_gain = 2000
+set iterm_relax = RP
+set iterm_limit = 500
+set pidsum_limit = 1000
+set pidsum_limit_yaw = 1000
+set p_pitch = 65
+set i_pitch = 80
+set d_pitch = 50
+set f_pitch = 96
+set p_roll = 65
+set i_roll = 80
+set d_roll = 50
+set f_roll = 96
+set i_yaw = 75
+set f_yaw = 100
 
 # rateprofile
 rateprofile 0
+
+set roll_rc_rate = 185
+set pitch_rc_rate = 185
+set yaw_rc_rate = 150
+set roll_expo = 50
+set pitch_expo = 50
+set yaw_expo = 55
+set roll_srate = 63
+set pitch_srate = 63
+set yaw_srate = 63
