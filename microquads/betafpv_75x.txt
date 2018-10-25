@@ -70,6 +70,7 @@ set serialrx_provider = SBUS
 set blackbox_device = NONE
 set dshot_idle_value = 650
 set motor_pwm_protocol = DSHOT300
+set align_board_yaw = 90
 set current_meter = VIRTUAL
 set ibatv_scale = 90
 set ibatv_offset = 29
