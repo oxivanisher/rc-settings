@@ -7,7 +7,7 @@ board_name OMNIBUSF4
 manufacturer_id AIRB
 
 # name
-name BETA75X 2S
+name oXi
 
 # resources
 
@@ -21,12 +21,15 @@ name BETA75X 2S
 # feature
 feature -RX_PARALLEL_PWM
 feature RX_SERIAL
+feature TELEMETRY
 feature LED_STRIP
 feature AIRMODE
 
 # beeper
+beeper -ON_USB
 
 # beacon
+beacon RX_LOST
 beacon RX_SET
 
 # map
@@ -64,13 +67,15 @@ aux 4 35 2 1300 1700 0 0
 # master
 set mag_hardware = NONE
 set baro_hardware = NONE
-set rssi_channel = 16
+set rssi_channel = 13
 set fpv_mix_degrees = 35
-set serialrx_provider = SBUS
+set serialrx_provider = CRSF
 set blackbox_device = NONE
 set dshot_idle_value = 650
 set motor_pwm_protocol = DSHOT300
 set align_board_yaw = 90
+set vbat_min_cell_voltage = 29
+set vbat_warning_cell_voltage = 31
 set current_meter = VIRTUAL
 set ibatv_scale = 90
 set ibatv_offset = 29
@@ -121,3 +126,4 @@ set yaw_expo = 55
 set roll_srate = 63
 set pitch_srate = 63
 set yaw_srate = 63
+
