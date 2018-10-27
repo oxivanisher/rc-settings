@@ -67,7 +67,7 @@ aux 4 35 2 1300 1700 0 0
 # master
 set mag_hardware = NONE
 set baro_hardware = NONE
-set rssi_channel = 13
+set rssi_channel = 9
 set fpv_mix_degrees = 35
 set serialrx_provider = CRSF
 set blackbox_device = NONE
@@ -91,6 +91,8 @@ set osd_throttle_pos = 2401
 set osd_crosshairs_pos = 2253
 set osd_mah_drawn_pos = 2392
 set osd_craft_name_pos = 2442
+set vtx_channel = 7
+set vtx_freq = 5860
 set vcd_video_system = NTSC
 
 # profile
@@ -126,4 +128,3 @@ set yaw_expo = 55
 set roll_srate = 63
 set pitch_srate = 63
 set yaw_srate = 63
-
