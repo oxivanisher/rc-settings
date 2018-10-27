@@ -11,5 +11,6 @@
 | tricopters   | Tricopter configuration dumps          |
 | wings        | Wing configuration dumps               |
 
-My Youtube channel (you probably came from there): https://youtube.com/oxivanisher
-My Thingiverse designs: https://www.thingiverse.com/oxivanisher/designs
+# Links
+* My Youtube channel (you probably came from there): https://youtube.com/oxivanisher
+* My Thingiverse designs: https://www.thingiverse.com/oxivanisher/designs
