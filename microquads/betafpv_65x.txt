@@ -1,13 +1,13 @@
 # diff
 
 # version
-# Betaflight / OMNIBUSF4SD (OBSD) 3.5.0 Aug 14 2018 / 03:49:56 (1d710afd7) MSP API: 1.40
+# Betaflight / OMNIBUSF4SD (OBSD) 3.5.2 Oct 16 2018 / 22:09:33 (a5e270fee) MSP API: 1.40
 
 board_name OMNIBUSF4SD
 manufacturer_id 
 
 # name
-name BETA65X 2S
+name oXi
 
 # resources
 
@@ -21,8 +21,10 @@ name BETA65X 2S
 # feature
 feature -RX_PARALLEL_PWM
 feature RX_SERIAL
+feature AIRMODE
 
 # beeper
+beeper -ON_USB
 
 # beacon
 beacon RX_SET
@@ -44,8 +46,12 @@ serial 5 2048 115200 57600 0 115200
 aux 0 0 0 1700 2100 0 0
 aux 1 1 1 1300 1700 0 0
 aux 2 2 1 1700 2100 0 0
-aux 3 28 2 900 1300 0 0
-aux 4 35 2 1700 2100 0 0
+aux 3 13 2 1700 2100 0 0
+aux 4 26 3 1700 2100 0 0
+aux 5 30 5 1300 1700 0 0
+aux 6 35 2 1300 1700 0 0
+aux 7 36 4 1700 2100 0 0
+aux 8 47 3 1300 1700 0 0
 
 # adjrange
 
@@ -58,19 +64,23 @@ aux 4 35 2 1700 2100 0 0
 # master
 set mag_hardware = NONE
 set baro_hardware = NONE
+set min_check = 1010
+set max_check = 1990
 set rssi_channel = 16
 set fpv_mix_degrees = 35
 set serialrx_provider = SBUS
 set blackbox_device = NONE
 set dshot_idle_value = 400
 set motor_pwm_protocol = DSHOT600
+set vbat_max_cell_voltage = 44
 set vbat_min_cell_voltage = 29
-set vbat_warning_cell_voltage = 30
+set vbat_warning_cell_voltage = 34
 set current_meter = VIRTUAL
 set ibatv_scale = 90
 set ibatv_offset = 29
 set yaw_motors_reversed = ON
 set small_angle = 180
+set yaw_deadband = 2
 set pid_process_denom = 1
 set osd_warn_core_temp = OFF
 set osd_vbat_pos = 2433
@@ -98,4 +108,14 @@ set f_yaw = 65
 
 # rateprofile
 rateprofile 0
+
+set roll_rc_rate = 185
+set pitch_rc_rate = 185
+set yaw_rc_rate = 150
+set roll_expo = 50
+set pitch_expo = 50
+set yaw_expo = 55
+set roll_srate = 63
+set pitch_srate = 63
+set yaw_srate = 63
 
