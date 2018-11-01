@@ -27,6 +27,7 @@ feature AIRMODE
 beeper -ON_USB
 
 # beacon
+beacon RX_LOST
 beacon RX_SET
 
 # map
@@ -70,7 +71,7 @@ set rssi_channel = 16
 set fpv_mix_degrees = 35
 set serialrx_provider = SBUS
 set blackbox_device = NONE
-set dshot_idle_value = 400
+set dshot_idle_value = 650
 set motor_pwm_protocol = DSHOT600
 set vbat_max_cell_voltage = 44
 set vbat_min_cell_voltage = 29
@@ -87,15 +88,23 @@ set osd_vbat_pos = 2433
 set osd_rssi_pos = 2242
 set osd_tim_2_pos = 2455
 set osd_flymode_pos = 2425
+set osd_throttle_pos = 2401
 set osd_crosshairs_pos = 2253
 set osd_mah_drawn_pos = 2392
 set osd_craft_name_pos = 2442
+set vtx_channel = 7
+set vtx_freq = 5860
 set vcd_video_system = NTSC
 
 # profile
 profile 0
 
 set dterm_notch_cutoff = 0
+set vbat_pid_gain = ON
+set iterm_relax = RP
+set iterm_limit = 500
+set pidsum_limit = 1000
+set pidsum_limit_yaw = 1000
 set p_pitch = 75
 set i_pitch = 70
 set d_pitch = 45
