@@ -100,11 +100,6 @@ set vcd_video_system = NTSC
 profile 0
 
 set dterm_notch_cutoff = 0
-set vbat_pid_gain = ON
-set iterm_relax = RP
-set iterm_limit = 500
-set pidsum_limit = 1000
-set pidsum_limit_yaw = 1000
 set p_pitch = 75
 set i_pitch = 70
 set d_pitch = 45
