@@ -3,7 +3,7 @@
 # version
 # Betaflight / OMNIBUSF4 (OBF4) 3.5.2 Oct 16 2018 / 22:08:52 (a5e270fee) MSP API: 1.40
 
-board_name OMNIBUSF4
+board_name OMNIBUSF4SD
 manufacturer_id AIRB
 
 # name
@@ -73,7 +73,6 @@ set serialrx_provider = CRSF
 set blackbox_device = NONE
 set dshot_idle_value = 650
 set motor_pwm_protocol = DSHOT300
-set align_board_yaw = 90
 set vbat_min_cell_voltage = 29
 set vbat_warning_cell_voltage = 31
 set current_meter = VIRTUAL
