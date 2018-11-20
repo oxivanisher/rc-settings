@@ -1,5 +1,5 @@
 # diff
-# Betaflight / CRAZYBEEF3FR (CBFR) 3.4.0 Jul  8 2018 / 04:06:04 (cce8a59be) MSP API: 1.39
+# Betaflight / CRAZYBEEF3FR (CBFR) 3.5.3 Nov 14 2018 / 23:20:22 (61d5abf00) MSP API: 1.40
 
 board_name CRAZYBEEF3FR
 manufacturer_id 
@@ -9,18 +9,19 @@ feature -ANTI_GRAVITY
 feature -DYNAMIC_FILTER
 map TAER1234
 serial 2 2048 115200 57600 0 115200
-aux 0 0 0 1700 2100 0
-aux 1 1 1 1300 1700 0
-aux 2 2 1 1700 2100 0
-aux 3 13 2 1700 2100 0
-aux 4 35 2 1300 1700 0
-aux 5 36 3 1700 2100 0
+aux 0 0 0 1700 2100 0 0
+aux 1 1 1 1300 1700 0 0
+aux 2 2 1 1700 2100 0 0
+aux 3 13 2 1700 2100 0 0
+aux 4 35 2 1300 1700 0 0
+aux 5 36 3 1700 2100 0 0
 set rx_spi_protocol = FRSKY_D
 set motor_pwm_protocol = DSHOT600
 set vbat_max_cell_voltage = 44
 set vbat_min_cell_voltage = 29
 set vbat_warning_cell_voltage = 32
 set ibata_scale = 1175
+set yaw_motors_reversed = ON
 set small_angle = 180
 set osd_warn_esc_fail = OFF
 set osd_vbat_pos = 2114
