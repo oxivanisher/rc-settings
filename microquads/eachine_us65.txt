@@ -13,11 +13,9 @@ aux 0 0 0 1700 2100 0
 aux 1 1 1 1300 1700 0
 aux 2 2 1 1700 2100 0
 aux 3 13 2 1700 2100 0
-aux 4 26 3 1700 2100 0
-aux 5 30 5 1300 1700 0
-aux 6 35 2 1300 1700 0
-aux 7 36 4 1700 2100 0
-aux 8 47 3 1300 1700 0
+aux 4 35 2 1300 1700 0
+aux 5 36 3 1700 2100 0
+set rx_spi_protocol = FRSKY_D
 set motor_pwm_protocol = DSHOT600
 set vbat_max_cell_voltage = 44
 set vbat_min_cell_voltage = 29
@@ -38,10 +36,9 @@ set osd_craft_name_pos = 2446
 set osd_disarmed_pos = 2346
 set vtx_channel = 7
 set vtx_freq = 5860
-set frsky_spi_tx_id = 140,7
-set frsky_spi_offset = -82
-set frsky_spi_bind_hop_data = 2,7,12,17,22,27,32,37,42,47,52,57,62,67,72,77,82,87,92,97,102,107,112,117,122,127,132,137,142,147,152,157,162,167,172,177,182,187,192,197,202,207,212,217,222,227,232,0,0,0
-set frsky_x_rx_num = 7
+set frsky_spi_tx_id = 152,59
+set frsky_spi_offset = -21
+set frsky_spi_bind_hop_data = 3,156,76,231,151,71,226,146,66,221,141,61,219,136,56,211,131,51,206,126,46,201,121,41,196,116,36,191,111,31,186,106,26,181,101,21,176,96,16,171,91,11,166,86,6,161,81,0,0,0
 profile 0
 
 rateprofile 0
