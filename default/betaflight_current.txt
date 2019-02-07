@@ -1,9 +1,12 @@
-# features
-feature AIRMODE
-feature ANTI_GRAVITY
-feature DYNAMIC_FILTER 
+# name
+name oXi
 
-# led
+# to accept HV batteries without warning
+# profile
+set vbat_max_cell_voltage = 44
+set vbat_warning_cell_voltage = 34
+
+# led - setup 6 leds (configured as a strip)
 led 0 5,15:W:CVI:0
 led 1 6,15:S:CV:0
 led 2 7,15:S:CVW:0
@@ -11,29 +14,17 @@ led 3 8,15:S:CVW:0
 led 4 9,15:S:CV:0
 led 5 10,15:E:CVI:0
 
-# modes
-aux 0 0 0 1700 2100
-aux 1 1 1 1300 1700
-aux 2 2 1 1700 2100
-aux 3 13 2 1700 2100
-aux 4 26 3 1300 2100
-aux 5 30 5 1300 1700
-aux 6 35 2 1300 1700
-aux 7 36 4 1700 2100
-
-# profile
-set vbat_max_cell_voltage = 44
-set vbat_warning_cell_voltage = 34
-
+# DShot settings
 # rc settings
 set min_check = 1010
 set max_check = 1990
+# my Taranis is setup for TAER1234
 map TAER1234
 
 # beeper
 beeper -ON_USB
 
-#osd
+# osd - my prefered OSD setup for acro quads
 set osd_cap_alarm = 1300
 set osd_vbat_pos = 23
 set osd_rssi_pos = 2426
@@ -74,9 +65,8 @@ set osd_stat_max_spd = OFF
 set osd_stat_min_rssi = OFF
 set osd_stat_endbatt = ON
 
-# rateprofile
+# rateprofile - my default rates for acro quads
 rateprofile 0
-
 set roll_rc_rate = 185
 set pitch_rc_rate = 185
 set yaw_rc_rate = 150
@@ -86,3 +76,55 @@ set yaw_expo = 55
 set roll_srate = 63
 set pitch_srate = 63
 set yaw_srate = 63
+
+# modes (aux) - for FrSky setup
+aux 0 0 0 1700 2100
+aux 1 1 1 1300 1700
+aux 2 2 1 1700 2100
+aux 3 13 2 1700 2100
+aux 4 26 3 1300 2100
+aux 5 30 5 1300 1700
+aux 6 35 2 1300 1700
+aux 7 36 4 1700 2100
+aux 8 0 0 900 900 0 0
+aux 9 0 0 900 900 0 0
+aux 10 0 0 900 900 0 0
+aux 11 0 0 900 900 0 0
+aux 12 0 0 900 900 0 0
+aux 13 0 0 900 900 0 0
+aux 14 0 0 900 900 0 0
+aux 15 0 0 900 900 0 0
+aux 16 0 0 900 900 0 0
+aux 17 0 0 900 900 0 0
+aux 18 0 0 900 900 0 0
+aux 19 0 0 900 900 0 0
+
+# modes (aux) - for Crossfire setup (8ch mode with prearm logic done in Taranis!)
+aux 0 0 0 1700 2100 0 0
+aux 1 1 1 1300 1700 0 0
+aux 2 2 1 1700 2100 0 0
+aux 3 13 2 1700 2100 0 0
+aux 4 35 2 1300 1700 0 0
+aux 5 0 0 900 900 0 0
+aux 6 0 0 900 900 0 0
+aux 7 0 0 900 900 0 0
+aux 8 0 0 900 900 0 0
+aux 9 0 0 900 900 0 0
+aux 10 0 0 900 900 0 0
+aux 11 0 0 900 900 0 0
+aux 12 0 0 900 900 0 0
+aux 13 0 0 900 900 0 0
+aux 14 0 0 900 900 0 0
+aux 15 0 0 900 900 0 0
+aux 16 0 0 900 900 0 0
+aux 17 0 0 900 900 0 0
+aux 18 0 0 900 900 0 0
+aux 19 0 0 900 900 0 0
+
+# features - those depend heavily on the model and bf versions (especially DYNAMIC_FILTER)
+feature AIRMODE
+feature ANTI_GRAVITY
+feature DYNAMIC_FILTER
+feature LED_STRIP
+feature AIRMODE
+feature ESC_SENSOR
