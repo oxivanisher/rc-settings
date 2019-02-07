@@ -1,0 +1,116 @@
+# diff
+
+# version
+# Betaflight / OMNIBUSF4SD (OBSD) 3.5.0 Aug 14 2018 / 03:49:56 (1d710afd7) MSP API: 1.40
+
+board_name OMNIBUSF4SD
+manufacturer_id 
+
+# name
+name x series
+
+# resources
+
+# mixer
+
+# servo
+
+# servo mix
+
+
+# feature
+feature -RX_PARALLEL_PWM
+feature RX_SERIAL
+feature LED_STRIP
+feature TRANSPONDER
+
+# beeper
+
+# beacon
+beacon RX_LOST
+beacon RX_SET
+
+# map
+map TAER1234
+
+# serial
+serial 0 64 115200 57600 0 115200
+serial 5 2048 115200 57600 0 115200
+
+# led
+led 0 0,0::A:0
+led 1 1,0::A:0
+led 2 2,0::L:0
+led 3 3,0::L:0
+
+# color
+
+# mode_color
+mode_color 6 0 2
+
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 1 1 1300 1700 0 0
+aux 2 2 1 1700 2100 0 0
+aux 3 28 2 900 1300 0 0
+aux 4 35 2 1700 2100 0 0
+
+# adjrange
+
+# rxrange
+
+# vtx
+
+# rxfail
+
+# master
+set mag_hardware = NONE
+set baro_hardware = NONE
+set fpv_mix_degrees = 35
+set serialrx_provider = CRSF
+set blackbox_device = NONE
+set dshot_idle_value = 650
+set motor_pwm_protocol = DSHOT1200
+set current_meter = VIRTUAL
+set ibatv_scale = 90
+set ibatv_offset = 29
+set yaw_motors_reversed = ON
+set small_angle = 180
+set pid_process_denom = 1
+set osd_warn_core_temp = OFF
+set osd_vbat_pos = 2433
+set osd_tim_2_pos = 2455
+set osd_flymode_pos = 2425
+set osd_throttle_pos = 2401
+set osd_crosshairs_pos = 2253
+set osd_mah_drawn_pos = 2392
+set osd_craft_name_pos = 2442
+set vtx_band = 5
+set vtx_channel = 5
+set vtx_freq = 5806
+set vcd_video_system = NTSC
+
+# profile
+profile 0
+
+set dterm_notch_cutoff = 0
+set vbat_pid_gain = ON
+set anti_gravity_gain = 2000
+set iterm_relax = RP
+set iterm_limit = 500
+set pidsum_limit = 1000
+set pidsum_limit_yaw = 1000
+set p_pitch = 65
+set i_pitch = 80
+set d_pitch = 50
+set f_pitch = 96
+set p_roll = 65
+set i_roll = 80
+set d_roll = 50
+set f_roll = 96
+set i_yaw = 75
+set f_yaw = 100
+
+# rateprofile
+rateprofile 0
+
