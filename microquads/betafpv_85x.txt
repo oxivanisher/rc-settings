@@ -1,3 +1,6 @@
+
+Entering CLI Mode, type 'exit' to return, or 'help'
+
 # diff
 
 # version
@@ -21,6 +24,7 @@ name oXi
 # feature
 feature -RX_PARALLEL_PWM
 feature RX_SERIAL
+feature TELEMETRY
 feature LED_STRIP
 feature TRANSPONDER
 feature AIRMODE
@@ -73,8 +77,11 @@ set rssi_channel = 12
 set fpv_mix_degrees = 35
 set serialrx_provider = CRSF
 set blackbox_device = NONE
+set min_throttle = 1000
 set dshot_idle_value = 650
+set use_unsynced_pwm = ON
 set motor_pwm_protocol = DSHOT1200
+set motor_pwm_rate = 16000
 set current_meter = VIRTUAL
 set ibatv_scale = 90
 set ibatv_offset = 29
@@ -82,16 +89,17 @@ set yaw_motors_reversed = ON
 set small_angle = 180
 set pid_process_denom = 1
 set osd_warn_core_temp = OFF
-set osd_vbat_pos = 2433
-set osd_tim_2_pos = 2455
-set osd_flymode_pos = 2425
-set osd_throttle_pos = 2401
+set osd_vbat_pos = 2497
+set osd_tim_2_pos = 2519
+set osd_flymode_pos = 2489
+set osd_throttle_pos = 2465
 set osd_crosshairs_pos = 2253
-set osd_mah_drawn_pos = 2392
-set osd_craft_name_pos = 2442
+set osd_mah_drawn_pos = 2456
+set osd_craft_name_pos = 2509
+set osd_warnings_pos = 2473
 set vtx_channel = 7
 set vtx_freq = 5860
-set vcd_video_system = NTSC
+set vcd_video_system = PAL
 
 # profile
 profile 0
