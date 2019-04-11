@@ -1,7 +1,10 @@
 # diff
 
 # version
-# Betaflight / BETAFLIGHTF4 (BFF4) 3.5.1 Sep  8 2018 / 05:01:45 (d9fb5ca13) MSP API: 1.40
+# Betaflight / BETAFLIGHTF4 (BFF4) 4.0.0 Apr 11 2019 / 07:00:41 (9ad2cc844) MSP API: 1.41
+
+# start the command batch
+batch start
 
 board_name BETAFLIGHTF4
 manufacturer_id 
@@ -10,6 +13,10 @@ manufacturer_id
 name oXi
 
 # resources
+
+# timer
+
+# dma
 
 # mixer
 
@@ -20,7 +27,6 @@ name oXi
 
 # feature
 feature LED_STRIP
-feature AIRMODE
 feature ESC_SENSOR
 
 # beeper
@@ -64,25 +70,26 @@ aux 4 35 2 1300 1700 0 0
 
 # rxfail
 
+# display_name
+
 # master
-set acc_calibration = -67,-21,-166
 set mag_hardware = NONE
 set baro_hardware = NONE
 set min_check = 1010
 set max_check = 1990
-set rssi_channel = 10
+set rssi_channel = 9
 set fpv_mix_degrees = 35
 set serialrx_provider = CRSF
 set dshot_idle_value = 300
 set motor_pwm_protocol = DSHOT1200
 set bat_capacity = 1300
-set vbat_max_cell_voltage = 44
-set vbat_warning_cell_voltage = 34
+set vbat_max_cell_voltage = 440
+set vbat_warning_cell_voltage = 340
 set current_meter = ESC
 set battery_meter = ADC
 set small_angle = 90
 set yaw_deadband = 2
-set pid_process_denom = 1
+set report_cell_voltage = ON
 set osd_cap_alarm = 1300
 set osd_vbat_pos = 23
 set osd_rssi_pos = 2489
@@ -128,6 +135,18 @@ set vcd_video_system = PAL
 # profile
 profile 0
 
+set dterm_lowpass2_type = PT1
+set dterm_lowpass2_hz = 200
+set feedforward_transition = 30
+set iterm_relax_type = GYRO
+set i_pitch = 85
+set i_roll = 80
+set d_roll = 30
+set f_yaw = 35
+set d_min_roll = 25
+set d_min_pitch = 28
+set d_min_boost_gain = 30
+set d_min_advance = 80
 
 # rateprofile
 rateprofile 0
