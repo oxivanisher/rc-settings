@@ -89,7 +89,6 @@ set ibatv_scale = 90
 set ibatv_offset = 29
 set yaw_motors_reversed = ON
 set small_angle = 180
-set pid_process_denom = 1
 set report_cell_voltage = ON
 set osd_warn_core_temp = OFF
 set osd_vbat_pos = 2497
@@ -107,21 +106,27 @@ set vcd_video_system = PAL
 # profile
 profile 0
 
+set dterm_lowpass2_type = PT1
+set dterm_lowpass2_hz = 200
 set vbat_pid_gain = ON
 set anti_gravity_gain = 2000
+set feedforward_transition = 30
+set iterm_relax_type = GYRO
 set iterm_limit = 500
 set pidsum_limit = 1000
 set pidsum_limit_yaw = 1000
 set p_pitch = 65
-set i_pitch = 80
-set d_pitch = 50
+set i_pitch = 85
 set f_pitch = 96
 set p_roll = 65
 set i_roll = 80
-set d_roll = 50
+set d_roll = 30
 set f_roll = 96
-set i_yaw = 75
-set f_yaw = 100
+set f_yaw = 35
+set d_min_roll = 25
+set d_min_pitch = 28
+set d_min_boost_gain = 30
+set d_min_advance = 80
 
 # rateprofile
 rateprofile 0
