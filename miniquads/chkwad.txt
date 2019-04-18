@@ -12,12 +12,13 @@ map TAER1234
 serial 1 32 115200 57600 0 115200
 serial 2 64 115200 57600 0 115200
 aux 0 0 0 1700 2100 0 0
-aux 1 1 1 1300 1700 0 0
-aux 2 2 1 1700 2100 0 0
-aux 3 12 2 1700 2100 0 0
-aux 4 25 3 1700 2100 0 0
+aux 1 2 1 1700 2100 0 0
+aux 2 13 2 1700 2100 0 0
+aux 3 35 2 1300 1700 0 0
+aux 4 36 4 1700 2100 0 0
+aux 5 47 1 1300 1700 0 0
 set gyro_sync_denom = 4
-set acc_calibration = -14,58,-40
+set acc_calibration = 120,-20,-37
 set mag_hardware = NONE
 set baro_hardware = NONE
 set serialrx_provider = SBUS
@@ -29,3 +30,4 @@ profile 0
 
 set dterm_notch_cutoff = 0
 rateprofile 1
+
