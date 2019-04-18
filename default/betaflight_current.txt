@@ -3,8 +3,8 @@ name oXi
 
 # to accept HV batteries without warning
 # profile
-set vbat_max_cell_voltage = 44
-set vbat_warning_cell_voltage = 34
+set vbat_max_cell_voltage = 440
+set vbat_warning_cell_voltage = 340
 
 # led - setup 6 leds (configured as a strip)
 led 0 5,15:W:CVI:0
@@ -20,6 +20,9 @@ set min_check = 1010
 set max_check = 1990
 # my Taranis is setup for TAER1234
 map TAER1234
+
+# Crossfire cfg to also send calculated cell voltage (finally!)
+set report_cell_voltage = on
 
 # beeper
 beeper -ON_USB
