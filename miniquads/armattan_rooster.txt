@@ -1,7 +1,7 @@
 # diff
 
 # version
-# Betaflight / BETAFLIGHTF4 (BFF4) 4.0.0 Apr 11 2019 / 07:00:41 (9ad2cc844) MSP API: 1.41
+# Betaflight / BETAFLIGHTF4 (BFF4) 4.0.3 Jun  1 2019 / 11:14:26 (094cfc956) MSP API: 1.41
 
 # start the command batch
 batch start
@@ -135,7 +135,6 @@ set vcd_video_system = PAL
 # profile
 profile 0
 
-set dterm_lowpass2_type = PT1
 set dterm_lowpass2_hz = 200
 set feedforward_transition = 30
 set iterm_relax_type = GYRO
@@ -160,3 +159,6 @@ set yaw_expo = 55
 set roll_srate = 63
 set pitch_srate = 63
 set yaw_srate = 63
+
+# end the command batch
+batch end
