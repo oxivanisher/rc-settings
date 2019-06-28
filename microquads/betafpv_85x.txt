@@ -46,10 +46,10 @@ serial 0 64 115200 57600 0 115200
 serial 5 2048 115200 57600 0 115200
 
 # led
-led 0 0,0::A:0
-led 1 1,0::A:0
-led 2 2,0::L:0
-led 3 3,0::L:0
+led 0 0,0::AV:0
+led 1 1,0::AV:0
+led 2 2,0:W:FVI:0
+led 3 3,0:E:FVI:0
 
 # color
 
@@ -89,6 +89,7 @@ set ibatv_scale = 90
 set ibatv_offset = 29
 set yaw_motors_reversed = ON
 set small_angle = 180
+set pid_process_denom = 1
 set report_cell_voltage = ON
 set osd_warn_core_temp = OFF
 set osd_vbat_pos = 2497
@@ -100,6 +101,7 @@ set osd_mah_drawn_pos = 2456
 set osd_craft_name_pos = 2509
 set osd_warnings_pos = 2473
 set vtx_channel = 7
+set vtx_power = 2
 set vtx_freq = 5860
 set vcd_video_system = PAL
 
@@ -140,3 +142,6 @@ set yaw_expo = 55
 set roll_srate = 63
 set pitch_srate = 63
 set yaw_srate = 63
+
+# end the command batch
+batch end
