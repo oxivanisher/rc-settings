@@ -1,0 +1,108 @@
+# diff
+
+# version
+# Betaflight / MATEKF411 (MK41) 3.5.3 Nov 15 2018 / 00:02:09 (61d5abf00) MSP API: 1.40
+
+board_name MATEKF411
+manufacturer_id 
+
+# name
+name HD series
+
+# resources
+
+# mixer
+
+# servo
+
+# servo mix
+
+
+# feature
+feature LED_STRIP
+
+# beeper
+
+# beacon
+beacon RX_LOST
+beacon RX_SET
+
+# map
+map TAER1234
+
+# serial
+serial 0 2048 115200 57600 0 115200
+serial 1 64 115200 57600 0 115200
+
+# led
+led 0 0,0::A:0
+led 1 1,0::A:0
+led 2 2,0::L:0
+led 3 3,0::L:0
+
+# color
+
+# mode_color
+mode_color 6 0 2
+
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 1 1 1300 1700 0 0
+aux 2 2 1 1700 2100 0 0
+aux 3 28 2 900 1300 0 0
+aux 4 35 2 1700 2100 0 0
+
+# adjrange
+
+# rxrange
+
+# vtx
+
+# rxfail
+
+# master
+set acc_calibration = -67,-25,-324
+set baro_hardware = NONE
+set rssi_channel = 16
+set serialrx_provider = CRSF
+set motor_pwm_protocol = DSHOT600
+set ibata_scale = 220
+set yaw_motors_reversed = ON
+set small_angle = 180
+set pid_process_denom = 1
+set osd_warn_batt_warning = OFF
+set osd_warn_core_temp = OFF
+set osd_vbat_pos = 2433
+set osd_rssi_pos = 289
+set osd_tim_2_pos = 2455
+set osd_flymode_pos = 2425
+set osd_throttle_pos = 2369
+set osd_crosshairs_pos = 2253
+set osd_current_pos = 2400
+set osd_mah_drawn_pos = 2392
+set osd_craft_name_pos = 2442
+set vtx_power = 2
+set vcd_video_system = NTSC
+
+# profile
+profile 0
+
+set anti_gravity_gain = 3000
+set iterm_relax = RPY
+set iterm_limit = 500
+set pidsum_limit = 1000
+set pidsum_limit_yaw = 1000
+set p_pitch = 52
+set i_pitch = 65
+set d_pitch = 31
+set f_pitch = 71
+set p_roll = 52
+set i_roll = 51
+set d_roll = 31
+set f_roll = 71
+set p_yaw = 78
+set i_yaw = 90
+set f_yaw = 100
+
+# rateprofile
+rateprofile 0
