@@ -7,7 +7,7 @@ board_name MATEKF411
 manufacturer_id 
 
 # name
-name HD series
+name oXi
 
 # resources
 
@@ -20,8 +20,10 @@ name HD series
 
 # feature
 feature LED_STRIP
+feature AIRMODE
 
 # beeper
+beeper -ON_USB
 
 # beacon
 beacon RX_LOST
@@ -35,10 +37,10 @@ serial 0 2048 115200 57600 0 115200
 serial 1 64 115200 57600 0 115200
 
 # led
-led 0 0,0::A:0
-led 1 1,0::A:0
-led 2 2,0::L:0
-led 3 3,0::L:0
+led 0 0,0::AV:0
+led 1 1,0::AV:0
+led 2 2,0:W:FVI:0
+led 3 3,0:E:FVI:0
 
 # color
 
@@ -49,8 +51,9 @@ mode_color 6 0 2
 aux 0 0 0 1700 2100 0 0
 aux 1 1 1 1300 1700 0 0
 aux 2 2 1 1700 2100 0 0
-aux 3 28 2 900 1300 0 0
-aux 4 35 2 1700 2100 0 0
+aux 3 13 2 1700 2100 0 0
+aux 4 35 2 1300 1700 0 0
+aux 5 36 4 1700 2100 0 0
 
 # adjrange
 
@@ -64,8 +67,9 @@ aux 4 35 2 1700 2100 0 0
 set acc_calibration = -67,-25,-324
 set baro_hardware = NONE
 set rssi_channel = 16
-set serialrx_provider = CRSF
 set motor_pwm_protocol = DSHOT600
+set vbat_min_cell_voltage = 32
+set vbat_warning_cell_voltage = 34
 set ibata_scale = 220
 set yaw_motors_reversed = ON
 set small_angle = 180
@@ -73,7 +77,7 @@ set pid_process_denom = 1
 set osd_warn_batt_warning = OFF
 set osd_warn_core_temp = OFF
 set osd_vbat_pos = 2433
-set osd_rssi_pos = 289
+set osd_rssi_pos = 2337
 set osd_tim_2_pos = 2455
 set osd_flymode_pos = 2425
 set osd_throttle_pos = 2369
@@ -81,12 +85,15 @@ set osd_crosshairs_pos = 2253
 set osd_current_pos = 2400
 set osd_mah_drawn_pos = 2392
 set osd_craft_name_pos = 2442
+set vtx_channel = 7
 set vtx_power = 2
+set vtx_freq = 5860
 set vcd_video_system = NTSC
 
 # profile
 profile 0
 
+set dterm_notch_cutoff = 0
 set anti_gravity_gain = 3000
 set iterm_relax = RPY
 set iterm_limit = 500
@@ -106,3 +113,13 @@ set f_yaw = 100
 
 # rateprofile
 rateprofile 0
+
+set roll_rc_rate = 185
+set pitch_rc_rate = 185
+set yaw_rc_rate = 150
+set roll_expo = 50
+set pitch_expo = 50
+set yaw_expo = 55
+set roll_srate = 63
+set pitch_srate = 63
+set yaw_srate = 63
