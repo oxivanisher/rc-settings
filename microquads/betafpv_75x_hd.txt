@@ -69,7 +69,6 @@ set baro_hardware = NONE
 set rssi_channel = 16
 set motor_pwm_protocol = DSHOT600
 set vbat_min_cell_voltage = 32
-set vbat_warning_cell_voltage = 34
 set ibata_scale = 220
 set yaw_motors_reversed = ON
 set small_angle = 180
