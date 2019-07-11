@@ -1,7 +1,10 @@
 # diff
 
 # version
-# Betaflight / MATEKF411 (MK41) 3.5.7 Mar 15 2019 / 22:05:14 (e9130527c) MSP API: 1.40
+# Betaflight / MATEKF411 (MK41) 4.0.4 Jun 30 2019 / 14:34:35 (f3a95efa3) MSP API: 1.41
+
+# start the command batch
+batch start
 
 board_name MATEKF411
 manufacturer_id 
@@ -10,6 +13,10 @@ manufacturer_id
 name oXi
 
 # resources
+
+# timer
+
+# dma
 
 # mixer
 
@@ -20,7 +27,6 @@ name oXi
 
 # feature
 feature LED_STRIP
-feature AIRMODE
 
 # beeper
 beeper -ON_USB
@@ -63,12 +69,14 @@ aux 5 36 4 1700 2100 0 0
 
 # rxfail
 
+# display_name
+
 # master
-set acc_calibration = -67,-25,-324
+set acc_calibration = -263,97,-290
 set baro_hardware = NONE
 set rssi_channel = 16
+set airmode_start_throttle_percent = 20
 set motor_pwm_protocol = DSHOT600
-set vbat_min_cell_voltage = 32
 set ibata_scale = 220
 set yaw_motors_reversed = ON
 set small_angle = 180
@@ -96,7 +104,6 @@ set vcd_video_system = NTSC
 # profile
 profile 0
 
-set dterm_notch_cutoff = 0
 set anti_gravity_gain = 3000
 set iterm_relax = RPY
 set iterm_limit = 500
@@ -111,7 +118,7 @@ set i_roll = 51
 set d_roll = 31
 set f_roll = 71
 set p_yaw = 78
-set i_yaw = 90
+set i_yaw = 36
 set f_yaw = 100
 
 # rateprofile
@@ -126,3 +133,6 @@ set yaw_expo = 55
 set roll_srate = 63
 set pitch_srate = 63
 set yaw_srate = 63
+
+# end the command batch
+batch end
