@@ -67,6 +67,8 @@ set osd_esc_rpm_pos = 83
 set osd_stat_max_spd = OFF
 set osd_stat_min_rssi = OFF
 set osd_stat_endbatt = ON
+set osd_stat_battery = ON
+set osd_stat_bbox = OFF
 
 # rateprofile - my default rates for acro quads
 rateprofile 0
