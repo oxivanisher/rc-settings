@@ -71,7 +71,7 @@ aux 4 35 2 1300 1700 0 0
 # display_name
 
 # master
-set acc_calibration = -67,-25,-324
+set acc_calibration = -209,86,-149
 set baro_hardware = NONE
 set rssi_channel = 16
 set serialrx_provider = CRSF
@@ -105,10 +105,13 @@ set vcd_video_system = NTSC
 profile 0
 
 set anti_gravity_gain = 3000
+set feedforward_transition = 30
+set smart_feedforward = ON
 set iterm_relax = RPY
 set iterm_limit = 500
 set pidsum_limit = 1000
 set pidsum_limit_yaw = 1000
+set throttle_boost = 8
 set p_pitch = 52
 set i_pitch = 65
 set d_pitch = 31
