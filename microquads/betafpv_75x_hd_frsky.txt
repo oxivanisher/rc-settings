@@ -104,22 +104,9 @@ set vcd_video_system = NTSC
 # profile
 profile 0
 
-set anti_gravity_gain = 3000
-set iterm_relax = RPY
-set iterm_limit = 500
-set pidsum_limit = 1000
-set pidsum_limit_yaw = 1000
-set p_pitch = 52
-set i_pitch = 65
-set d_pitch = 31
-set f_pitch = 71
-set p_roll = 52
-set i_roll = 51
-set d_roll = 31
-set f_roll = 71
-set p_yaw = 78
-set i_yaw = 36
-set f_yaw = 100
+set feedforward_transition = 30
+set smart_feedforward = ON
+set throttle_boost = 8
 
 # rateprofile
 rateprofile 0
@@ -136,3 +123,5 @@ set yaw_srate = 63
 
 # end the command batch
 batch end
+
+# 
