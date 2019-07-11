@@ -1,7 +1,7 @@
 # diff
 
 # version
-# Betaflight / OMNIBUSF4SD (OBSD) 4.0.0 Apr 11 2019 / 07:31:36 (9ad2cc844) MSP API: 1.41
+# Betaflight / OMNIBUSF4SD (OBSD) 4.0.4 Jun 30 2019 / 14:43:06 (f3a95efa3) MSP API: 1.41
 
 # start the command batch
 batch start
@@ -92,23 +92,29 @@ set small_angle = 180
 set pid_process_denom = 1
 set report_cell_voltage = ON
 set osd_warn_core_temp = OFF
-set osd_vbat_pos = 2497
-set osd_tim_2_pos = 2519
-set osd_flymode_pos = 2489
-set osd_throttle_pos = 2465
+set osd_vbat_pos = 257
+set osd_rssi_pos = 2337
+set osd_tim_2_pos = 2455
+set osd_flymode_pos = 2425
+set osd_throttle_pos = 2369
 set osd_crosshairs_pos = 2253
-set osd_mah_drawn_pos = 2456
-set osd_craft_name_pos = 2509
-set osd_warnings_pos = 2473
+set osd_current_pos = 2400
+set osd_mah_drawn_pos = 2392
+set osd_craft_name_pos = 2445
+set osd_warnings_pos = 2409
+set osd_avg_cell_voltage_pos = 2433
+set osd_stat_max_spd = OFF
+set osd_stat_endbatt = ON
+set osd_stat_battery = ON
+set osd_stat_bbox = OFF
 set vtx_channel = 7
 set vtx_power = 2
 set vtx_freq = 5860
-set vcd_video_system = PAL
+set vcd_video_system = NTSC
 
 # profile
 profile 0
 
-set dterm_lowpass2_type = PT1
 set dterm_lowpass2_hz = 200
 set vbat_pid_gain = ON
 set anti_gravity_gain = 2000
