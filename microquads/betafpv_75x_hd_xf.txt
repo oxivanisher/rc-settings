@@ -73,7 +73,7 @@ aux 4 35 2 1300 1700 0 0
 # master
 set acc_calibration = -209,86,-149
 set baro_hardware = NONE
-set rssi_channel = 16
+set rssi_channel = 12
 set serialrx_provider = CRSF
 set motor_pwm_protocol = DSHOT600
 set ibata_scale = 220
