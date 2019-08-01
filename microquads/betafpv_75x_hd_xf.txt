@@ -1,7 +1,7 @@
 # diff
 
 # version
-# Betaflight / MATEKF411 (MK41) 4.0.4 Jun 30 2019 / 14:34:35 (f3a95efa3) MSP API: 1.41
+# Betaflight / MATEKF411 (MK41) 4.0.5 Aug  1 2019 / 12:06:55 (839661b20) MSP API: 1.41
 
 # start the command batch
 batch start
