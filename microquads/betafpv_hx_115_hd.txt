@@ -1,10 +1,12 @@
+# 
+
 # diff
 
 # version
-# Betaflight / MATEKF411 (MK41) 3.5.6 Feb 16 2019 / 13:21:00 (c28ca22f9) MSP API: 1.40
+# Betaflight / MATEKF411 (MK41) 3.5.7 Mar 15 2019 / 22:05:14 (e9130527c) MSP API: 1.40
 
-board_name MAMBAF411
-manufacturer_id
+board_name MATEKF411
+manufacturer_id 
 
 # name
 name oXi
@@ -59,7 +61,7 @@ aux 7 36 4 1700 2100 0 0
 # rxfail
 
 # master
-set acc_calibration = -138,96,-4086
+set acc_calibration = -7,31,201
 set baro_hardware = NONE
 set rssi_channel = 16
 set rc_smoothing_type = FILTER
@@ -85,9 +87,9 @@ set osd_current_pos = 320
 set osd_mah_drawn_pos = 2392
 set osd_craft_name_pos = 2445
 set osd_warnings_pos = 329
-set vtx_band = 1
+set vtx_channel = 7
 set vtx_power = 3
-set vtx_freq = 5865
+set vtx_freq = 5860
 set vcd_video_system = NTSC
 
 # profile
@@ -128,3 +130,5 @@ set pitch_srate = 63
 set yaw_srate = 63
 set tpa_rate = 50
 set tpa_breakpoint = 1500
+
+# 
