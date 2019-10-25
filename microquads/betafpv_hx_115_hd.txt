@@ -1,5 +1,7 @@
 # 
 
+# ff
+Unknown command, try 'help'
 # diff
 
 # version
@@ -104,17 +106,16 @@ set iterm_limit = 500
 set pidsum_limit = 1000
 set pidsum_limit_yaw = 1000
 set throttle_boost = 13
-set p_pitch = 24
 set i_pitch = 70
-set d_pitch = 30
-set f_pitch = 71
-set p_roll = 24
+set d_pitch = 28
+set f_pitch = 70
+set p_roll = 48
 set i_roll = 66
-set d_roll = 29
-set f_roll = 71
-set p_yaw = 40
-set i_yaw = 66
-set f_yaw = 75
+set d_roll = 28
+set f_roll = 70
+set p_yaw = 70
+set i_yaw = 62
+set f_yaw = 74
 
 # rateprofile
 rateprofile 0
