@@ -68,8 +68,8 @@ set dshot_idle_value = 450
 set motor_pwm_protocol = DSHOT600
 set bat_capacity = 300
 set vbat_max_cell_voltage = 440
-set vbat_min_cell_voltage = 320
-set vbat_warning_cell_voltage = 340
+set vbat_min_cell_voltage = 300
+set vbat_warning_cell_voltage = 320
 set current_meter = NONE
 set small_angle = 180
 set pid_process_denom = 1
@@ -89,6 +89,9 @@ set vtx_band = 4
 set vtx_channel = 7
 set vtx_freq = 5860
 set vcd_video_system = NTSC
+set frsky_spi_tx_id = 41,146
+set frsky_spi_offset = -26
+set frsky_spi_bind_hop_data = 5,93,181,34,122,210,63,151,4,92,180,33,121,209,62,150,3,91,179,32,120,208,61,149,2,91,178,31,119,207,60,148,1,89,177,30,118,206,59,147,1,88,176,29,117,205,58,0,0,0
 set rcdevice_init_dev_attempts = 4
 set gyro_1_align_yaw = 1800
 set name = oXi
@@ -136,4 +139,3 @@ rateprofile 0
 
 # save configuration
 save
-# 
