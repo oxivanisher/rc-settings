@@ -73,9 +73,9 @@ set osd_stat_bbox = OFF
 # VTX Settings
 set vtx_band = 4
 set vtx_channel = 7
+set vtx_freq = 5860
 # attention: vtx_power is very different depending on smart audio version!
 set vtx_power = 2
-set vtx_freq = 5860
 
 
 # rateprofile - my default rates for acro quads
