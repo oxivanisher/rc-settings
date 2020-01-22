@@ -3,7 +3,7 @@
 # diff all
 
 # version
-# Betaflight / STM32F405 (S405) 4.1.1 Nov 15 2019 / 12:54:53 (1e5e3d369) MSP API: 1.42
+# Betaflight / STM32F405 (S405) 4.1.3 Jan 16 2020 / 11:34:00 (543a5e1ba) MSP API: 1.42
 # manufacturer_id: HGLR   board_name: HGLRCF405   custom defaults: YES
 
 # start the command batch
@@ -17,57 +17,115 @@ manufacturer_id HGLR
 mcu_id 00540027424d500f20323654
 signature 
 
-# name: HGLRCF405
+# name: oXi
 
 # feature
 feature -RX_PARALLEL_PWM
-feature -AIRMODE
 feature RX_SERIAL
-feature MOTOR_STOP
-feature ESC_SENSOR
+feature TELEMETRY
 
-# beacon
-beacon RX_LOST
-beacon RX_SET
+# beeper
+beeper -ON_USB
+
+# map
+map TAER1234
 
 # serial
-serial 1 8192 115200 57600 0 115200
-serial 3 1024 115200 57600 0 115200
-serial 5 64 115200 57600 0 115200
+serial 0 64 115200 57600 0 115200
+serial 1 2048 115200 57600 0 115200
 
 # aux
-aux 0 0 0 1300 2100 0 0
-aux 1 1 0 1300 2100 0 0
+aux 0 0 0 1700 2100 0 0
+aux 1 1 1 1300 1700 0 0
+aux 2 2 1 1700 2100 0 0
+aux 3 13 2 1700 2100 0 0
+aux 4 35 2 1300 1700 0 0
 
 # vtxtable
-vtxtable bands 6
+vtxtable bands 5
 vtxtable channels 8
-vtxtable band 1 BOSCAM_A A CUSTOM  5865 5845 5825 5805 5785 5765 5745 5725
-vtxtable band 2 BOSCAM_B B CUSTOM  5733 5752 5771 5790 5809 5828 5847 5866
-vtxtable band 3 BOSCAM_E E CUSTOM  5705 5685 5665    0 5885 5905    0    0
-vtxtable band 4 FATSHARK F CUSTOM  5740 5760 5780 5800 5820 5840 5860 5880
-vtxtable band 5 RACEBAND R CUSTOM  5658 5695 5732 5769 5806 5843 5880 5917
-vtxtable band 6 IMD6     I CUSTOM  5732 5765 5828 5840 5866 5740    0    0
-vtxtable powerlevels 5
-vtxtable powervalues 25 100 200 400 600
-vtxtable powerlabels 25 100 200 400 600
+vtxtable band 1 BOSCAM_A A FACTORY 5865 5845 5825 5805 5785 5765 5745 5725
+vtxtable band 2 BOSCAM_B B FACTORY 5733 5752 5771 5790 5809 5828 5847 5866
+vtxtable band 3 BOSCAM_E E FACTORY 5705 5685 5665 5645 5885 5905 5925 5945
+vtxtable band 4 FATSHARK F FACTORY 5740 5760 5780 5800 5820 5840 5860 5880
+vtxtable band 5 RACEBAND R FACTORY 5658 5695 5732 5769 5806 5843 5880 5917
+vtxtable powerlevels 4
+vtxtable powervalues 0 1 2 3
+vtxtable powerlabels 25 200 500 800
 
 # master
-set serialrx_provider = SBUS
+set gyro_sync_denom = 2
+set gyro_lowpass2_hz = 300
+set dyn_notch_width_percent = 0
+set dyn_notch_q = 200
+set dyn_notch_min_hz = 90
+set dyn_lpf_gyro_min_hz = 240
+set dyn_lpf_gyro_max_hz = 600
+set mag_hardware = NONE
+set min_check = 1010
+set max_check = 1990
+set fpv_mix_degrees = 10
+set serialrx_provider = CRSF
 set min_throttle = 1070
+set dshot_bidir = ON
 set use_unsynced_pwm = OFF
-set motor_pwm_protocol = DSHOT600
+set motor_pwm_protocol = DSHOT300
 set motor_pwm_rate = 480
-set small_angle = 180
+set align_board_yaw = 90
+set vbat_max_cell_voltage = 440
+set vbat_warning_cell_voltage = 340
+set small_angle = 45
 set pid_process_denom = 1
-set osd_vbat_pos = 2485
-set osd_tim_1_pos = 2517
-set osd_vtx_channel_pos = 2499
-set osd_craft_name_pos = 2467
+set report_cell_voltage = ON
+set osd_cap_alarm = 1300
+set osd_vbat_pos = 23
+set osd_rssi_pos = 2426
+set osd_tim_1_pos = 15
+set osd_tim_2_pos = 2059
+set osd_flymode_pos = 2048
+set osd_throttle_pos = 2457
+set osd_vtx_channel_pos = 377
+set osd_current_pos = 2432
+set osd_mah_drawn_pos = 2400
+set osd_craft_name_pos = 362
+set osd_gps_speed_pos = 218
+set osd_gps_lon_pos = 82
+set osd_gps_lat_pos = 65
+set osd_gps_sats_pos = 51
+set osd_home_dir_pos = 302
+set osd_home_dist_pos = 303
+set osd_compass_bar_pos = 266
+set osd_altitude_pos = 247
+set osd_pid_roll_pos = 0
+set osd_pid_pitch_pos = 0
+set osd_pid_yaw_pos = 0
+set osd_debug_pos = 1
+set osd_power_pos = 384
+set osd_pidrate_profile_pos = 345
+set osd_warnings_pos = 2409
+set osd_avg_cell_voltage_pos = 2071
+set osd_pit_ang_pos = 257
+set osd_rol_ang_pos = 289
+set osd_battery_usage_pos = 8
+set osd_nheading_pos = 311
+set osd_nvario_pos = 279
+set osd_esc_tmp_pos = 82
+set osd_esc_rpm_pos = 83
+set osd_stat_max_spd = OFF
+set osd_stat_endbatt = ON
+set osd_stat_battery = ON
+set osd_stat_min_rssi = OFF
+set osd_stat_bbox = OFF
+set vtx_low_power_disarm = UNTIL_FIRST_ARM
 set gyro_1_align_yaw = 1800
-set name = HGLRCF405
+set name = oXi
 
 profile 0
+
+# profile 0
+set dyn_lpf_dterm_min_hz = 84
+set dyn_lpf_dterm_max_hz = 204
+set dterm_lowpass2_hz = 180
 
 profile 1
 
@@ -77,6 +135,17 @@ profile 2
 profile 0
 
 rateprofile 0
+
+# rateprofile 0
+set roll_rc_rate = 185
+set pitch_rc_rate = 185
+set yaw_rc_rate = 150
+set roll_expo = 50
+set pitch_expo = 50
+set yaw_expo = 55
+set roll_srate = 63
+set pitch_srate = 63
+set yaw_srate = 63
 
 rateprofile 1
 
