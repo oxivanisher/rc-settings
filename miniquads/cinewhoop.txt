@@ -1,0 +1,96 @@
+# 
+
+# diff all
+
+# version
+# Betaflight / STM32F405 (S405) 4.1.1 Nov 15 2019 / 12:54:53 (1e5e3d369) MSP API: 1.42
+# manufacturer_id: HGLR   board_name: HGLRCF405   custom defaults: YES
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name HGLRCF405
+manufacturer_id HGLR
+mcu_id 00540027424d500f20323654
+signature 
+
+# name: HGLRCF405
+
+# feature
+feature -RX_PARALLEL_PWM
+feature -AIRMODE
+feature RX_SERIAL
+feature MOTOR_STOP
+feature ESC_SENSOR
+
+# beacon
+beacon RX_LOST
+beacon RX_SET
+
+# serial
+serial 1 8192 115200 57600 0 115200
+serial 3 1024 115200 57600 0 115200
+serial 5 64 115200 57600 0 115200
+
+# aux
+aux 0 0 0 1300 2100 0 0
+aux 1 1 0 1300 2100 0 0
+
+# vtxtable
+vtxtable bands 6
+vtxtable channels 8
+vtxtable band 1 BOSCAM_A A CUSTOM  5865 5845 5825 5805 5785 5765 5745 5725
+vtxtable band 2 BOSCAM_B B CUSTOM  5733 5752 5771 5790 5809 5828 5847 5866
+vtxtable band 3 BOSCAM_E E CUSTOM  5705 5685 5665    0 5885 5905    0    0
+vtxtable band 4 FATSHARK F CUSTOM  5740 5760 5780 5800 5820 5840 5860 5880
+vtxtable band 5 RACEBAND R CUSTOM  5658 5695 5732 5769 5806 5843 5880 5917
+vtxtable band 6 IMD6     I CUSTOM  5732 5765 5828 5840 5866 5740    0    0
+vtxtable powerlevels 5
+vtxtable powervalues 25 100 200 400 600
+vtxtable powerlabels 25 100 200 400 600
+
+# master
+set serialrx_provider = SBUS
+set min_throttle = 1070
+set use_unsynced_pwm = OFF
+set motor_pwm_protocol = DSHOT600
+set motor_pwm_rate = 480
+set small_angle = 180
+set pid_process_denom = 1
+set osd_vbat_pos = 2485
+set osd_tim_1_pos = 2517
+set osd_vtx_channel_pos = 2499
+set osd_craft_name_pos = 2467
+set gyro_1_align_yaw = 1800
+set name = HGLRCF405
+
+profile 0
+
+profile 1
+
+profile 2
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+rateprofile 4
+
+rateprofile 5
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
+save
+# 
