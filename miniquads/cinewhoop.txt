@@ -14,7 +14,7 @@ defaults nosave
 
 board_name HGLRCF405
 manufacturer_id HGLR
-mcu_id 00540027424d500f20323654
+mcu_id 00410017424d500f20323654
 signature 
 
 # name: oXi
@@ -66,6 +66,7 @@ set min_check = 1010
 set max_check = 1990
 set fpv_mix_degrees = 10
 set serialrx_provider = CRSF
+set dshot_idle_value = 400
 set dshot_bidir = ON
 set motor_pwm_protocol = DSHOT300
 set align_board_yaw = 90
@@ -78,8 +79,8 @@ set osd_cap_alarm = 1300
 set osd_vbat_pos = 23
 set osd_rssi_pos = 2426
 set osd_tim_1_pos = 15
-set osd_tim_2_pos = 2059
-set osd_flymode_pos = 2048
+set osd_tim_2_pos = 2091
+set osd_flymode_pos = 2081
 set osd_throttle_pos = 2457
 set osd_vtx_channel_pos = 377
 set osd_current_pos = 2432
@@ -100,7 +101,7 @@ set osd_debug_pos = 1
 set osd_power_pos = 384
 set osd_pidrate_profile_pos = 345
 set osd_warnings_pos = 2409
-set osd_avg_cell_voltage_pos = 2071
+set osd_avg_cell_voltage_pos = 2103
 set osd_pit_ang_pos = 257
 set osd_rol_ang_pos = 289
 set osd_battery_usage_pos = 8
@@ -113,7 +114,11 @@ set osd_stat_endbatt = ON
 set osd_stat_battery = ON
 set osd_stat_min_rssi = OFF
 set osd_stat_bbox = OFF
+set vtx_band = 4
+set vtx_channel = 7
+set vtx_power = 2
 set vtx_low_power_disarm = UNTIL_FIRST_ARM
+set vtx_freq = 5860
 set gyro_1_align_yaw = 1800
 set name = oXi
 
@@ -123,6 +128,19 @@ profile 0
 set dyn_lpf_dterm_min_hz = 84
 set dyn_lpf_dterm_max_hz = 204
 set dterm_lowpass2_hz = 180
+set p_pitch = 66
+set i_pitch = 108
+set d_pitch = 46
+set f_pitch = 114
+set p_roll = 60
+set i_roll = 102
+set d_roll = 42
+set f_roll = 108
+set p_yaw = 36
+set i_yaw = 108
+set f_yaw = 108
+set d_min_roll = 24
+set d_min_pitch = 26
 
 profile 1
 
@@ -134,6 +152,19 @@ profile 0
 rateprofile 0
 
 # rateprofile 0
+set roll_rc_rate = 124
+set pitch_rc_rate = 124
+set yaw_rc_rate = 120
+set roll_expo = 50
+set pitch_expo = 50
+set yaw_expo = 55
+set roll_srate = 44
+set pitch_srate = 44
+set yaw_srate = 46
+
+rateprofile 1
+
+# rateprofile 1
 set roll_rc_rate = 185
 set pitch_rc_rate = 185
 set yaw_rc_rate = 150
@@ -143,8 +174,6 @@ set yaw_expo = 55
 set roll_srate = 63
 set pitch_srate = 63
 set yaw_srate = 63
-
-rateprofile 1
 
 rateprofile 2
 
