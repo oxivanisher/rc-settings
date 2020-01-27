@@ -56,9 +56,10 @@ vtxtable powerlabels 25 200 500 800
 # master
 set gyro_sync_denom = 2
 set gyro_lowpass2_hz = 300
+set dyn_notch_range = HIGH
 set dyn_notch_width_percent = 0
 set dyn_notch_q = 200
-set dyn_notch_min_hz = 90
+set dyn_notch_min_hz = 180
 set dyn_lpf_gyro_min_hz = 240
 set dyn_lpf_gyro_max_hz = 600
 set mag_hardware = NONE
@@ -66,9 +67,12 @@ set min_check = 1010
 set max_check = 1990
 set fpv_mix_degrees = 10
 set serialrx_provider = CRSF
+set min_throttle = 1070
 set dshot_idle_value = 400
 set dshot_bidir = ON
+set use_unsynced_pwm = OFF
 set motor_pwm_protocol = DSHOT300
+set motor_pwm_rate = 480
 set align_board_yaw = 90
 set vbat_max_cell_voltage = 440
 set vbat_warning_cell_voltage = 340
@@ -114,6 +118,7 @@ set osd_stat_endbatt = ON
 set osd_stat_battery = ON
 set osd_stat_min_rssi = OFF
 set osd_stat_bbox = OFF
+set scheduler_optimize_rate = ON
 set vtx_band = 4
 set vtx_channel = 7
 set vtx_power = 2
@@ -123,24 +128,6 @@ set gyro_1_align_yaw = 1800
 set name = oXi
 
 profile 0
-
-# profile 0
-set dyn_lpf_dterm_min_hz = 84
-set dyn_lpf_dterm_max_hz = 204
-set dterm_lowpass2_hz = 180
-set p_pitch = 66
-set i_pitch = 108
-set d_pitch = 46
-set f_pitch = 114
-set p_roll = 60
-set i_roll = 102
-set d_roll = 42
-set f_roll = 108
-set p_yaw = 36
-set i_yaw = 108
-set f_yaw = 108
-set d_min_roll = 24
-set d_min_pitch = 26
 
 profile 1
 
