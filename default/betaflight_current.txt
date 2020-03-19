@@ -1,5 +1,5 @@
 # name
-name oXi
+set name = oXi
 
 # to accept HV batteries without warning
 # profile
