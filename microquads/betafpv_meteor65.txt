@@ -3,7 +3,7 @@
 # diff all
 
 # version
-# Betaflight / STM32F411 (S411) 4.1.3 Jan 16 2020 / 11:34:23 (543a5e1ba) MSP API: 1.42
+# Betaflight / STM32F411 (S411) 4.1.5 Mar 16 2020 / 05:20:24 (d4e74e39c) MSP API: 1.42
 # manufacturer_id: MTKS   board_name: MATEKF411RX   custom defaults: YES
 
 # start the command batch
@@ -18,6 +18,9 @@ mcu_id 004e001b3437510d32363736
 signature 
 
 # name: oXi
+
+# feature
+feature -AIRMODE
 
 # beeper
 beeper -ON_USB
@@ -58,19 +61,33 @@ vtxtable powervalues 0 1 2 3
 vtxtable powerlabels 25 200 500 800
 
 # master
+set gyro_sync_denom = 2
+set gyro_lowpass2_hz = 325
+set gyro_notch1_hz = 500
+set dyn_notch_range = AUTO
+set dyn_notch_width_percent = 0
+set dyn_notch_q = 70
+set dyn_notch_min_hz = 130
+set dyn_lpf_gyro_min_hz = 260
+set dyn_lpf_gyro_max_hz = 650
 set acc_calibration = -155,47,-352
+set mag_hardware = NONE
+set baro_hardware = NONE
 set min_check = 1010
 set max_check = 1990
-set fpv_mix_degrees = 17
+set fpv_mix_degrees = 15
 set airmode_start_throttle_percent = 55
 set rx_spi_protocol = FRSKY_X_LBT
 set dshot_idle_value = 450
-set motor_pwm_protocol = DSHOT600
+set dshot_bidir = ON
+set motor_pwm_protocol = DSHOT300
+set motor_poles = 12
 set bat_capacity = 300
-set vbat_max_cell_voltage = 440
-set vbat_min_cell_voltage = 300
-set vbat_warning_cell_voltage = 320
+set vbat_max_cell_voltage = 450
+set vbat_min_cell_voltage = 320
+set vbat_warning_cell_voltage = 330
 set current_meter = NONE
+set yaw_motors_reversed = ON
 set small_angle = 180
 set pid_process_denom = 1
 set runaway_takeoff_prevention = OFF
@@ -94,14 +111,41 @@ set frsky_spi_offset = -26
 set frsky_spi_bind_hop_data = 5,93,181,34,122,210,63,151,4,92,180,33,121,209,62,150,3,91,179,32,120,208,61,149,2,91,178,31,119,207,60,148,1,89,177,30,118,206,59,147,1,88,176,29,117,205,58,0,0,0
 set rcdevice_init_dev_attempts = 4
 set gyro_1_align_yaw = 1800
+set gyro_rpm_notch_harmonics = 0
 set name = oXi
 
 profile 0
 
 # profile 0
-set p_pitch = 42
-set p_roll = 38
-set p_yaw = 27
+set dyn_lpf_dterm_min_hz = 91
+set dyn_lpf_dterm_max_hz = 221
+set dterm_lowpass_hz = 80
+set dterm_lowpass2_hz = 195
+set vbat_pid_gain = ON
+set feedforward_transition = 25
+set iterm_rotation = ON
+set p_pitch = 50
+set i_pitch = 75
+set d_pitch = 44
+set f_pitch = 60
+set p_roll = 46
+set i_roll = 65
+set d_roll = 40
+set f_roll = 60
+set p_yaw = 95
+set i_yaw = 25
+set f_yaw = 200
+set angle_level_strength = 110
+set horizon_level_strength = 30
+set horizon_transition = 80
+set level_limit = 70
+set horizon_tilt_effect = 80
+set horizon_tilt_expert_mode = ON
+set abs_control_gain = 20
+set d_min_roll = 39
+set d_min_pitch = 43
+set d_min_boost_gain = 25
+set d_min_advance = 0
 
 profile 1
 
@@ -115,14 +159,15 @@ rateprofile 0
 # rateprofile 0
 set roll_rc_rate = 185
 set pitch_rc_rate = 185
-set yaw_rc_rate = 150
+set yaw_rc_rate = 210
 set roll_expo = 50
 set pitch_expo = 50
 set yaw_expo = 55
-set roll_srate = 63
-set pitch_srate = 63
-set yaw_srate = 63
-set tpa_rate = 40
+set roll_srate = 80
+set pitch_srate = 80
+set yaw_srate = 25
+set tpa_rate = 50
+set tpa_breakpoint = 1750
 
 rateprofile 1
 
