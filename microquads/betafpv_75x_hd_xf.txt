@@ -1,29 +1,23 @@
-# diff
+# 
+
+# diff all
 
 # version
-# Betaflight / MATEKF411 (MK41) 4.0.5 Aug  1 2019 / 12:06:55 (839661b20) MSP API: 1.41
+# Betaflight / STM32F411 (S411) 4.1.5 Mar 16 2020 / 05:20:24 (d4e74e39c) MSP API: 1.42
+# manufacturer_id: MTKS   board_name: MATEKF411   custom defaults: YES
 
 # start the command batch
 batch start
 
+# reset configuration to default settings
+defaults nosave
+
 board_name MATEKF411
-manufacturer_id 
+manufacturer_id MTKS
+mcu_id 005a00643437511931393434
+signature 
 
-# name
-name oXi
-
-# resources
-
-# timer
-
-# dma
-
-# mixer
-
-# servo
-
-# servo mix
-
+# name: oXi
 
 # feature
 feature LED_STRIP
@@ -48,8 +42,6 @@ led 1 1,0::AV:0
 led 2 2,0:W:FVI:0
 led 3 3,0:E:FVI:0
 
-# color
-
 # mode_color
 mode_color 6 0 2
 
@@ -60,23 +52,25 @@ aux 2 2 1 1700 2100 0 0
 aux 3 13 2 1700 2100 0 0
 aux 4 35 2 1300 1700 0 0
 
-# adjrange
-
-# rxrange
-
-# vtx
-
-# rxfail
-
-# display_name
+# vtxtable
+vtxtable bands 5
+vtxtable channels 8
+vtxtable band 1 BOSCAM_A A FACTORY 5865 5845 5825 5805 5785 5765 5745 5725
+vtxtable band 2 BOSCAM_B B FACTORY 5733 5752 5771 5790 5809 5828 5847 5866
+vtxtable band 3 BOSCAM_E E FACTORY 5705 5685 5665 5645 5885 5905 5925 5945
+vtxtable band 4 FATSHARK F FACTORY 5740 5760 5780 5800 5820 5840 5860 5880
+vtxtable band 5 RACEBAND R FACTORY 5658 5695 5732 5769 5806 5843 5880 5917
+vtxtable powerlevels 2
+vtxtable powervalues 0 1
+vtxtable powerlabels 25 200
 
 # master
+set gyro_sync_denom = 2
 set acc_calibration = -209,86,-149
-set baro_hardware = NONE
 set rssi_channel = 12
 set serialrx_provider = CRSF
-set motor_pwm_protocol = DSHOT600
-set ibata_scale = 220
+set dshot_bidir = ON
+set motor_poles = 12
 set yaw_motors_reversed = ON
 set small_angle = 180
 set pid_process_denom = 1
@@ -97,36 +91,23 @@ set osd_stat_endbatt = ON
 set osd_stat_battery = ON
 set osd_stat_bbox = OFF
 set vtx_channel = 7
-set vtx_power = 2
 set vtx_freq = 5860
 set vcd_video_system = NTSC
+set gyro_1_align_yaw = 1800
+set name = oXi
 
-# profile
 profile 0
 
-set anti_gravity_gain = 3000
-set feedforward_transition = 30
-set smart_feedforward = ON
-set iterm_relax = RPY
-set iterm_limit = 500
-set pidsum_limit = 1000
-set pidsum_limit_yaw = 1000
-set throttle_boost = 8
-set p_pitch = 52
-set i_pitch = 65
-set d_pitch = 31
-set f_pitch = 71
-set p_roll = 52
-set i_roll = 51
-set d_roll = 31
-set f_roll = 71
-set p_yaw = 78
-set i_yaw = 90
-set f_yaw = 100
+profile 1
 
-# rateprofile
+profile 2
+
+# restore original profile selection
+profile 0
+
 rateprofile 0
 
+# rateprofile 0
 set roll_rc_rate = 185
 set pitch_rc_rate = 185
 set yaw_rc_rate = 150
@@ -137,7 +118,19 @@ set roll_srate = 63
 set pitch_srate = 63
 set yaw_srate = 63
 
-# end the command batch
-batch end
+rateprofile 1
 
+rateprofile 2
+
+rateprofile 3
+
+rateprofile 4
+
+rateprofile 5
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
+save
 # 
