@@ -60,14 +60,18 @@ vtxtable powervalues 0 1 2
 vtxtable powerlabels 25 200 500
 
 # master
+set gyro_lowpass2_hz = 325
 set dyn_notch_width_percent = 0
 set dyn_notch_q = 250
-set dyn_notch_min_hz = 90
+set dyn_notch_min_hz = 70
 set dyn_notch_max_hz = 350
+set dyn_lpf_gyro_min_hz = 260
+set dyn_lpf_gyro_max_hz = 650
 set acc_calibration = -94,-9,-222,1
 set min_check = 1010
 set max_check = 1990
 set serialrx_provider = CRSF
+set blackbox_device = NONE
 set min_throttle = 1000
 set dshot_bidir = ON
 set motor_pwm_protocol = DSHOT300
@@ -130,6 +134,9 @@ set name = oXi
 profile 0
 
 # profile 0
+set dyn_lpf_dterm_min_hz = 91
+set dyn_lpf_dterm_max_hz = 221
+set dterm_lowpass2_hz = 195
 set vbat_sag_compensation = 100
 set ff_interpolate_sp = AVERAGED_3
 
