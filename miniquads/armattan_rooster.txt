@@ -72,10 +72,9 @@ set min_check = 1010
 set max_check = 1990
 set serialrx_provider = CRSF
 set blackbox_device = NONE
-set min_throttle = 1000
 set dshot_bidir = ON
+set use_unsynced_pwm = OFF
 set motor_pwm_protocol = DSHOT300
-set motor_pwm_rate = 16000
 set bat_capacity = 1300
 set vbat_max_cell_voltage = 440
 set vbat_warning_cell_voltage = 340
@@ -137,7 +136,6 @@ profile 0
 set dyn_lpf_dterm_min_hz = 91
 set dyn_lpf_dterm_max_hz = 221
 set dterm_lowpass2_hz = 195
-set vbat_sag_compensation = 100
 set ff_interpolate_sp = AVERAGED_3
 
 profile 1
