@@ -1,4 +1,4 @@
-# 
+Entering CLI Mode, type 'exit' to return, o
 
 # diff all
 
@@ -18,6 +18,9 @@ mcu_id 005600403439510b36383737
 signature 
 
 # name: X-Knight
+
+# beeper
+beeper -ON_USB
 
 # beacon
 beacon RX_LOST
@@ -52,26 +55,62 @@ vtxtable powerlabels 25 200 500 800
 set gyro_lowpass2_hz = 350
 set dyn_lpf_gyro_min_hz = 280
 set dyn_lpf_gyro_max_hz = 700
+set min_check = 1010
+set max_check = 1990
 set rssi_channel = 12
 set serialrx_provider = CRSF
 set dshot_idle_value = 600
 set motor_poles = 12
+set vbat_max_cell_voltage = 440
+set vbat_warning_cell_voltage = 340
 set yaw_motors_reversed = ON
 set small_angle = 180
 set pid_process_denom = 1
-set osd_vbat_pos = 2529
-set osd_rssi_pos = 2465
-set osd_tim_2_pos = 2551
-set osd_flymode_pos = 2488
-set osd_throttle_pos = 320
-set osd_vtx_channel_pos = 2049
-set osd_current_pos = 2518
-set osd_craft_name_pos = 2507
-set osd_warnings_pos = 14824
-set vtx_band = 5
-set vtx_channel = 5
-set vtx_power = 1
-set vtx_freq = 5806
+set report_cell_voltage = ON
+set osd_cap_alarm = 1300
+set osd_vbat_pos = 23
+set osd_rssi_pos = 2426
+set osd_tim_1_pos = 15
+set osd_tim_2_pos = 2059
+set osd_flymode_pos = 2048
+set osd_throttle_pos = 2457
+set osd_vtx_channel_pos = 377
+set osd_current_pos = 2432
+set osd_mah_drawn_pos = 2400
+set osd_craft_name_pos = 362
+set osd_gps_speed_pos = 218
+set osd_gps_lon_pos = 82
+set osd_gps_lat_pos = 65
+set osd_gps_sats_pos = 51
+set osd_home_dir_pos = 302
+set osd_home_dist_pos = 303
+set osd_compass_bar_pos = 266
+set osd_altitude_pos = 247
+set osd_pid_roll_pos = 0
+set osd_pid_pitch_pos = 0
+set osd_pid_yaw_pos = 0
+set osd_debug_pos = 1
+set osd_power_pos = 384
+set osd_pidrate_profile_pos = 345
+set osd_warnings_pos = 2409
+set osd_avg_cell_voltage_pos = 2071
+set osd_pit_ang_pos = 257
+set osd_rol_ang_pos = 289
+set osd_battery_usage_pos = 8
+set osd_nheading_pos = 311
+set osd_nvario_pos = 279
+set osd_esc_tmp_pos = 82
+set osd_esc_rpm_pos = 83
+set osd_stat_max_spd = OFF
+set osd_stat_endbatt = ON
+set osd_stat_battery = ON
+set osd_stat_min_rssi = OFF
+set osd_stat_bbox = OFF
+set vtx_band = 4
+set vtx_channel = 7
+set vtx_power = 2
+set vtx_low_power_disarm = UNTIL_FIRST_ARM
+set vtx_freq = 5860
 set vcd_video_system = PAL
 set name = X-Knight
 
@@ -99,6 +138,15 @@ profile 0
 rateprofile 0
 
 # rateprofile 0
+set roll_rc_rate = 185
+set pitch_rc_rate = 185
+set yaw_rc_rate = 150
+set roll_expo = 50
+set pitch_expo = 50
+set yaw_expo = 55
+set roll_srate = 63
+set pitch_srate = 63
+set yaw_srate = 63
 set tpa_rate = 30
 
 rateprofile 1
