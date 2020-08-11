@@ -1,9 +1,9 @@
-Entering CLI Mode, type 'exit' to return, o
+# 
 
 # diff all
 
 # version
-# Betaflight / STM32F411 (S411) 4.1.1 Nov 15 2019 / 12:55:17 (1e5e3d369) MSP API: 1.42
+# Betaflight / STM32F411 (S411) 4.1.7 May 28 2020 / 15:05:37 (9ba02a587) MSP API: 1.42
 # manufacturer_id: BEFH   board_name: BETAFPVF411   custom defaults: YES
 
 # start the command batch
@@ -57,7 +57,6 @@ set dyn_lpf_gyro_min_hz = 280
 set dyn_lpf_gyro_max_hz = 700
 set min_check = 1010
 set max_check = 1990
-set rssi_channel = 12
 set serialrx_provider = CRSF
 set dshot_idle_value = 600
 set motor_poles = 12
@@ -69,14 +68,15 @@ set pid_process_denom = 1
 set report_cell_voltage = ON
 set osd_cap_alarm = 1300
 set osd_vbat_pos = 23
-set osd_rssi_pos = 2426
+set osd_rssi_pos = 442
+set osd_link_quality_pos = 2489
 set osd_tim_1_pos = 15
-set osd_tim_2_pos = 2059
-set osd_flymode_pos = 2048
-set osd_throttle_pos = 2457
+set osd_tim_2_pos = 2091
+set osd_flymode_pos = 2081
+set osd_throttle_pos = 2521
 set osd_vtx_channel_pos = 377
-set osd_current_pos = 2432
-set osd_mah_drawn_pos = 2400
+set osd_current_pos = 2496
+set osd_mah_drawn_pos = 2466
 set osd_craft_name_pos = 362
 set osd_gps_speed_pos = 218
 set osd_gps_lon_pos = 82
@@ -93,7 +93,7 @@ set osd_debug_pos = 1
 set osd_power_pos = 384
 set osd_pidrate_profile_pos = 345
 set osd_warnings_pos = 2409
-set osd_avg_cell_voltage_pos = 2071
+set osd_avg_cell_voltage_pos = 2103
 set osd_pit_ang_pos = 257
 set osd_rol_ang_pos = 289
 set osd_battery_usage_pos = 8
@@ -104,7 +104,6 @@ set osd_esc_rpm_pos = 83
 set osd_stat_max_spd = OFF
 set osd_stat_endbatt = ON
 set osd_stat_battery = ON
-set osd_stat_min_rssi = OFF
 set osd_stat_bbox = OFF
 set vtx_band = 4
 set vtx_channel = 7
