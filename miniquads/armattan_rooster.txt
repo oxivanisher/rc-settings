@@ -136,6 +136,7 @@ profile 0
 set dyn_lpf_dterm_min_hz = 91
 set dyn_lpf_dterm_max_hz = 221
 set dterm_lowpass2_hz = 195
+set throttle_boost = 10
 set ff_interpolate_sp = AVERAGED_3
 
 profile 1
