@@ -3,8 +3,8 @@
 # diff all
 
 # version
-# Betaflight / STM32F405 (S405) 4.1.5 Mar 16 2020 / 05:19:58 (d4e74e39c) MSP API: 1.42
-# manufacturer_id: AIRB   board_name: OMNIBUSF4SD   custom defaults: YES
+# Betaflight / STM32F405 (S405) 4.2.6 Jan  5 2021 / 19:07:23 (a4b6db1e7) MSP API: 1.43
+# config: manufacturer_id: AIRB, board_name: OMNIBUSF4SD, version: 3a35e73b, date: 2019-09-30T05:46:12Z
 
 # start the command batch
 batch start
@@ -53,6 +53,7 @@ vtxtable powervalues 0 1
 vtxtable powerlabels 25 200
 
 # master
+set acc_calibration = 3,32,-110,1
 set mag_hardware = NONE
 set baro_hardware = NONE
 set min_check = 1010
@@ -64,7 +65,6 @@ set motor_pwm_protocol = DSHOT600
 set motor_poles = 12
 set yaw_motors_reversed = ON
 set small_angle = 180
-set pid_process_denom = 1
 set report_cell_voltage = ON
 set osd_warn_core_temp = OFF
 set osd_vbat_pos = 257
