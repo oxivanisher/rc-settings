@@ -1,9 +1,7 @@
-# 
-
-# diff all
+diff all
 
 # version
-# Betaflight / STM32F411 (S411) 4.1.5 Mar 16 2020 / 05:20:24 (d4e74e39c) MSP API: 1.42
+# Betaflight / STM32F411 (S411) 4.1.7 May 28 2020 / 15:05:37 (9ba02a587) MSP API: 1.42
 # manufacturer_id: MTKS   board_name: MATEKF411   custom defaults: YES
 
 # start the command batch
