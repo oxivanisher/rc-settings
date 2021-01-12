@@ -3,8 +3,8 @@
 # diff all
 
 # version
-# Betaflight / STM32F411 (S411) 4.1.7 May 28 2020 / 15:05:37 (9ba02a587) MSP API: 1.42
-# manufacturer_id: IFRC   board_name: IFLIGHT_F411_PRO   custom defaults: YES
+# Betaflight / STM32F411 (S411) 4.2.6 Jan  5 2021 / 19:07:43 (a4b6db1e7) MSP API: 1.43
+# config: manufacturer_id: IFRC, board_name: IFLIGHT_F411_PRO, version: bc19b7dc, date: 2020-04-01T04:37:12Z
 
 # start the command batch
 batch start
@@ -17,9 +17,10 @@ manufacturer_id IFRC
 mcu_id 002400403439510a38313437
 signature 
 
+# name: oXi
+
 # feature
 feature -RX_PARALLEL_PWM
-feature -AIRMODE
 feature RX_SERIAL
 feature MOTOR_STOP
 feature TELEMETRY
@@ -59,13 +60,12 @@ vtxtable powervalues 14 20 26 28
 vtxtable powerlabels 25 100 400 500
 
 # master
-set acc_calibration = 32,-86,-301
+set acc_calibration = 32,-86,-301,1
 set serialrx_provider = CRSF
 set blackbox_device = NONE
 set min_throttle = 1069
 set motor_pwm_protocol = DSHOT600
 set failsafe_switch_mode = KILL
-set pid_process_denom = 1
 set report_cell_voltage = ON
 set osd_cap_alarm = 1300
 set osd_vbat_pos = 23
@@ -102,4 +102,33 @@ set osd_disarmed_pos = 14730
 set osd_nheading_pos = 311
 set osd_nvario_pos = 279
 set osd_esc_tmp_pos = 82
-set osd_esc_rpm_pos = 
+set osd_esc_rpm_pos = 0
+set name = oXi
+
+profile 0
+
+profile 1
+
+profile 2
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+rateprofile 4
+
+rateprofile 5
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
+save
+# 
