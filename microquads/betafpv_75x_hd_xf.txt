@@ -66,6 +66,12 @@ vtxtable powerlabels 25 200
 
 # master
 set gyro_sync_denom = 2
+set gyro_lowpass2_hz = 325
+set dyn_notch_width_percent = 0
+set dyn_notch_q = 200
+set dyn_notch_min_hz = 90
+set dyn_lpf_gyro_min_hz = 260
+set dyn_lpf_gyro_max_hz = 650
 set acc_calibration = -209,86,-149
 set rssi_channel = 12
 set serialrx_provider = CRSF
@@ -90,13 +96,36 @@ set osd_stat_max_spd = OFF
 set osd_stat_endbatt = ON
 set osd_stat_battery = ON
 set osd_stat_bbox = OFF
+set vtx_band = 4
 set vtx_channel = 7
+set vtx_power = 2
 set vtx_freq = 5860
 set vcd_video_system = NTSC
 set gyro_1_align_yaw = 1800
 set name = oXi
 
 profile 0
+
+# profile 0
+set dyn_lpf_dterm_min_hz = 77
+set dyn_lpf_dterm_max_hz = 187
+set dterm_lowpass2_hz = 165
+set anti_gravity_gain = 7000
+set feedforward_transition = 10
+set throttle_boost = 8
+set p_pitch = 61
+set i_pitch = 99
+set d_pitch = 51
+set f_pitch = 125
+set p_roll = 55
+set i_roll = 94
+set d_roll = 46
+set f_roll = 119
+set p_yaw = 40
+set i_yaw = 99
+set f_yaw = 106
+set d_min_roll = 26
+set d_min_pitch = 29
 
 profile 1
 
