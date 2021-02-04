@@ -64,16 +64,19 @@ vtxtable powerlabels 25 200 500 800
 rxfail 6 s 2000
 
 # master
+set dyn_notch_min_hz = 100
+set dyn_notch_max_hz = 1000
 set acc_calibration = -155,47,-352,1
 set mag_hardware = NONE
 set baro_hardware = NONE
 set min_check = 1010
 set max_check = 1990
 set rssi_channel = 16
-set fpv_mix_degrees = 15
-set airmode_start_throttle_percent = 55
+set rc_smoothing_auto_smoothness = 7
+set fpv_mix_degrees = 17
+set airmode_start_throttle_percent = 15
 set rx_spi_protocol = FRSKY_X_LBT
-set dshot_idle_value = 450
+set dshot_idle_value = 600
 set dshot_bidir = ON
 set motor_pwm_protocol = DSHOT300
 set motor_poles = 12
@@ -109,9 +112,39 @@ set frsky_spi_bind_hop_data = 5,93,181,34,122,210,63,151,4,92,180,33,121,209,62,
 set rcdevice_init_dev_attempts = 4
 set gyro_1_align_yaw = 1800
 set gyro_rpm_notch_harmonics = 0
+set gyro_rpm_notch_q = 700
 set name = oXi
 
 profile 0
+
+# profile 0
+set dyn_lpf_dterm_curve_expo = 7
+set anti_gravity_gain = 5000
+set iterm_relax_cutoff = 20
+set yaw_lowpass_hz = 100
+set throttle_boost = 7
+set throttle_boost_cutoff = 25
+set p_pitch = 66
+set i_pitch = 99
+set d_pitch = 55
+set f_pitch = 105
+set p_roll = 61
+set i_roll = 94
+set d_roll = 51
+set f_roll = 99
+set p_yaw = 65
+set i_yaw = 99
+set f_yaw = 99
+set angle_level_strength = 97
+set horizon_level_strength = 30
+set horizon_transition = 80
+set level_limit = 70
+set horizon_tilt_effect = 80
+set horizon_tilt_expert_mode = ON
+set d_min_roll = 0
+set d_min_pitch = 0
+set ff_spike_limit = 70
+set ff_smooth_factor = 20
 
 profile 1
 
