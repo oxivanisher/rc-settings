@@ -3,8 +3,8 @@
 # diff all
 
 # version
-# Betaflight / STM32F411 (S411) 4.1.5 Mar 16 2020 / 05:20:24 (d4e74e39c) MSP API: 1.42
-# manufacturer_id: MTKS   board_name: MATEKF411RX   custom defaults: YES
+# Betaflight / STM32F411 (S411) 4.2.6 Jan  5 2021 / 19:07:43 (a4b6db1e7) MSP API: 1.43
+# config: manufacturer_id: MTKS, board_name: MATEKF411RX, version: ee671311, date: 2019-10-16T11:49:37Z
 
 # start the command batch
 batch start
@@ -64,16 +64,7 @@ vtxtable powerlabels 25 200 500 800
 rxfail 6 s 2000
 
 # master
-set gyro_sync_denom = 2
-set gyro_lowpass2_hz = 325
-set gyro_notch1_hz = 500
-set dyn_notch_range = AUTO
-set dyn_notch_width_percent = 0
-set dyn_notch_q = 70
-set dyn_notch_min_hz = 130
-set dyn_lpf_gyro_min_hz = 260
-set dyn_lpf_gyro_max_hz = 650
-set acc_calibration = -155,47,-352
+set acc_calibration = -155,47,-352,1
 set mag_hardware = NONE
 set baro_hardware = NONE
 set min_check = 1010
@@ -93,7 +84,6 @@ set vbat_warning_cell_voltage = 330
 set current_meter = NONE
 set yaw_motors_reversed = ON
 set small_angle = 180
-set pid_process_denom = 1
 set runaway_takeoff_prevention = OFF
 set osd_warn_esc_fail = OFF
 set osd_warn_core_temp = OFF
@@ -108,7 +98,6 @@ set osd_craft_name_pos = 2444
 set osd_warnings_pos = 2377
 set osd_esc_tmp_pos = 257
 set osd_core_temp_pos = 289
-set cpu_overclock = 108MHZ
 set vtx_band = 4
 set vtx_channel = 7
 set vtx_power = 1
@@ -123,37 +112,6 @@ set gyro_rpm_notch_harmonics = 0
 set name = oXi
 
 profile 0
-
-# profile 0
-set dyn_lpf_dterm_min_hz = 91
-set dyn_lpf_dterm_max_hz = 221
-set dterm_lowpass_hz = 80
-set dterm_lowpass2_hz = 195
-set vbat_pid_gain = ON
-set feedforward_transition = 25
-set iterm_rotation = ON
-set p_pitch = 50
-set i_pitch = 75
-set d_pitch = 44
-set f_pitch = 60
-set p_roll = 46
-set i_roll = 65
-set d_roll = 40
-set f_roll = 60
-set p_yaw = 95
-set i_yaw = 25
-set f_yaw = 200
-set angle_level_strength = 110
-set horizon_level_strength = 30
-set horizon_transition = 80
-set level_limit = 70
-set horizon_tilt_effect = 80
-set horizon_tilt_expert_mode = ON
-set abs_control_gain = 20
-set d_min_roll = 39
-set d_min_pitch = 43
-set d_min_boost_gain = 25
-set d_min_advance = 0
 
 profile 1
 
@@ -188,7 +146,7 @@ rateprofile 4
 rateprofile 5
 
 # restore original rateprofile selection
-rateprofile 1
+rateprofile 0
 
 # save configuration
 save
