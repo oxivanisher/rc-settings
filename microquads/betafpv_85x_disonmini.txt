@@ -8,7 +8,7 @@
 
 # start the command batch
 batch start
- 
+
 # reset configuration to default settings
 defaults nosave
 
@@ -18,6 +18,10 @@ mcu_id 004a001c534d501520353447
 signature 
 
 # name: oXi
+
+# resources
+resource PINIO 1 B12
+resource FLASH_CS 1 NONE
 
 # feature
 feature TELEMETRY
@@ -39,6 +43,7 @@ aux 1 1 1 1300 1700 0 0
 aux 2 2 1 1700 2100 0 0
 aux 3 13 2 1700 2100 0 0
 aux 4 35 2 1300 1700 0 0
+aux 5 40 3 900 1300 0 0
 
 # vtxtable
 vtxtable bands 5
@@ -88,6 +93,7 @@ set vtx_power = 2
 set vtx_low_power_disarm = ON
 set vtx_freq = 5860
 set vcd_video_system = NTSC
+set pinio_box = 40,255,255,255
 set gyro_1_align_yaw = 2700
 set name = oXi
 
