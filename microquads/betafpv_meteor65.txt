@@ -60,6 +60,9 @@ vtxtable powerlevels 4
 vtxtable powervalues 0 1 2 3
 vtxtable powerlabels 25 200 500 800
 
+# rxfail
+rxfail 6 s 2000
+
 # master
 set gyro_sync_denom = 2
 set gyro_lowpass2_hz = 325
@@ -75,6 +78,7 @@ set mag_hardware = NONE
 set baro_hardware = NONE
 set min_check = 1010
 set max_check = 1990
+set rssi_channel = 16
 set fpv_mix_degrees = 15
 set airmode_start_throttle_percent = 55
 set rx_spi_protocol = FRSKY_X_LBT
@@ -93,17 +97,21 @@ set pid_process_denom = 1
 set runaway_takeoff_prevention = OFF
 set osd_warn_esc_fail = OFF
 set osd_warn_core_temp = OFF
-set osd_vbat_pos = 2402
-set osd_rssi_pos = 2242
-set osd_tim_2_pos = 2423
-set osd_flymode_pos = 2391
+set osd_vbat_pos = 2433
+set osd_rssi_pos = 2401
+set osd_link_quality_pos = 2369
+set osd_tim_2_pos = 2455
+set osd_flymode_pos = 2423
 set osd_throttle_pos = 321
 set osd_crosshairs_pos = 2285
-set osd_craft_name_pos = 2412
-set osd_warnings_pos = 2345
+set osd_craft_name_pos = 2444
+set osd_warnings_pos = 2377
+set osd_esc_tmp_pos = 257
+set osd_core_temp_pos = 289
 set cpu_overclock = 108MHZ
 set vtx_band = 4
 set vtx_channel = 7
+set vtx_power = 1
 set vtx_freq = 5860
 set vcd_video_system = NTSC
 set frsky_spi_tx_id = 41,146
