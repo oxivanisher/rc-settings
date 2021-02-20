@@ -1,9 +1,9 @@
-# 
+#
 
 # diff all
 
 # version
-# Betaflight / STM32F411 (S411) 4.2.6 Jan  5 2021 / 19:07:43 (a4b6db1e7) MSP API: 1.43
+# Betaflight / STM32F411 (S411) 4.2.8 Feb 15 2021 / 12:09:04 (101738d8e) MSP API: 1.43
 # config: manufacturer_id: IFRC, board_name: IFLIGHT_F411_PRO, version: bc19b7dc, date: 2020-04-01T04:37:12Z
 
 # start the command batch
@@ -15,7 +15,7 @@ defaults nosave
 board_name IFLIGHT_F411_PRO
 manufacturer_id IFRC
 mcu_id 002400403439510a38313437
-signature 
+signature
 
 # name: oXi
 
@@ -133,4 +133,4 @@ rateprofile 0
 
 # save configuration
 save
-# 
+#
