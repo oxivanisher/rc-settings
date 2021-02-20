@@ -41,7 +41,8 @@ aux 0 0 0 1700 2100 0 0
 aux 1 1 1 1300 1700 0 0
 aux 2 2 1 1700 2100 0 0
 aux 3 13 2 1700 2100 0 0
-aux 4 35 2 1300 1700 0 0
+aux 4 26 3 1700 2100 0 0
+aux 5 35 2 1300 1700 0 0
 
 # adjrange
 adjrange 0 0 1 900 2100 12 1 0 0
@@ -60,9 +61,12 @@ vtxtable powervalues 14 20 26 28
 vtxtable powerlabels 25 100 400 500
 
 # master
+set dyn_notch_width_percent = 0
+set dyn_notch_q = 250
+set dyn_notch_min_hz = 100
+set dyn_notch_max_hz = 200
 set acc_calibration = 32,-86,-301,1
 set serialrx_provider = CRSF
-set blackbox_device = NONE
 set min_throttle = 1069
 set dshot_bidir = ON
 set motor_pwm_protocol = DSHOT300
@@ -71,7 +75,7 @@ set failsafe_switch_mode = KILL
 set report_cell_voltage = ON
 set osd_cap_alarm = 1300
 set osd_vbat_pos = 23
-set osd_rssi_pos = 378
+set osd_rssi_pos = 2426
 set osd_link_quality_pos = 2425
 set osd_tim_1_pos = 15
 set osd_tim_2_pos = 2091
@@ -104,10 +108,31 @@ set osd_disarmed_pos = 14730
 set osd_nheading_pos = 311
 set osd_nvario_pos = 279
 set osd_esc_tmp_pos = 82
-set osd_esc_rpm_pos = 0
+set osd_esc_rpm_pos = 83
+set osd_stat_max_spd = OFF
+set osd_stat_endbatt = ON
+set osd_stat_battery = ON
+set osd_stat_min_rssi = OFF
+set osd_stat_bbox = OFF
+set debug_mode = GYRO_SCALED
 set name = oXi
 
 profile 0
+
+# profile 0
+set p_pitch = 37
+set i_pitch = 72
+set d_pitch = 26
+set f_pitch = 76
+set p_roll = 34
+set i_roll = 68
+set d_roll = 24
+set f_roll = 72
+set p_yaw = 36
+set i_yaw = 72
+set f_yaw = 72
+set d_min_roll = 0
+set d_min_pitch = 0
 
 profile 1
 
@@ -117,6 +142,17 @@ profile 2
 profile 0
 
 rateprofile 0
+
+# rateprofile 0
+set roll_rc_rate = 185
+set pitch_rc_rate = 185
+set yaw_rc_rate = 150
+set roll_expo = 50
+set pitch_expo = 50
+set yaw_expo = 55
+set roll_srate = 63
+set pitch_srate = 63
+set yaw_srate = 63
 
 rateprofile 1
 
