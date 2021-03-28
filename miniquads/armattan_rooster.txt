@@ -1,9 +1,9 @@
-# 
+#
 
 # diff all
 
 # version
-# Betaflight / STM32F405 (S405) 4.2.0 Jun 14 2020 / 03:04:22 (8f2d21460) MSP API: 1.43
+# Betaflight / STM32F405 (S405) 4.2.6 Jan  5 2021 / 19:07:23 (a4b6db1e7) MSP API: 1.43
 # config: manufacturer_id: FPVM, board_name: BETAFLIGHTF4, version: f92ddc38, date: 2020-04-28T07:37:21Z
 
 # start the command batch
@@ -15,7 +15,7 @@ defaults nosave
 board_name BETAFLIGHTF4
 manufacturer_id FPVM
 mcu_id 003b00233037470735393636
-signature 
+signature
 
 # name: oXi
 
@@ -72,9 +72,11 @@ set min_check = 1010
 set max_check = 1990
 set serialrx_provider = CRSF
 set blackbox_device = NONE
+set min_throttle = 1070
 set dshot_bidir = ON
 set use_unsynced_pwm = OFF
 set motor_pwm_protocol = DSHOT300
+set motor_pwm_rate = 480
 set bat_capacity = 1300
 set vbat_max_cell_voltage = 440
 set vbat_warning_cell_voltage = 340
@@ -174,4 +176,4 @@ rateprofile 0
 
 # save configuration
 save
-# 
+#
