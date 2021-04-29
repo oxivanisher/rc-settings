@@ -157,7 +157,7 @@ set dyn_lpf_dterm_min_hz = 105
 set dyn_lpf_dterm_max_hz = 255
 set dterm_lowpass2_hz = 225
 set vbat_pid_gain = ON
-set anti_gravity_gain = 5000
+set anti_gravity_gain = 5500
 set p_pitch = 64
 set i_pitch = 63
 set d_pitch = 46
@@ -169,6 +169,7 @@ set f_roll = 101
 set p_yaw = 63
 set i_yaw = 63
 set f_yaw = 101
+set angle_level_strength = 20
 set d_min_roll = 0
 set d_min_pitch = 0
 
