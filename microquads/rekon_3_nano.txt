@@ -3,9 +3,8 @@
 # diff all
 
 # version
-# Betaflight / STM32F411 (S411) 4.2.0 Jun 14 2020 / 03:04:43 (8f2d21460) MSP API: 1.43
-
-# config: YES
+# Betaflight / STM32F411 (S411) 4.2.9 Apr 27 2021 / 19:33:23 (e097f4ab7) MSP API: 1.43
+# config: manufacturer_id: HGLR, board_name: HGLRCF411, version: 18c5b9b5, date: 2020-05-25T12:32:42Z
 
 # start the command batch
 batch start
