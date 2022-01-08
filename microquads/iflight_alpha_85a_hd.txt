@@ -14,7 +14,7 @@ defaults nosave
 board_name IFLIGHT_F411_PRO
 manufacturer_id IFRC
 mcu_id 0034003a3236510435383430
-signature 
+signature
 
 # name: oXi
 
@@ -145,6 +145,7 @@ set anti_gravity_gain = 5000
 set feedforward_transition = 40
 set iterm_relax_cutoff = 10
 set yaw_lowpass_hz = 70
+set throttle_boost = 7
 set throttle_boost_cutoff = 10
 set d_pitch = 26
 set f_pitch = 133
