@@ -1,8 +1,8 @@
 # diff all
 
 # version
-# Betaflight / STM32F411 (S411) 4.2.8 Feb 15 2021 / 12:09:04 (101738d8e) MSP API: 1.43
-# config: manufacturer_id: GEPR, board_name: GEPRCF411, version: 8758488d, date: 2019-12-29T10:31:32Z
+# Betaflight / STM32F411 (S411) 4.2.11 Nov  9 2021 / 20:28:23 (948ba6339) MSP API: 1.43
+# config: manufacturer_id: GEPR, board_name: GEPRCF411, version: edcd244b, date: 2022-06-29T02:24:46Z
 
 # start the command batch
 batch start
@@ -41,6 +41,9 @@ dma pin C06 0
 # pin C06: DMA1 Stream 4 Channel 5
 dma pin C07 0
 # pin C07: DMA1 Stream 5 Channel 5
+
+# feature
+feature -RX_PARALLEL_PWM
 
 # beeper
 beeper -ON_USB
