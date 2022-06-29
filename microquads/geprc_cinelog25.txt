@@ -1,5 +1,3 @@
-#
-
 # diff all
 
 # version
@@ -15,7 +13,7 @@ defaults nosave
 board_name GEPRCF411
 manufacturer_id GEPR
 mcu_id 004600103030511437393838
-signature
+signature 
 
 # name: oXi
 
@@ -208,4 +206,4 @@ rateprofile 0
 
 # save configuration
 save
-#
+# 
