@@ -1,4 +1,4 @@
-# 
+#
 
 # diff all
 
@@ -15,7 +15,7 @@ defaults nosave
 board_name MATEKF411RX
 manufacturer_id MTKS
 mcu_id 004e001b3437510d32363736
-signature 
+signature
 
 # name: oXi
 
@@ -66,7 +66,7 @@ rxfail 6 s 2000
 # master
 set dyn_notch_min_hz = 100
 set dyn_notch_max_hz = 1000
-set acc_calibration = -155,47,-352,1
+set acc_calibration = -180,51,-267,1
 set mag_hardware = NONE
 set baro_hardware = NONE
 set min_check = 1010
@@ -179,8 +179,8 @@ rateprofile 4
 rateprofile 5
 
 # restore original rateprofile selection
-rateprofile 0
+rateprofile 1
 
 # save configuration
 save
-# 
+#
