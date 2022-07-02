@@ -1,4 +1,4 @@
-# 
+#
 
 # diff all
 
@@ -15,7 +15,7 @@ defaults nosave
 board_name GEPRCF411
 manufacturer_id GEPR
 mcu_id 004600103030511437393838
-signature 
+signature
 
 # name: oXi
 
@@ -71,8 +71,13 @@ aux 5 35 2 1300 1700 0 0
 aux 6 40 3 1300 1700 0 0
 
 # master
-set dyn_notch_count = 1
-set dyn_notch_q = 250
+set gyro_lpf1_static_hz = 375
+set gyro_lpf2_static_hz = 750
+set dyn_notch_count = 2
+set dyn_notch_min_hz = 100
+set dyn_notch_max_hz = 1000
+set gyro_lpf1_dyn_min_hz = 375
+set gyro_lpf1_dyn_max_hz = 750
 set acc_calibration = 15,58,274,1
 set min_check = 1010
 set max_check = 1990
@@ -91,6 +96,7 @@ set align_board_yaw = 135
 set beeper_dshot_beacon_tone = 3
 set yaw_motors_reversed = ON
 set small_angle = 180
+set simplified_gyro_filter_multiplier = 150
 set report_cell_voltage = ON
 set osd_cap_alarm = 1300
 set osd_vbat_pos = 23
@@ -135,13 +141,34 @@ set pinio_box = 40,255,255,255
 set flash_spi_bus = 2
 set gyro_1_sensor_align = CW180
 set gyro_1_align_yaw = 1800
+set rpm_filter_harmonics = 2
 set name = oXi
 
 profile 0
 
 # profile 0
+set vbat_sag_compensation = 100
+set anti_gravity_gain = 5500
+set iterm_relax_cutoff = 10
+set p_pitch = 75
+set i_pitch = 134
+set d_pitch = 76
+set f_pitch = 199
+set p_roll = 71
+set i_roll = 127
+set d_roll = 67
+set f_roll = 191
+set p_yaw = 71
+set i_yaw = 127
+set f_yaw = 191
+set d_min_roll = 67
+set d_min_pitch = 76
+set thrust_linear = 20
 set feedforward_smooth_factor = 35
 set feedforward_jitter_factor = 12
+set simplified_master_multiplier = 160
+set simplified_d_gain = 140
+set simplified_dmax_gain = 0
 
 profile 1
 
@@ -151,6 +178,9 @@ profile 2
 profile 0
 
 rateprofile 0
+
+# rateprofile 0
+set yaw_srate = 54
 
 rateprofile 1
 
@@ -167,4 +197,4 @@ rateprofile 0
 
 # save configuration
 save
-# 
+#
