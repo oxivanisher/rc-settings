@@ -87,6 +87,7 @@ dma pin B10 0
 # feature
 feature -RX_PARALLEL_PWM
 feature RX_SERIAL
+feature TELEMETRY
 feature OSD
 
 # serial
