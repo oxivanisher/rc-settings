@@ -87,6 +87,7 @@ set motor_poles = 12
 set bat_capacity = 300
 set vbat_max_cell_voltage = 450
 set vbat_min_cell_voltage = 320
+set vbat_warning_cell_voltage = 330
 set current_meter = NONE
 set yaw_motors_reversed = ON
 set small_angle = 180
@@ -96,7 +97,7 @@ set osd_warn_esc_fail = OFF
 set osd_warn_core_temp = OFF
 set osd_vbat_pos = 2433
 set osd_rssi_pos = 2401
-set osd_link_quality_pos = 2369
+set osd_link_quality_pos = 321
 set osd_tim_2_pos = 2455
 set osd_flymode_pos = 2423
 set osd_throttle_pos = 321
@@ -122,6 +123,7 @@ profile 0
 # profile 0
 set vbat_sag_compensation = 100
 set anti_gravity_gain = 10000
+set crash_recovery = ON
 set iterm_relax_cutoff = 10
 set p_pitch = 75
 set i_pitch = 134
