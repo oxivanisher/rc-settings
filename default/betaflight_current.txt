@@ -1,5 +1,6 @@
 # name
-set name = oXi
+set craft_name = CraftName
+set pilot_name = oXi
 
 # to accept HV batteries without warning
 # profile

@@ -3,7 +3,7 @@
 # diff all
 
 # version
-# Betaflight / STM32F411 (S411) 4.3.2 Nov 28 2022 / 07:27:10 (60c9521) MSP API: 1.44
+# Betaflight / STM32F411 (S411) 4.4.1 Apr 15 2023 / 21:28:23 (e43d591b2) MSP API: 1.45
 
 # config: YES
 
@@ -18,7 +18,7 @@ manufacturer_id GEPR
 mcu_id 004600103030511437393838
 signature
 
-# name: oXi
+# name: Cinelog25
 
 # resources
 resource MOTOR 1 B06
@@ -31,7 +31,6 @@ resource SERIAL_RX 11 B10
 resource I2C_SCL 1 B08
 resource I2C_SDA 1 B09
 resource PINIO 1 A08
-resource FLASH_CS 1 B03
 
 # timer
 timer C06 AF2
@@ -44,9 +43,6 @@ dma pin C06 0
 # pin C06: DMA1 Stream 4 Channel 5
 dma pin C07 0
 # pin C07: DMA1 Stream 5 Channel 5
-
-# feature
-feature -RX_PARALLEL_PWM
 
 # serial
 serial 0 1 115200 57600 0 115200
@@ -72,23 +68,16 @@ aux 5 35 2 1300 1700 0 0
 aux 6 40 3 1300 1700 0 0
 
 # master
-set gyro_lpf1_static_hz = 375
-set gyro_lpf2_static_hz = 750
+set gyro_lpf1_static_hz = 150
+set gyro_lpf2_static_hz = 300
 set dyn_notch_count = 2
-set dyn_notch_min_hz = 100
-set dyn_notch_max_hz = 1000
-set gyro_lpf1_dyn_min_hz = 375
-set gyro_lpf1_dyn_max_hz = 750
+set dyn_notch_max_hz = 550
+set gyro_lpf1_dyn_min_hz = 150
+set gyro_lpf1_dyn_max_hz = 300
+set acc_lpf_hz = 10
 set acc_calibration = 15,58,274,1
 set min_check = 1010
 set max_check = 1990
-set rc_smoothing_auto_factor = 175
-set rc_smoothing_auto_factor_throttle = 100
-set rc_smoothing_setpoint_cutoff = 12
-set rc_smoothing_feedforward_cutoff = 12
-set rc_smoothing_throttle_cutoff = 20
-set serialrx_provider = CRSF
-set blackbox_device = SPIFLASH
 set dshot_bidir = ON
 set motor_pwm_protocol = DSHOT300
 set motor_poles = 12
@@ -97,7 +86,7 @@ set align_board_yaw = 135
 set beeper_dshot_beacon_tone = 3
 set yaw_motors_reversed = ON
 set small_angle = 180
-set simplified_gyro_filter_multiplier = 150
+set simplified_gyro_filter_multiplier = 60
 set report_cell_voltage = ON
 set osd_cap_alarm = 1300
 set osd_vbat_pos = 23
@@ -130,27 +119,30 @@ set osd_pit_ang_pos = 257
 set osd_rol_ang_pos = 289
 set osd_battery_usage_pos = 8
 set osd_nheading_pos = 311
-set osd_nvario_pos = 279
 set osd_esc_tmp_pos = 82
 set osd_esc_rpm_pos = 83
-set osd_stat_max_spd = OFF
-set osd_stat_endbatt = ON
-set osd_stat_battery = ON
-set osd_stat_min_rssi = OFF
-set osd_stat_bbox = OFF
+set osd_canvas_width = 30
+set osd_canvas_height = 13
 set pinio_box = 40,255,255,255
-set flash_spi_bus = 2
 set gyro_1_sensor_align = CW180
 set gyro_1_align_yaw = 1800
 set rpm_filter_harmonics = 2
-set name = oXi
+set craft_name = Cinelog25
+set pilot_name = oXi
 
 profile 0
 
 # profile 0
+set dterm_lpf1_dyn_min_hz = 90
+set dterm_lpf1_dyn_max_hz = 180
+set dterm_lpf1_static_hz = 90
+set dterm_lpf2_static_hz = 180
 set vbat_sag_compensation = 100
-set anti_gravity_gain = 5500
-set iterm_relax_cutoff = 10
+set anti_gravity_gain = 90
+set iterm_relax_cutoff = 5
+set pidsum_limit = 1000
+set pidsum_limit_yaw = 1000
+set yaw_lowpass_hz = 125
 set p_pitch = 75
 set i_pitch = 134
 set d_pitch = 76
@@ -170,10 +162,13 @@ set feedforward_jitter_factor = 12
 set simplified_master_multiplier = 160
 set simplified_d_gain = 140
 set simplified_dmax_gain = 0
+set simplified_dterm_filter_multiplier = 120
 
 profile 1
 
 profile 2
+
+profile 3
 
 # restore original profile selection
 profile 0
@@ -188,10 +183,6 @@ rateprofile 1
 rateprofile 2
 
 rateprofile 3
-
-rateprofile 4
-
-rateprofile 5
 
 # restore original rateprofile selection
 rateprofile 0
