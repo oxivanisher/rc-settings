@@ -3,8 +3,9 @@
 # diff all
 
 # version
-# Betaflight / STM32F411 (S411) 4.3.0 Jun 14 2022 / 00:48:04 (229ac66) MSP API: 1.44
-# config: manufacturer_id: GEPR, board_name: GEPRCF411, version: edcd244b, date: 2022-06-29T02:24:46Z
+# Betaflight / STM32F411 (S411) 4.3.2 Nov 28 2022 / 07:27:10 (60c9521) MSP API: 1.44
+
+# config: YES
 
 # start the command batch
 batch start
